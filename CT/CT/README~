@@ -1,0 +1,36 @@
+	I have provided the combined grammar file named "smallC.g4". And some test programs to see if it parses then correctly. I have also included their resulting AST trees below as a text representation.
+
+Testfile 1 :
+	
+	(program (includes #include (string "<stdio.h>")) decls (main main ( ) (body { (decls (typedident int (ident fahr)) ; (typedident int (ident celsius)) ;) (stmtlist (stmt (ident fahr) = (lexp (term (factor (ident lower)))) ;) (stmt while ( (exp (lexp (term (factor (ident fahr)))) <= (lexp (term (factor (ident upper))))) ) (stmt { (stmtlist (stmt (ident celsius) = (lexp (term (factor (number 5)) * (factor ( (lexp (term (factor (ident fahr))) - (term (factor (number 32)))) )) / (factor (number 9)))) ;)) })) (stmt return (lexp (term (factor (number 1)))) ;)) })))
+
+-It parses the test file correctly 
+
+Testfile 2 :
+
+	(program (includes #include (string "<iostream.h>")) (decls (typedident char (ident c)) ;) (main main ( ) (body { (decls (typedident int (ident boo)) ; (typedident char (ident b)) ; (typedident char (ident a)) ;) (stmtlist (stmt (ident character) = (lexp (term (factor (character 'g')))) ;) (stmt if ( (exp (lexp (term (factor (ident x)))) == (lexp (term (factor (ident boo))))) ) (stmt { (stmtlist (stmt if ( (exp (lexp (term (factor (ident x)))) == (lexp (term (factor (ident boo))))) ) (stmt { (stmtlist (stmt (ident boo) = (lexp (term (factor (number 22)))) ;) (stmt print ( (string "A sdas") ) ;)) }) else (stmt { (stmtlist (stmt (ident boo) = (lexp (term (factor (number 33)))) ;)) }))) }) else (stmt { (stmtlist (stmt (ident character) = (lexp (term (factor (character 'y')))) ;)) })) (stmt return (lexp (term (factor (ident zero)))) ;)) })))
+
+- This test file is parsed correctly aswell.
+
+Testfile 3 :
+
+(program (includes "<iostream.h>") (decls (typedident int (ident x)) ;) (main main ( ) (body { (decls (typedident int (ident boo)) ; (typedident char (ident b)) ;) (stmtlist (stmt (ident b) = (lexp (term (factor (character 'g')))) ;) (stmt return (lexp (term (factor (ident boo)))) ;)) })))
+
+- Correct parsing for this simple test file.
+
+Testfile 4 :
+
+(program (includes #include (string <)) decls (procedure (ident ios)) (procedure (ident tream)) (procedure (ident h) > ") (procedure char (ident c) ;) (main main ( ) (body { (decls (typedident int (ident boo)) ; (typedident char (ident b)) ; (typedident char (ident a)) ;) (stmtlist (stmt (ident character) = (lexp (term (factor (character 'g')))) ;) (stmt if ( (exp (lexp (term (factor (ident x)))) == (lexp (term (factor (ident boo))))) ) (stmt { (stmtlist (stmt if ( (exp (lexp (term (factor (ident x)))) == (lexp (term (factor (ident boo))))) ) (stmt { (stmtlist (stmt (ident boo) = (lexp (term (factor (number 22)))) ;) (stmt print ( (string "A sdas") ) ;)) }) else (stmt { (stmtlist (stmt (ident boo) = (lexp (term (factor (number 33)))) ;)) }))) }) else (stmt { (stmtlist (stmt (ident character) = (lexp (term (factor (character 'y')))) ;)) })) (stmt return (lexp (term (factor (ident zero)))) ;)) })))
+
+- This test file was created to simulate incorrect smallC code. In the beginning the #include statement is not followed by a string surrounded with "" so it
+parses it as different parts and not as a initial include statement.
+
+Testfile 5 :
+
+(program (includes #include (string "<iostream.h>")) (decls (typedident char (ident c)) ;) (main main ( ) (body { (decls (typedident int (ident boo)) ; (typedident char (ident b)) ; (typedident char (ident a)) ;) (stmtlist (stmt (ident character) = (lexp (term (factor (character 'g')))) ;) (stmt if ( (exp (lexp (term (factor (ident x)))) == (lexp (term (factor (ident boo))))) ) (stmt { (stmtlist (stmt if ( (exp (lexp (term (factor (ident x)))) == (lexp (term (factor (ident boo))))) ) (stmt { (stmtlist (stmt (ident boo) = (lexp (term (factor (number 22)))) ;) (stmt print ( (string "A sdas") ) ;)) }) else (stmt { (stmtlist (stmt (ident boo) = (lexp (term (factor (number 33)))) ;)) }))) }) else (stmt { (stmtlist (stmt (ident character) = (lexp (term (factor (character 'y')))) ;)) }))) })))
+
+- Another failure test file to see how it behaves when incorrect input is given.
+
+Testfile 6 :
+
+- Test fail

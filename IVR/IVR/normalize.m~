@@ -1,0 +1,11 @@
+function rgb = normalize(RGB)
+	R = HSV(:,:,1); 
+	G = HSV(:,:,2);
+	B = HSV(:,:,3);
+	sum = R+G+B;
+    
+    	h = R./sum; 
+    	s = G./sum;
+    	v = B./sum; 
+	rgb = cat(3,h,s,v); 
+

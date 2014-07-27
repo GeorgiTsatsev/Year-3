@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/impact.xsl
+OUTFILE=/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project
+LICENSE=iMPACT
+USER_INFO=iMPACT

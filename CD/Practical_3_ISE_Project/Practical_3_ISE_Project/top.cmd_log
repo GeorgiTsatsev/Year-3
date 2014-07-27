@@ -1,0 +1,438 @@
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.syr" 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+xst -intstyle ise -ifn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.xst" -ofn "/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p xc3s500e-fg320-4 top.ngc top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr b -c 100 -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o top.twr top.pcf -ucf constraints.ucf 
+xpwr -intstyle ise top.ncd top.pcf -o top.pwr 
+bitgen -intstyle ise -f top.ut top.ncd 

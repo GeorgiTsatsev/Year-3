@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.ncd
+OUTFILE=/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project
+LICENSE=WebPack
+USER_INFO=177283050_0_0_252

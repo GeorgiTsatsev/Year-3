@@ -1,0 +1,127 @@
+--=========================================================================
+-- AR 2013-14: Coursework 2
+--=========================================================================
+-- Student UUN: s1045049
+
+--=========================================================================
+-- PROPERTIES OF FIFO
+--=========================================================================
+-- This file is not a standalone NuSMV file: it is to be included in
+-- fifo.smv or fifo-fixed.smv.
+
+-- The CTL and LTL properties in this file are numbered.  To have
+-- NuSMV check just the property numbered <p>, run it with the added
+-- option -n <p>.  
+
+-- NuSMV always numbers CTL properties first, so the numbers for the
+-- LTL properties do not start from 0.
+
+
+---------------------------------------------------------------------------
+-- Section 3.2, Q1: LTL Properties
+---------------------------------------------------------------------------
+
+
+--2: (a)
+
+LTLSPEC G ! (full & empty) ;
+
+
+--3: (b)
+
+LTLSPEC G(write & !read) -> F(full) ;
+
+
+--4: (c)
+              
+LTLSPEC G( G (wr_data=0ud1_1 & write & !full) -> F rd_data=0ud1_1);                      
+ 
+
+--5: (d)
+
+LTLSPEC G( G (wr_data=data1 & write & !full) -> F rd_data=data1);                      
+
+
+--6: (e)
+
+LTLSPEC G( G (wr_data=data1 & write & !full ) -> X (!empty) U (rd_data=data1));                     
+
+
+--7: (f)
+
+LTLSPEC G( G (wr_data=data1 & write & !full & X (wr_data=data2 & write & !full)) -> F (rd_data=data1 & X (rd_data=data2)));                      
+ 
+
+---------------------------------------------------------------------------
+-- Section 3.2, Q2: CTL Properties
+---------------------------------------------------------------------------
+
+--0: (a)
+
+CTLSPEC EF (AX full);
+
+
+--1: (b)
+
+CTLSPEC (AG full) -> (EF empty); 
+
+---------------------------------------------------------------------------
+-- Section 3.3, Q1: LTL Property showing bug
+---------------------------------------------------------------------------
+
+--8:
+LTLSPEC G(empty -> (rd_p=wr_p));
+
+
+---------------------------------------------------------------------------
+-- Section 3.3, Q2: Description of counter example behaviour
+---------------------------------------------------------------------------
+-- <ADD DESCRIPTION HERE>
+
+
+-- The shortest counter example given by the BMC has three states that show
+-- us the bug of the fifo. In the first state read and write pointers are set to
+-- 0 since it is the initial state. Write flag is set to true to write the data
+-- and the write pointer is incremented to 1. Since in the second state write is
+-- still true write pointer is incremented again so it now is 2. In our second 
+-- state read is set to TRUE so its pointer is incremented and is now 1. In the
+-- third state the read and write flags are set to false so we wont increment them.
+-- Because we have read in the second state our empty flag is set to true again and
+-- in the third state it is set to false because we have had a read flag set to true
+-- and we have read the rd_data. In the third state the read and write pointers differ
+-- and our queue is empty because in my opinion there is something wrong with the 
+-- way the empty flag is set since it says that in state 3 it is empty but we know that
+-- we have written twice in the fifo queue. 
+
+
+-- specification  G (empty -> rd_p = wr_p)    is false
+-- as demonstrated by the following execution sequence
+--Trace Description: BMC Counterexample 
+--Trace Type: Counterexample 
+---> State: 1.1 <-
+--  data1 = 0ud1_1
+--  data2 = 0ud1_1
+--  buffer[0] = 0ud1_1
+--  buffer[1] = 0ud1_1
+--  buffer[2] = 0ud1_1
+--  buffer[3] = 0ud1_1
+--  buffer[4] = 0ud1_1
+--  rd_p = 0
+--  wr_p = 0
+--  empty = TRUE
+--  write = TRUE
+--  wr_data = 0ud1_1
+--  read = FALSE
+--  rd_data = 0ud1_1
+--  full = FALSE
+---> State: 1.2 <-
+--  wr_p = 1
+--  empty = FALSE
+-- read = TRUE
+---> State: 1.3 <-
+--  rd_p = 1
+--  wr_p = 2
+--  empty = TRUE
+--  write = FALSE
+--  read = FALSE
+

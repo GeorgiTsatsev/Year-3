@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+adder16 instance_name (
+    .clock(clock), 
+    .in12(in12), 
+    .in22(in22), 
+    .result22(result22)
+    );
+
+

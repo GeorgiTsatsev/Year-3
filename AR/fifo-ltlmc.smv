@@ -1,0 +1,121 @@
+--=========================================================================
+-- AR 2013-14: Coursework 2
+--=========================================================================
+-- Student UUN: s1045049
+
+--=========================================================================
+-- Sec 3.4: Demonstration of LTL Model checking principles
+--=========================================================================
+
+--=========================================================================
+-- Composition of system with a Buchi Automaton for negated property
+--=========================================================================
+
+
+MODULE main
+  VAR
+    sys  : system;
+    nfba : neg_fmla_ba(sys);
+
+--=========================================================================
+-- Emulation of a Buchi Automaton for negated property
+--=========================================================================
+
+---------------------------------------------------------------------------
+-- Section 3.4, Q1: 
+---------------------------------------------------------------------------
+-- <NEGATED FORMULA, IN NORMALISED FORM>
+
+-- !phi = F ( full & read & X full)
+
+---------------------------------------------------------------------------
+-- Section 3.4, Q2: 
+---------------------------------------------------------------------------
+-- Complete the module that emulates a Buchi Automaton for !phi.  An LTL
+-- property capturing the acceptance condition for the automaton is asked for
+-- separately below. 
+
+MODULE neg_fmla_ba(sys)
+  VAR
+    st : 0 .. 2;  -- <ADJUST NUMBER OF STATES, AS NEEDED>
+  ASSIGN
+    init(st) := 0;
+    next(st) :=
+	case
+	st = 0 & sys.full & sys.read : 1;
+	st = 1 & sys.full: 2;
+	st = 2 : 2;
+	TRUE: 0;
+	
+	esac;
+
+
+---------------------------------------------------------------------------
+-- Section 3.4, Q3: 
+---------------------------------------------------------------------------
+-- Add a property here that, if true, captures that there are *no*
+-- accepting runs of the automaton.
+
+
+-- The accepting state is 2 since this specification gives true it captures
+-- that there are no runs of the automation.
+
+LTLSPEC !G F st=2;
+
+--=========================================================================
+-- FIFO model
+--=========================================================================
+
+#define DEPTH 5
+#define WIDTH 1
+#define WORD word[WIDTH]
+
+MODULE system
+  VAR 
+  -- Internal state
+    buffer : array 0 .. (DEPTH-1) of WORD;
+    rd_p: 0 .. DEPTH-1;
+    wr_p: 0 .. DEPTH-1;
+    empty : boolean;  -- Also an output.
+  -- Inputs
+    write : boolean;
+    wr_data : WORD;
+    read : boolean;
+
+  FROZENVAR
+  -- For use in specifications to capture and refer to data values
+     data1 : WORD;  
+     data2 : WORD;  
+  DEFINE
+  -- Outputs
+    full := !empty & (rd_p = wr_p);
+    rd_data := buffer[rd_p];
+  ASSIGN
+    init(rd_p) := 0;
+    init(wr_p) := 0;
+    init(empty) := TRUE;
+    -- No init statement for buffer.  Values in buffer at start
+    -- left unconstrained.
+
+    next(rd_p) := read & !empty ? (rd_p + 1) mod DEPTH : rd_p;
+    next(wr_p) := write & !full ? (wr_p + 1) mod DEPTH : wr_p;
+
+    next(empty) := 
+      case
+        empty & write : FALSE;
+        (rd_p + 1) mod DEPTH = wr_p & read: TRUE;
+        TRUE : empty;
+      esac;
+    
+    next(buffer[0]) := wr_p = 0 & write & !full  ?  wr_data : buffer[0];
+    next(buffer[1]) := wr_p = 1 & write & !full  ?  wr_data : buffer[1];
+    next(buffer[2]) := wr_p = 2 & write & !full  ?  wr_data : buffer[2];
+    next(buffer[3]) := wr_p = 3 & write & !full  ?  wr_data : buffer[3];
+    next(buffer[4]) := wr_p = 4 & write & !full  ?  wr_data : buffer[4];
+
+
+
+
+
+
+

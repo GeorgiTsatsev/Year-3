@@ -1,0 +1,25 @@
+Release 13.2 reportgen O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+honda.inf.ed.ac.uk::  Tue Nov 20 14:58:57 2012
+
+/afs/inf.ed.ac.uk/group/teaching/cd/Xilinx132/ISE_DS/ISE/bin/lin64/unwrapped/re
+portgen -intstyle ise -clock_regions -o top top.ncd 
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment
+/afs/inf.ed.ac.uk/group/teaching/cd/Xilinx132/ISE_DS/ISE/.
+   "top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+ReportGen:LoadDesign: 'top.ncd'
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+Device speed data version:  "PRODUCTION 1.27 2011-06-20".
+
+Generating Clock Region Report: top.clk_rgn
+
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+reportgen done!

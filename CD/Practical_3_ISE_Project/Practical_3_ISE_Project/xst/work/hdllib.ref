@@ -1,0 +1,16 @@
+MO charmap NULL charmap.v vlg78/charmap.bin 1353423396
+MO simplemult NULL simplemult.v vlg68/simplemult.bin 1353423396
+MO adder NULL adder.v vlg54/adder.bin 1353423396
+MO ripple NULL ripple.v vlg14/ripple.bin 1353423396
+MO prom_ram_empty NULL prom.v vlg4F/prom__ram__empty.bin 1353423396
+MO top NULL top.v vlg6F/top.bin 1353423396
+MO VGA_S3E500 NULL S3E500.v vlg49/_v_g_a___s3_e500.bin 1353423396
+MO rx NULL rx.v vlg32/rx.bin 1353423396
+MO prom_ram_small NULL prom.v vlg51/prom__ram__small.bin 1353423396
+MO tx NULL tx.v vlg3C/tx.bin 1353423396
+MO clockgen NULL clockgen.v vlg16/clockgen.bin 1353423396
+MO adder16 NULL adder16.v vlg5F/adder16.bin 1353423396
+MO dotaddr NULL dotaddr.v vlg3A/dotaddr.bin 1353423396
+MO dotfetch NULL dotfetch.v vlg01/dotfetch.bin 1353423396
+MO rx_line NULL rx_line.v vlg51/rx__line.bin 1353423396
+MO dotclock NULL dotclock.v vlg1F/dotclock.bin 1353423396

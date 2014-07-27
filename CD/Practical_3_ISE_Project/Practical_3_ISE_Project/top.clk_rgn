@@ -1,0 +1,85 @@
+Release 13.2 - reportgen O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 20 14:59:00 2012
+
+SUMMARY
+-------
+There are 4 clock regions:
+
+Clock Reports by Clock Regions
+------------------------------
+
+Clock Region X0Y0:
+------------------
+Number of global clocks in this region: 1
+List of global clocks in this region:
+   CLK_50MHz_IBUFG driven by BUFGMUX_X1Y11 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of      BUFGMUX:     1 used out of     6    16%
+Number of          DCM:     1 used out of     1   100%
+Number of       DIFFMI:     1 used out of    11     9%
+Number of       SLICEL:     1 used out of   582     1%
+
+Clock Region X1Y0:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   CLK_50MHz_IBUFG driven by BUFGMUX_X1Y11 
+   CLK_108MHz driven by BUFGMUX_X1Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of       RAMB16:     5 used out of     5   100%
+Number of       SLICEL:    60 used out of   582    10%
+Number of       SLICEM:    45 used out of   582     7%
+
+Clock Region X0Y1:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   CLK_50MHz_IBUFG driven by BUFGMUX_X1Y11 
+   CLK_108MHz driven by BUFGMUX_X1Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of      BUFGMUX:     1 used out of     6    16%
+Number of          DCM:     1 used out of     1   100%
+Number of        DIFFM:     1 used out of    29     3%
+Number of       RAMB16:     1 used out of     5    20%
+
+Clock Region X1Y1:
+------------------
+Number of global clocks in this region: 2
+List of global clocks in this region:
+   CLK_50MHz_IBUFG driven by BUFGMUX_X1Y11 
+   CLK_108MHz driven by BUFGMUX_X1Y0 
+
+Number of regional clocks in this region: 0
+
+Number of local clocks in this region: 0
+
+Summary of components used in this region:
+
+Number of        DIFFM:     3 used out of    29    10%
+Number of        DIFFS:     2 used out of    29     6%
+Number of         IBUF:     1 used out of    11     9%
+Number of MULT18X18SIO:     2 used out of     5    40%
+Number of       RAMB16:     5 used out of     5   100%
+Number of       SLICEL:    81 used out of   582    13%
+Number of       SLICEM:   101 used out of   582    17%
+

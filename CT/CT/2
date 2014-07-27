@@ -1,0 +1,22 @@
+#include	 "<iostream.h>"
+char c;
+main(){
+	int boo;
+	char b;
+char a;
+	character = 'g';
+	if (x==boo){
+		if (x==boo){
+			boo = 22;
+			print("A sdas");
+		} else {
+			boo=33;	
+		}
+			
+	} else {
+		character = 'y';
+	
+	}
+
+	return zero;
+}

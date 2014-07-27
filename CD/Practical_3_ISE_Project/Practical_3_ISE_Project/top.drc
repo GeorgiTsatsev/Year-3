@@ -1,0 +1,14 @@
+Release 13.2 Drc O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 20 14:59:21 2012
+
+drc -z top.ncd top.pcf
+
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp u_clockgen/DCM_SP_inst_0,
+   consult the device Interactive Data Sheet.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp u_clockgen/DCM_SP_inst_1,
+   consult the device Interactive Data Sheet.
+DRC detected 0 errors and 0 warnings.

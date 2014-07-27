@@ -1,0 +1,3948 @@
+Release 13.2 - reportgen O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 20 14:58:57 2012
+
+File: top.dly
+
+ The 20 worst nets by delay are:
++-----------------+-----------+
+| Max Delay       | Netname   |
++-----------------+-----------+
+   6.085            reset_IBUF
+   4.527            u_vga/u_daddr/result<5>
+   4.376            u_vga/u_daddr/result<0>
+   4.147            u_vga/u_dotaddr/u_mult/result<9>
+   4.116            u_vga/u_dotaddr/u_mult/result<8>
+   4.112            u_vga/u_dotaddr/u_mult/result<6>
+   4.106            u_vga/u_daddr/result<10>
+   4.099            u_vga/u_daddr/result<7>
+   4.096            u_vga/u_dotaddr/u_mult/result<11>
+   3.995            u_vga/u_dotaddr/u_mult/result<2>
+   3.988            u_vga/u_daddr/result<8>
+   3.933            u_vga/ram0/_and0000
+   3.932            u_vga/u_dotaddr/u_mult/result<4>
+   3.914            u_vga/u_dotaddr/u_mult/result<5>
+   3.904            u_vga/ram0/old_addra<1>
+   3.887            u_vga/u_dotaddr/u_mult/result<0>
+   3.875            u_vga/u_daddr/result<6>
+   3.873            u_vga/u_dotaddr/u_mult/result<3>
+   3.861            u_vga/u_daddr/result<3>
+   3.860            u_vga/ramb_data_in_dly<5>
+---------------------------------
+
+-------------------------------------------------------------------------------
+                               Net Delays
+-------------------------------------------------------------------------------
+
+CLK_108MHz
+   CLK_108MHz_BUFG.O
+         0.190  VGA_HSYNC.OTCLK1
+         0.190  VGA_VSYNC.OTCLK1
+         0.168  u_vga/ram0/u_ram1/Mram_prom1.CLKA
+         0.164  u_vga/ram0/u_ram1/Mram_prom2.CLKA
+         0.159  u_vga/ram0/u_ram2/Mram_prom1.CLKA
+         0.170  u_vga/ram0/u_ram2/Mram_prom2.CLKA
+         0.162  u_vga/ram0/u_ram3/Mram_prom1.CLKA
+         0.164  u_vga/ram0/u_ram3/Mram_prom2.CLKA
+         0.145  u_vga/ram0/u_ram4/Mram_prom1.CLKA
+         0.161  u_vga/ram0/u_ram4/Mram_prom2.CLKA
+         0.146  u_vga/ram0/u_ram0/Mram_prom1.CLKA
+         0.151  u_vga/ram0/u_ram0/Mram_prom2.CLKA
+         0.144  u_vga/u_charmap/Mrom__varindex0000.CLKA
+         0.182  u_vga/u_dotaddr/u_mult/blio/dummie.CLK
+         0.182  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.CLK
+         0.185  u_vga/u_dotaddr/u_mult/blio/result<10>.CLK
+         0.185  u_vga/u_dotaddr/u_mult/blio/result<7>.CLK
+         0.183  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.CLK
+         0.179  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.CLK
+         0.179  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.CLK
+         0.181  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.CLK
+         0.174  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.CLK
+         0.179  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.CLK
+         0.181  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.CLK
+         0.179  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.CLK
+         0.131  u_vga/u_dotclock/vctr_int<0>.CLK
+         0.185  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.CLK
+         0.184  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.CLK
+         0.186  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.CLK
+         0.184  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.CLK
+         0.133  u_vga/u_dotclock/hctr_int<1>.CLK
+         0.136  u_vga/u_dotclock/vctr_int<10>.CLK
+         0.131  u_vga/u_dotclock/vctr_int<3>.CLK
+         0.139  u_vga/u_dotclock/vctr_int<5>.CLK
+         0.142  u_vga/u_dotclock/vctr_int<7>.CLK
+         0.141  u_vga/u_dotclock/vctr_int<9>.CLK
+         0.142  u_vga/u_dotclock/hsync.CLK
+         0.172  u_vga/u_dotaddr/de_out.CLK
+         0.138  u_vga/u_dotclock/hctr_int<3>.CLK
+         0.145  u_vga/u_dotclock/hctr_int<5>.CLK
+         0.138  u_vga/u_dotclock/hctr_int<7>.CLK
+         0.133  u_vga/u_dotclock/hctr_int<9>.CLK
+         0.181  u_vga/u_dotaddr/u_mult/blio/result<11>.CLK
+         0.184  u_vga/u_dotaddr/u_mult/blio/result<13>.CLK
+         0.176  u_vga/u_dotaddr/u_mult/blio/result<1>.CLK
+         0.181  u_vga/u_dotaddr/u_mult/blio/result<6>.CLK
+         0.184  u_vga/u_dotaddr/u_mult/blio/state<1>.CLK
+         0.166  u_vga/u_dotaddr/hctr_out<1>.CLK
+         0.198  u_vga/u_dotaddr/hctr_out<2>.CLK
+         0.188  u_vga/u_rx/rx.CLK
+         0.139  u_vga/u_fetch/vctr_out<1>.CLK
+         0.173  u_vga/u_fetch/vctr_out<2>.CLK
+         0.188  u_vga/u_rx/tx2.CLK
+         0.170  u_vga/u_rx/valid.CLK
+         0.172  u_vga/u_rx/out<1>.CLK
+         0.167  u_vga/u_rx/out<3>.CLK
+         0.172  u_vga/u_rx/out<5>.CLK
+         0.167  u_vga/u_rx/out<7>.CLK
+         0.189  u_vga/u_fetch/vsync_out.CLK
+         0.134  u_vga/ram0/old_addra<1>.CLK
+         0.168  u_vga/ram0/old_addra<2>.CLK
+         0.179  u_vga/u_dotaddr/hsync_out.CLK
+         0.166  u_vga/u_fetch/hctr_out<1>.CLK
+         0.179  u_vga/u_fetch/hctr_out<2>.CLK
+         0.165  u_vga/VGA_BLUE.CLK
+         0.191  u_vga/u_charmap/hsync_out.CLK
+         0.172  u_vga/u_dotclock/hctr<10>.CLK
+         0.140  u_vga/u_dotaddr/u_mult/result<11>.CLK
+         0.168  u_vga/u_dotaddr/u_mult/result<13>.CLK
+         0.170  u_vga/u_dotaddr/u_mult/result<14>.CLK
+         0.148  u_vga/u_dotaddr/vctr_out<1>.CLK
+         0.165  u_vga/u_dotaddr/vctr_out<2>.CLK
+         0.171  u_vga/u_dotaddr/vsync_out.CLK
+         0.147  u_vga/u_dotclock/vsync.CLK
+         0.182  u_vga/u_dotaddr/u_mult/blio/result<16>.CLK
+         0.149  u_vga/u_dotclock/vctr<10>.CLK
+         0.142  u_vga/u_dotclock/de_h.CLK
+         0.136  u_vga/u_dotclock/hctr_int<0>.CLK
+         0.185  u_vga/u_fetch/de_out.CLK
+         0.152  u_vga/u_dotclock/hctr<1>.CLK
+         0.174  u_vga/u_dotclock/hctr<3>.CLK
+         0.179  u_vga/u_dotclock/hctr<5>.CLK
+         0.177  u_vga/u_dotclock/hctr<7>.CLK
+         0.177  u_vga/u_dotclock/hctr<9>.CLK
+         0.139  u_vga/u_dotclock/de_v.CLK
+         0.180  u_vga/columns_pxclk<1>.CLK
+         0.146  u_vga/columns_pxclk<3>.CLK
+         0.146  u_vga/columns_pxclk<5>.CLK
+         0.146  u_vga/columns_pxclk<7>.CLK
+         0.140  u_vga/u_dotaddr/u_mult/result<1>.CLK
+         0.140  u_vga/u_dotaddr/u_mult/result<3>.CLK
+         0.136  u_vga/u_dotaddr/u_mult/result<5>.CLK
+         0.148  u_vga/u_dotaddr/u_mult/result<7>.CLK
+         0.140  u_vga/u_dotaddr/u_mult/result<9>.CLK
+         0.173  u_vga/u_dotaddr/u_mult/blio/result<3>.CLK
+         0.184  u_vga/u_dotaddr/u_mult/blio/result<5>.CLK
+         0.176  u_vga/u_dotaddr/u_mult/blio/result<9>.CLK
+         0.136  u_vga/u_dotclock/vctr<1>.CLK
+         0.147  u_vga/u_dotclock/vctr<3>.CLK
+         0.147  u_vga/u_dotclock/vctr<5>.CLK
+         0.142  u_vga/u_dotclock/vctr<7>.CLK
+         0.142  u_vga/u_dotclock/vctr<9>.CLK
+         0.189  u_vga/u_charmap/vsync_out.CLK
+         0.176  u_vga/u_dotaddr/u_mult/blio/state<0>.CLK
+         0.201  u_vga/u_fetch/hsync_out.CLK
+
+CLK_108MHz1
+   u_clockgen/DCM_SP_inst_1.CLKFX
+         0.416  CLK_108MHz_BUFG.I0
+
+CLK_50MHz_IBUFG
+   CLK_50MHz_IBUFG_BUFG.O
+         0.176  UART_RX.ICLK1
+         0.168  u_vga/ram0/u_ram1/Mram_prom1.CLKB
+         0.164  u_vga/ram0/u_ram1/Mram_prom2.CLKB
+         0.159  u_vga/ram0/u_ram2/Mram_prom1.CLKB
+         0.170  u_vga/ram0/u_ram2/Mram_prom2.CLKB
+         0.162  u_vga/ram0/u_ram3/Mram_prom1.CLKB
+         0.164  u_vga/ram0/u_ram3/Mram_prom2.CLKB
+         0.145  u_vga/ram0/u_ram4/Mram_prom1.CLKB
+         0.161  u_vga/ram0/u_ram4/Mram_prom2.CLKB
+         0.146  u_vga/ram0/u_ram0/Mram_prom1.CLKB
+         0.151  u_vga/ram0/u_ram0/Mram_prom2.CLKB
+         0.130  u_vga/row<3>.CLK
+         0.195  u_vga/u_daddr/blio/dummie.CLK
+         0.167  u_vga/u_daddr/blio/in2_reg<0>.CLK
+         0.163  u_rx_line/bitcounter<3>.CLK
+         0.152  u_vga/u_daddr/blio/in1_reg<0>.CLK
+         0.172  u_vga/u_daddr/blio/in1_reg<1>.CLK
+         0.187  u_vga/u_daddr/blio/in1_reg<2>.CLK
+         0.184  u_vga/u_daddr/blio/in1_reg<3>.CLK
+         0.172  u_vga/u_daddr/blio/in1_reg<4>.CLK
+         0.172  u_vga/u_daddr/blio/in1_reg<5>.CLK
+         0.187  u_vga/u_daddr/blio/in1_reg<6>.CLK
+         0.186  u_vga/u_daddr/blio/in1_reg<7>.CLK
+         0.143  u_vga/column<7>.CLK
+         0.129  u_vga/column<5>.CLK
+         0.133  u_vga/row<7>.CLK
+         0.133  u_vga/row<6>.CLK
+         0.137  u_vga/row<5>.CLK
+         0.130  u_vga/row<2>.CLK
+         0.165  u_rx_line/active.CLK
+         0.192  u_vga/u_daddr/blio/state<1>.CLK
+         0.158  u_vga/u_daddr/blio/in2_reg<1>.CLK
+         0.150  u_vga/u_daddr/blio/in2_reg<3>.CLK
+         0.164  u_vga/u_daddr/blio/in2_reg<5>.CLK
+         0.195  u_vga/u_daddr/blio/in2_reg<7>.CLK
+         0.143  u_vga/column<1>.CLK
+         0.141  u_vga/column<4>.CLK
+         0.165  u_rx_line/writeen.CLK
+         0.164  u_rx_line/cyclecounter<1>.CLK
+         0.144  u_rx_line/cyclecounter<3>.CLK
+         0.151  u_rx_line/cyclecounter<5>.CLK
+         0.142  u_rx_line/cyclecounter<7>.CLK
+         0.142  u_rx_line/cyclecounter<9>.CLK
+         0.137  u_vga/row<0>.CLK
+         0.158  row_column_update.CLK
+         0.172  u_vga/u_daddr/blio/result<11>.CLK
+         0.165  u_vga/u_daddr/blio/result<13>.CLK
+         0.163  u_rx_line/bitcounter<1>.CLK
+         0.163  u_rx_line/bitcounter<2>.CLK
+         0.188  u_vga/u_daddr/blio/result<1>.CLK
+         0.195  u_vga/u_daddr/blio/result<6>.CLK
+         0.167  u_rx_line/data<0>.CLK
+         0.167  u_rx_line/data<1>.CLK
+         0.167  u_rx_line/data<2>.CLK
+         0.165  u_rx_line/data<3>.CLK
+         0.166  u_rx_line/data<4>.CLK
+         0.166  u_rx_line/data<5>.CLK
+         0.164  u_rx_line/data<6>.CLK
+         0.165  u_rx_line/data<7>.CLK
+         0.153  u_vga/ramb_ena.CLK
+         0.188  u_vga/u_daddr/blio/result<10>.CLK
+         0.175  u_vga/u_daddr/blio/state<0>.CLK
+         0.152  u_vga/u_daddr/result<11>.CLK
+         0.148  u_vga/u_daddr/result<13>.CLK
+         0.148  u_vga/u_daddr/result<14>.CLK
+         0.195  u_vga/u_daddr/blio/result<7>.CLK
+         0.186  u_vga/u_tx/tx.CLK
+         0.134  u_vga/ramb_ena_dly.CLK
+         0.130  u_vga/row<1>.CLK
+         0.188  u_vga/u_tx/rx2.CLK
+         0.146  columns<1>.CLK
+         0.152  columns<3>.CLK
+         0.145  columns<5>.CLK
+         0.137  columns<7>.CLK
+         0.158  fwd_uart_data<1>.CLK
+         0.152  fwd_uart_data<3>.CLK
+         0.158  fwd_uart_data<5>.CLK
+         0.152  fwd_uart_data<7>.CLK
+         0.172  u_vga/u_tx/data<1>.CLK
+         0.167  u_vga/u_tx/data<3>.CLK
+         0.171  u_vga/u_tx/data<5>.CLK
+         0.167  u_vga/u_tx/data<7>.CLK
+         0.143  u_vga/column<6>.CLK
+         0.153  u_vga/ramb_data_in_dly<1>.CLK
+         0.131  u_vga/ramb_data_in_dly<3>.CLK
+         0.145  u_vga/ramb_data_in_dly<5>.CLK
+         0.145  u_vga/ramb_data_in_dly<7>.CLK
+         0.137  u_vga/row<4>.CLK
+         0.142  u_vga/u_daddr/result<1>.CLK
+         0.155  u_vga/u_daddr/result<3>.CLK
+         0.155  u_vga/u_daddr/result<5>.CLK
+         0.161  u_vga/u_daddr/result<7>.CLK
+         0.155  u_vga/u_daddr/result<9>.CLK
+         0.128  u_vga/ramb_data_in<1>.CLK
+         0.120  u_vga/ramb_data_in<3>.CLK
+         0.146  u_vga/ramb_data_in<5>.CLK
+         0.145  u_vga/ramb_data_in<7>.CLK
+         0.158  fwd_uart_ena.CLK
+         0.157  rows<1>.CLK
+         0.152  rows<3>.CLK
+         0.152  rows<5>.CLK
+         0.151  rows<7>.CLK
+         0.166  u_rx_line/uart_rx_retimed.CLK
+         0.142  u_vga/u_daddr/blio/result<16>.CLK
+         0.122  u_vga/column<3>.CLK
+         0.158  escape_FSM_FFd2.CLK
+         0.155  u_vga/u_daddr/blio/result<3>.CLK
+         0.161  u_vga/u_daddr/blio/result<5>.CLK
+         0.188  u_vga/u_daddr/blio/result<9>.CLK
+
+CLK_50MHz_IBUFG1
+   CLK_50MHz.I
+         0.765  u_clockgen/DCM_SP_inst_0.CLKIN
+         0.046  CLK_50MHz_IBUFG_BUFG.I0
+
+N110
+   u_rx_line/resetcycles27.Y
+         0.343  u_rx_line/resetcycles27.F4
+
+N112
+   escape_FSM_FFd2.Y
+         0.023  escape_FSM_FFd2.F4
+
+N140
+   u_vga/u_dotclock/vsync.Y
+         0.023  u_vga/u_dotclock/vsync.F3
+
+N33
+   N33.X
+         0.195  u_vga/u_dotclock/vctr_int<0>.G2
+
+N35
+   N35.Y
+         0.023  N35.F4
+
+N43
+   u_vga/row<0>.X
+         0.119  u_vga/row<5>.F4
+
+N45
+   N45.Y
+         0.023  N45.F4
+
+N47
+   u_vga/row<1>.Y
+         0.023  u_vga/row<1>.F4
+
+N49
+   N49.X
+         0.156  u_vga/row<4>.F2
+
+N5
+   u_rx_line/bitcounter<2>.X
+         0.369  u_rx_line/active.G4
+
+N61
+   N61.X
+         0.361  u_vga/row<4>.G3
+
+N65
+   u_vga/u_dotclock/hctr_int_cmp_eq000010.Y
+         0.434  u_vga/u_dotclock/hsync_and0000.G4
+
+N67
+   u_vga/u_dotclock/de_v.Y
+         0.023  u_vga/u_dotclock/de_v.F2
+
+N75
+   u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.Y
+         0.156  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.F2
+
+N78
+   N96.Y
+         0.101  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.F2
+
+N81
+   N90.Y
+         0.101  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.F2
+
+N84
+   u_vga/u_dotaddr/u_mult/blio/result<11>.X
+         0.565  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.F2
+
+N87
+   N87.X
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.F2
+
+N90
+   N90.X
+         0.072  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.F2
+
+N93
+   u_vga/u_dotaddr/u_mult/blio/result<6>.X
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.F2
+
+N96
+   N96.X
+         0.072  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.F2
+
+columns<0>
+   columns<1>.YQ
+         1.317  u_vga/Mcompar_row_cmp_gt0001_cy<1>.G3
+         1.397  u_vga/Mcompar_row_cmp_gt0001_cy<3>.F2
+         2.387  u_vga/u_daddr/Mmult__mult0000.B0
+         2.522  u_vga/u_tx/data<1>.BY
+         0.756  u_vga/row_sub0001<1>.F2
+         0.821  u_vga/row_sub0001<1>.G1
+         0.913  u_vga/row_sub0001<6>.G3
+         1.026  u_vga/row_sub0001<3>.F4
+         1.091  u_vga/row_sub0001<3>.G2
+
+columns<1>
+   columns<1>.XQ
+         1.204  u_vga/Mcompar_row_cmp_gt0001_cy<1>.G2
+         1.659  u_vga/Mcompar_row_cmp_gt0001_cy<3>.F4
+         2.274  u_vga/u_daddr/Mmult__mult0000.B1
+         2.138  u_vga/u_tx/data<1>.BX
+         0.752  u_vga/row_sub0001<1>.F1
+         0.779  u_vga/row_sub0001<6>.G2
+         1.755  u_vga/row_sub0001<3>.F3
+         1.760  u_vga/row_sub0001<3>.G3
+
+columns<2>
+   columns<3>.YQ
+         1.350  u_vga/Mcompar_row_cmp_gt0001_cy<3>.F1
+         2.277  u_vga/u_daddr/Mmult__mult0000.B2
+         3.474  u_vga/u_tx/data<3>.BY
+         1.003  u_vga/row_sub0001<6>.G4
+         0.923  u_vga/row_sub0001<3>.F1
+         0.923  u_vga/row_sub0001<3>.G1
+
+columns<3>
+   columns<3>.XQ
+         2.272  u_vga/u_daddr/Mmult__mult0000.B3
+         3.526  u_vga/u_tx/data<3>.BX
+         0.712  u_vga/row_sub0001<6>.G1
+         0.998  u_vga/row_sub0001<3>.F2
+
+columns<4>
+   columns<5>.YQ
+         0.863  u_vga/Mcompar_row_cmp_gt0001_cy<5>.F2
+         0.839  u_vga/Mcompar_row_cmp_gt0001_cy<5>.G2
+         2.342  u_vga/u_daddr/Mmult__mult0000.B4
+         1.127  u_vga/row_sub0001<7>.G4
+         3.361  u_vga/u_tx/data<5>.BY
+         0.419  u_vga/row_sub0001<6>.F1
+         0.783  N45.G2
+         0.785  u_vga/row_sub0001<5>.F2
+         0.785  u_vga/row_sub0001<5>.G1
+
+columns<5>
+   columns<5>.XQ
+         1.619  u_vga/Mcompar_row_cmp_gt0001_cy<5>.G1
+         2.296  u_vga/u_daddr/Mmult__mult0000.B5
+         1.482  u_vga/row_sub0001<7>.G1
+         3.265  u_vga/u_tx/data<5>.BX
+         0.775  u_vga/row_sub0001<6>.F3
+         1.550  N45.F3
+         1.445  u_vga/row_sub0001<5>.F1
+
+columns<6>
+   columns<7>.YQ
+         2.274  u_vga/u_daddr/Mmult__mult0000.B6
+         0.796  u_vga/row_sub0001<7>.G3
+         2.147  u_vga/u_tx/data<7>.BY
+         0.469  u_vga/row_sub0001<6>.F2
+         0.812  N45.F2
+
+columns<7>
+   columns<7>.XQ
+         1.470  u_vga/u_daddr/Mmult__mult0000.B7
+         0.583  u_vga/row_sub0001<7>.F1
+         0.623  u_vga/row_sub0001<7>.G2
+         2.440  u_vga/u_tx/data<7>.BX
+         0.534  N45.G1
+
+columns_and0000
+   row_column_update.Y
+         0.893  columns<1>.CE
+         0.572  columns<3>.CE
+         0.860  columns<5>.CE
+         1.396  columns<7>.CE
+
+escape_FSM_FFd1
+   escape_FSM_FFd2.YQ
+         0.480  row_column_update.F1
+         0.483  row_column_update.G2
+         0.502  rows_and0000.G2
+
+escape_FSM_FFd2
+   escape_FSM_FFd2.XQ
+         1.065  row_column_update.F2
+         0.932  rows_and0000.F2
+         0.440  rows_and0000.G4
+         0.932  escape_FSM_FFd2.BY
+
+escape_FSM_FFd2-In19
+   rows_and0000.Y
+         0.156  escape_FSM_FFd2.F1
+
+fwd_uart_data<0>
+   fwd_uart_data<1>.YQ
+         1.813  u_vga/N3.F3
+         1.853  u_vga/N3.G2
+         0.497  u_vga/ramb_ena.G2
+         1.764  N61.F3
+         2.193  u_vga/ramb_data_in<1>.BY
+         1.853  u_vga/N2.G2
+
+fwd_uart_data<1>
+   fwd_uart_data<1>.XQ
+         1.689  u_vga/N3.F4
+         1.694  u_vga/N3.G3
+         0.465  u_vga/ramb_ena.G4
+         1.013  N61.F4
+         2.415  u_vga/ramb_data_in<1>.BX
+         1.694  u_vga/N2.G1
+
+fwd_uart_data<2>
+   fwd_uart_data<3>.YQ
+         1.737  u_vga/N3.F2
+         1.737  u_vga/N3.G1
+         0.605  u_vga/ramb_ena.G1
+         1.211  N61.F1
+         2.030  u_vga/ramb_data_in<3>.BY
+         1.737  u_vga/N2.G4
+
+fwd_uart_data<3>
+   fwd_uart_data<3>.XQ
+         0.427  u_vga/row_and0000.G3
+         1.980  u_vga/ramb_data_in<3>.BX
+
+fwd_uart_data<4>
+   fwd_uart_data<5>.YQ
+         0.395  u_vga/row_and0000.G4
+         0.784  u_vga/ramb_data_in<5>.BY
+
+fwd_uart_data<5>
+   fwd_uart_data<5>.XQ
+         0.526  u_vga/row_and0000.G2
+         1.054  u_vga/ramb_data_in<5>.BX
+
+fwd_uart_data<6>
+   fwd_uart_data<7>.YQ
+         0.512  u_vga/row_and0000.G1
+         0.765  u_vga/ramb_data_in<7>.BY
+
+fwd_uart_data<7>
+   fwd_uart_data<7>.XQ
+         0.685  u_vga/row_and0000.BX
+         0.987  u_vga/ramb_data_in<7>.BX
+
+fwd_uart_data_and0000
+   fwd_uart_ena.X
+         0.629  fwd_uart_data<1>.CE
+         0.623  fwd_uart_data<3>.CE
+         1.160  fwd_uart_data<5>.CE
+         0.618  fwd_uart_data<7>.CE
+
+fwd_uart_data_and000017
+   fwd_uart_ena.Y
+         0.023  fwd_uart_ena.F3
+
+fwd_uart_data_and000033
+   row_column_update.X
+         0.409  fwd_uart_ena.F1
+
+fwd_uart_data_and00004
+   fwd_uart_data_and00004.X
+         0.398  fwd_uart_ena.F2
+
+fwd_uart_ena
+   fwd_uart_ena.XQ
+         1.623  u_vga/row<3>.CE
+         2.132  u_vga/column<7>.CE
+         2.668  u_vga/column<5>.CE
+         2.172  u_vga/row<7>.CE
+         2.172  u_vga/row<6>.CE
+         2.705  u_vga/row<5>.CE
+         2.698  u_vga/row<2>.CE
+         1.439  u_vga/column<1>.CE
+         1.686  u_vga/column<4>.CE
+         2.705  u_vga/row<0>.CE
+         0.416  u_vga/ramb_ena.F1
+         2.698  u_vga/row<1>.CE
+         1.439  u_vga/column<6>.CE
+         1.618  u_vga/row<4>.CE
+         2.943  u_vga/column<3>.CE
+
+reset_IBUF
+   reset.I
+         0.868  VGA_HSYNC.SR
+         0.875  VGA_VSYNC.SR
+         1.816  u_clockgen/DCM_SP_inst_0.RST
+         3.414  u_clockgen/DCM_SP_inst_1.RST
+         2.962  u_vga/u_charmap/Mrom__varindex0000.ENA
+         1.992  u_vga/row<3>.SR
+         2.391  u_rx_line/bitcounter<3>.SR
+         2.011  u_vga/column<7>.SR
+         2.004  u_vga/column<5>.SR
+         2.210  u_vga/row<7>.SR
+         2.210  u_vga/row<6>.SR
+         2.007  u_vga/row<5>.SR
+         1.992  u_vga/row<2>.SR
+         2.198  u_vga/u_dotclock/vctr_int<0>.SR
+         2.392  u_rx_line/active.SR
+         2.011  u_vga/column<1>.SR
+         2.009  u_vga/column<4>.SR
+         2.099  u_vga/u_dotclock/hctr_int<1>.SR
+         2.511  u_rx_line/writeen.CE
+         2.592  u_rx_line/cyclecounter<1>.SR
+         2.228  u_rx_line/cyclecounter<3>.SR
+         2.230  u_rx_line/cyclecounter<5>.SR
+         2.229  u_rx_line/cyclecounter<7>.SR
+         2.229  u_rx_line/cyclecounter<9>.SR
+         2.007  u_vga/row<0>.SR
+         2.288  u_vga/u_dotclock/vctr_int<10>.SR
+         2.198  u_vga/u_dotclock/vctr_int<3>.SR
+         2.290  u_vga/u_dotclock/vctr_int<5>.SR
+         2.291  u_vga/u_dotclock/vctr_int<7>.SR
+         2.291  u_vga/u_dotclock/vctr_int<9>.SR
+         2.111  u_vga/u_dotclock/hsync.SR
+         2.227  row_column_update.SR
+         6.085  u_vga/u_dotaddr/de_out.SR
+         2.100  u_vga/u_dotclock/hctr_int<3>.SR
+         2.112  u_vga/u_dotclock/hctr_int<5>.SR
+         2.100  u_vga/u_dotclock/hctr_int<7>.SR
+         2.099  u_vga/u_dotclock/hctr_int<9>.SR
+         2.391  u_rx_line/bitcounter<1>.SR
+         2.391  u_rx_line/bitcounter<2>.SR
+         2.395  u_rx_line/data<0>.SR
+         2.395  u_rx_line/data<1>.SR
+         2.395  u_rx_line/data<2>.SR
+         2.408  u_rx_line/data<3>.SR
+         2.395  u_rx_line/data<4>.SR
+         2.395  u_rx_line/data<5>.SR
+         2.407  u_rx_line/data<6>.SR
+         2.408  u_rx_line/data<7>.SR
+         1.894  u_vga/u_dotaddr/hctr_out<1>.SR
+         2.048  u_vga/u_dotaddr/hctr_out<2>.SR
+         2.227  u_vga/ramb_ena.SR
+         1.890  u_vga/u_daddr/result<11>.SR
+         2.116  u_vga/u_daddr/result<13>.SR
+         2.116  u_vga/u_daddr/result<14>.SR
+         2.195  u_vga/ramb_ena_dly.SR
+         2.110  u_vga/u_fetch/vctr_out<1>.SR
+         1.073  u_vga/u_fetch/vctr_out<2>.SR
+         1.992  u_vga/row<1>.SR
+         2.056  u_vga/u_fetch/vsync_out.SR
+         2.224  columns<1>.SR
+         2.228  columns<3>.SR
+         2.227  columns<5>.SR
+         2.209  columns<7>.SR
+         2.228  fwd_uart_data<1>.SR
+         1.604  u_vga/u_dotaddr/hsync_out.SR
+         2.226  fwd_uart_data<3>.SR
+         2.227  fwd_uart_data<5>.SR
+         2.226  fwd_uart_data<7>.SR
+         2.011  u_vga/column<6>.SR
+         1.894  u_vga/u_fetch/hctr_out<1>.SR
+         1.598  u_vga/u_fetch/hctr_out<2>.SR
+         2.305  u_vga/ramb_data_in_dly<1>.SR
+         2.300  u_vga/ramb_data_in_dly<3>.SR
+         2.226  u_vga/ramb_data_in_dly<5>.SR
+         2.226  u_vga/ramb_data_in_dly<7>.SR
+         2.007  u_vga/row<4>.SR
+         2.267  u_vga/VGA_BLUE.SR
+         2.051  u_vga/u_charmap/hsync_out.SR
+         2.300  u_vga/u_daddr/result<1>.SR
+         1.889  u_vga/u_daddr/result<3>.SR
+         1.889  u_vga/u_daddr/result<5>.SR
+         1.891  u_vga/u_daddr/result<7>.SR
+         1.889  u_vga/u_daddr/result<9>.SR
+         2.293  u_vga/ramb_data_in<1>.SR
+         2.325  u_vga/ramb_data_in<3>.SR
+         2.224  u_vga/ramb_data_in<5>.SR
+         2.226  u_vga/ramb_data_in<7>.SR
+         2.682  u_vga/u_charmap/N0.G1
+         2.228  fwd_uart_ena.SR
+         2.270  u_vga/u_dotclock/hctr<10>.SR
+         2.229  rows<1>.SR
+         2.228  rows<3>.SR
+         2.228  rows<5>.SR
+         2.230  rows<7>.SR
+         2.299  u_vga/u_dotaddr/u_mult/result<11>.SR
+         2.458  u_vga/u_dotaddr/u_mult/result<13>.SR
+         2.457  u_vga/u_dotaddr/u_mult/result<14>.SR
+         2.115  u_vga/u_dotaddr/vctr_out<1>.SR
+         1.893  u_vga/u_dotaddr/vctr_out<2>.SR
+         2.058  u_vga/u_dotaddr/vsync_out.SR
+         2.303  u_vga/u_dotclock/vsync.SR
+         2.303  u_vga/u_dotclock/vctr<10>.SR
+         2.111  u_vga/u_dotclock/de_h.SR
+         1.989  u_vga/column<3>.SR
+         2.099  u_vga/u_dotclock/hctr_int<0>.SR
+         2.274  u_vga/u_fetch/de_out.SR
+         1.890  u_vga/u_dotclock/hctr<1>.SR
+         2.264  u_vga/u_dotclock/hctr<3>.SR
+         2.266  u_vga/u_dotclock/hctr<5>.SR
+         2.265  u_vga/u_dotclock/hctr<7>.SR
+         2.265  u_vga/u_dotclock/hctr<9>.SR
+         2.290  u_vga/u_dotclock/de_v.SR
+         2.457  u_vga/columns_pxclk<1>.SR
+         2.302  u_vga/columns_pxclk<3>.SR
+         2.302  u_vga/columns_pxclk<5>.SR
+         2.302  u_vga/columns_pxclk<7>.SR
+         2.299  u_vga/u_dotaddr/u_mult/result<1>.SR
+         2.299  u_vga/u_dotaddr/u_mult/result<3>.SR
+         2.298  u_vga/u_dotaddr/u_mult/result<5>.SR
+         2.115  u_vga/u_dotaddr/u_mult/result<7>.SR
+         2.299  u_vga/u_dotaddr/u_mult/result<9>.SR
+         2.227  escape_FSM_FFd2.SR
+         2.288  u_vga/u_dotclock/vctr<1>.SR
+         2.303  u_vga/u_dotclock/vctr<3>.SR
+         2.303  u_vga/u_dotclock/vctr<5>.SR
+         2.291  u_vga/u_dotclock/vctr<7>.SR
+         2.291  u_vga/u_dotclock/vctr<9>.SR
+         2.056  u_vga/u_charmap/vsync_out.SR
+         2.055  u_vga/u_fetch/hsync_out.SR
+
+row_column_update
+   row_column_update.YQ
+         3.173  u_vga/u_tx/data_and0000.G1
+
+rows<0>
+   rows<1>.YQ
+         1.400  u_vga/Mcompar_row_cmp_gt0000_cy<1>.G3
+         0.999  u_vga/Mcompar_row_cmp_gt0000_cy<3>.F2
+         1.493  u_vga/row_sub0000<1>.F2
+         0.921  u_vga/row_sub0000<1>.G1
+         1.019  u_vga/row_sub0000<6>.G3
+         1.014  u_vga/row_sub0000<3>.F4
+         1.019  u_vga/row_sub0000<3>.G2
+
+rows<1>
+   rows<1>.XQ
+         0.916  u_vga/Mcompar_row_cmp_gt0000_cy<1>.G2
+         0.875  u_vga/Mcompar_row_cmp_gt0000_cy<3>.F4
+         0.742  u_vga/row_sub0000<1>.F1
+         0.791  u_vga/row_sub0000<6>.G2
+         0.726  u_vga/row_sub0000<3>.F3
+         0.791  u_vga/row_sub0000<3>.G3
+
+rows<2>
+   rows<3>.YQ
+         0.692  u_vga/Mcompar_row_cmp_gt0000_cy<3>.F1
+         0.534  u_vga/row_sub0000<6>.G4
+         0.534  u_vga/row_sub0000<3>.F1
+         0.534  u_vga/row_sub0000<3>.G1
+
+rows<3>
+   rows<3>.XQ
+         0.519  u_vga/row_sub0000<6>.G1
+         0.479  u_vga/row_sub0000<3>.F2
+
+rows<4>
+   rows<5>.YQ
+         1.328  u_vga/Mcompar_row_cmp_gt0000_cy<5>.F2
+         1.086  u_vga/Mcompar_row_cmp_gt0000_cy<5>.G4
+         1.036  u_vga/row_sub0000<7>.G4
+         0.749  u_vga/row_sub0000<6>.F3
+         1.030  N35.G2
+         0.870  u_vga/row_sub0000<5>.F3
+         1.250  u_vga/row_sub0000<5>.G1
+
+rows<5>
+   rows<5>.XQ
+         0.817  u_vga/Mcompar_row_cmp_gt0000_cy<5>.G1
+         0.520  u_vga/row_sub0000<7>.G1
+         0.512  u_vga/row_sub0000<6>.F1
+         1.093  N35.F3
+         0.763  u_vga/row_sub0000<5>.F1
+
+rows<6>
+   rows<7>.YQ
+         0.535  u_vga/row_sub0000<7>.G3
+         0.724  u_vga/row_sub0000<6>.F2
+         1.372  N35.F2
+
+rows<7>
+   rows<7>.XQ
+         0.532  u_vga/row_sub0000<7>.F1
+         0.861  u_vga/row_sub0000<7>.G2
+         0.745  N35.G1
+
+rows_and0000
+   rows_and0000.X
+         0.833  rows<1>.CE
+         1.370  rows<3>.CE
+         1.370  rows<5>.CE
+         0.629  rows<7>.CE
+
+u_clockgen/CLKFB0
+   u_clockgen/DCM_SP_inst_0.CLK0
+         1.391  u_clockgen/DCM_SP_inst_0.CLKFB
+
+u_clockgen/CLKFB1
+   u_clockgen/DCM_SP_inst_1.CLK0
+         1.807  u_clockgen/DCM_SP_inst_1.CLKFB
+
+u_clockgen/CLK_180MHz
+   u_clockgen/DCM_SP_inst_0.CLKFX
+         3.293  u_clockgen/DCM_SP_inst_1.CLKIN
+
+u_rx_line/Madd_cyclecounter_addsub0000_cy<1>
+   u_rx_line/cyclecounter_addsub0000<0>.COUT
+         0.000  u_rx_line/cyclecounter_addsub0000<2>.CIN
+
+u_rx_line/Madd_cyclecounter_addsub0000_cy<3>
+   u_rx_line/cyclecounter_addsub0000<2>.COUT
+         0.000  u_rx_line/cyclecounter_addsub0000<4>.CIN
+
+u_rx_line/Madd_cyclecounter_addsub0000_cy<5>
+   u_rx_line/cyclecounter_addsub0000<4>.COUT
+         0.000  u_rx_line/cyclecounter_addsub0000<6>.CIN
+
+u_rx_line/Madd_cyclecounter_addsub0000_cy<7>
+   u_rx_line/cyclecounter_addsub0000<6>.COUT
+         0.000  u_rx_line/cyclecounter_addsub0000<8>.CIN
+
+u_rx_line/N11
+   u_rx_line/data_6_not0001.Y
+         0.489  u_rx_line/data_6_not0001.F2
+         0.450  u_rx_line/data_1_not0001.F3
+         0.490  u_rx_line/data_1_not0001.G3
+         0.352  u_rx_line/data_2_not0001.F1
+         0.717  u_rx_line/data_4_not0001.F3
+         0.757  u_rx_line/data_4_not0001.G3
+         0.702  u_rx_line/data_5_not0001.G3
+
+u_rx_line/N7
+   u_rx_line/N7.X
+         0.672  u_rx_line/writeen.F1
+         0.648  u_rx_line/writeen.G2
+
+u_rx_line/active
+   u_rx_line/active.YQ
+         0.886  u_rx_line/N7.F3
+         0.580  u_rx_line/bitcounter<3>.F1
+         0.583  u_rx_line/bitcounter<3>.G1
+         0.955  u_rx_line/active.F4
+         0.654  u_rx_line/active.G1
+         1.151  u_rx_line/cyclecounter<1>.F2
+         1.185  u_rx_line/cyclecounter<1>.G2
+         1.544  u_rx_line/cyclecounter<3>.F2
+         1.339  u_rx_line/cyclecounter<3>.G2
+         1.260  u_rx_line/cyclecounter<5>.F2
+         1.294  u_rx_line/cyclecounter<5>.G2
+         1.914  u_rx_line/cyclecounter<7>.F2
+         1.613  u_rx_line/cyclecounter<7>.G2
+         1.573  u_rx_line/cyclecounter<9>.F2
+         1.613  u_rx_line/cyclecounter<9>.G2
+         0.676  u_rx_line/bitcounter<1>.F1
+         0.681  u_rx_line/bitcounter<1>.G1
+         0.681  u_rx_line/bitcounter<2>.G1
+         0.585  u_rx_line/data_6_not0001.G1
+
+u_rx_line/bitcounter<0>
+   u_rx_line/bitcounter<1>.YQ
+         0.958  u_rx_line/bitcounter<3>.F4
+         0.999  u_rx_line/bitcounter<3>.G3
+         1.485  u_rx_line/writeen.F2
+         1.526  u_rx_line/writeen.G1
+         0.825  u_rx_line/bitcounter<1>.F2
+         0.890  u_rx_line/bitcounter<1>.G2
+         0.825  u_rx_line/bitcounter<2>.F2
+         0.890  u_rx_line/bitcounter<2>.G3
+         0.563  u_rx_line/resetcycles27.G1
+         1.091  u_rx_line/data_6_not0001.F1
+         1.518  u_rx_line/data_1_not0001.F2
+         1.523  u_rx_line/data_1_not0001.G1
+         1.457  u_rx_line/data_2_not0001.F3
+         0.774  u_rx_line/data_2_not0001.G4
+         1.786  u_rx_line/data_4_not0001.F4
+         1.791  u_rx_line/data_4_not0001.G4
+         1.693  u_rx_line/data_5_not0001.G2
+
+u_rx_line/bitcounter<1>
+   u_rx_line/bitcounter<1>.XQ
+         0.795  u_rx_line/N7.F2
+         0.702  u_rx_line/bitcounter<3>.F3
+         0.736  u_rx_line/bitcounter<3>.G2
+         0.751  u_rx_line/bitcounter<1>.F3
+         0.751  u_rx_line/bitcounter<2>.F4
+         0.791  u_rx_line/bitcounter<2>.G4
+         0.568  u_rx_line/resetcycles27.G2
+         0.795  u_rx_line/data_6_not0001.F4
+         1.227  u_rx_line/data_1_not0001.F1
+         1.292  u_rx_line/data_1_not0001.G4
+         0.479  u_rx_line/data_2_not0001.F4
+         0.513  u_rx_line/resetcycles.G2
+         2.282  u_rx_line/data_4_not0001.F2
+         2.282  u_rx_line/data_4_not0001.G2
+         2.336  u_rx_line/data_5_not0001.G4
+
+u_rx_line/bitcounter<2>
+   u_rx_line/bitcounter<2>.YQ
+         0.752  u_rx_line/N7.F4
+         0.710  u_rx_line/bitcounter<3>.F2
+         0.686  u_rx_line/bitcounter<3>.G4
+         0.632  u_rx_line/bitcounter<2>.F3
+         0.632  u_rx_line/bitcounter<2>.G2
+         0.544  u_rx_line/resetcycles27.G3
+         1.046  u_rx_line/data_6_not0001.F3
+         1.236  u_rx_line/data_1_not0001.F4
+         1.236  u_rx_line/data_1_not0001.G2
+         0.612  u_rx_line/data_2_not0001.F2
+         0.653  u_rx_line/resetcycles.G4
+         1.029  u_rx_line/data_4_not0001.F1
+         1.094  u_rx_line/data_4_not0001.G1
+         1.203  u_rx_line/data_5_not0001.G1
+
+u_rx_line/bitcounter<3>
+   u_rx_line/bitcounter<3>.XQ
+         0.760  u_rx_line/N7.F1
+         0.573  u_rx_line/bitcounter<3>.BX
+         0.574  u_rx_line/bitcounter<2>.F1
+         0.500  u_rx_line/resetcycles27.G4
+         0.760  u_rx_line/data_6_not0001.G3
+         0.952  u_rx_line/data_2_not0001.G2
+
+u_rx_line/bitcounter_not0001
+   u_rx_line/active.X
+         0.581  u_rx_line/bitcounter<3>.CE
+         0.566  u_rx_line/bitcounter<1>.CE
+         0.566  u_rx_line/bitcounter<2>.CE
+
+u_rx_line/cyclecounter<0>
+   u_rx_line/cyclecounter<1>.YQ
+         0.991  u_rx_line/cyclecounter_addsub0000<0>.F1
+         0.880  u_rx_line/resetcycles58.F3
+         0.945  u_rx_line/resetcycles58.G4
+
+u_rx_line/cyclecounter<1>
+   u_rx_line/cyclecounter<1>.XQ
+         1.044  u_rx_line/cyclecounter_addsub0000<0>.G1
+         0.880  u_rx_line/resetcycles58.F4
+         0.880  u_rx_line/resetcycles58.G3
+
+u_rx_line/cyclecounter<2>
+   u_rx_line/cyclecounter<3>.YQ
+         0.549  u_rx_line/cyclecounter_addsub0000<2>.F1
+         0.416  u_rx_line/resetcycles103.F4
+
+u_rx_line/cyclecounter<3>
+   u_rx_line/cyclecounter<3>.XQ
+         0.416  u_rx_line/cyclecounter_addsub0000<2>.G1
+         1.246  u_rx_line/resetcycles58.F1
+         1.251  u_rx_line/resetcycles58.G2
+
+u_rx_line/cyclecounter<4>
+   u_rx_line/cyclecounter<5>.YQ
+         0.513  u_rx_line/cyclecounter_addsub0000<4>.F1
+         0.484  u_rx_line/resetcycles103.F3
+
+u_rx_line/cyclecounter<5>
+   u_rx_line/cyclecounter<5>.XQ
+         0.423  u_rx_line/cyclecounter_addsub0000<4>.G1
+         0.737  u_rx_line/resetcycles58.F2
+         0.777  u_rx_line/resetcycles58.G1
+
+u_rx_line/cyclecounter<6>
+   u_rx_line/cyclecounter<7>.YQ
+         0.465  u_rx_line/cyclecounter_addsub0000<6>.F1
+         1.425  u_rx_line/resetcycles27.F2
+         1.332  u_rx_line/data_2_not0001.G3
+
+u_rx_line/cyclecounter<7>
+   u_rx_line/cyclecounter<7>.XQ
+         0.585  u_rx_line/cyclecounter_addsub0000<6>.G1
+         0.416  u_rx_line/resetcycles103.F1
+
+u_rx_line/cyclecounter<8>
+   u_rx_line/cyclecounter<9>.YQ
+         0.407  u_rx_line/cyclecounter_addsub0000<8>.F1
+         1.241  u_rx_line/resetcycles27.F1
+         1.295  u_rx_line/data_2_not0001.G1
+
+u_rx_line/cyclecounter<9>
+   u_rx_line/cyclecounter<9>.XQ
+         0.414  u_rx_line/cyclecounter_addsub0000<8>.G1
+         0.512  u_rx_line/resetcycles103.F2
+
+u_rx_line/cyclecounter_addsub0000<0>
+   u_rx_line/cyclecounter_addsub0000<0>.X
+         0.924  u_rx_line/cyclecounter<1>.G1
+
+u_rx_line/cyclecounter_addsub0000<1>
+   u_rx_line/cyclecounter_addsub0000<0>.Y
+         1.054  u_rx_line/cyclecounter<1>.F1
+
+u_rx_line/cyclecounter_addsub0000<2>
+   u_rx_line/cyclecounter_addsub0000<2>.X
+         0.021  u_rx_line/cyclecounter<3>.G1
+
+u_rx_line/cyclecounter_addsub0000<3>
+   u_rx_line/cyclecounter_addsub0000<2>.Y
+         0.072  u_rx_line/cyclecounter<3>.F1
+
+u_rx_line/cyclecounter_addsub0000<4>
+   u_rx_line/cyclecounter_addsub0000<4>.X
+         0.348  u_rx_line/cyclecounter<5>.G1
+
+u_rx_line/cyclecounter_addsub0000<5>
+   u_rx_line/cyclecounter_addsub0000<4>.Y
+         0.639  u_rx_line/cyclecounter<5>.F1
+
+u_rx_line/cyclecounter_addsub0000<6>
+   u_rx_line/cyclecounter_addsub0000<6>.X
+         0.021  u_rx_line/cyclecounter<7>.G1
+
+u_rx_line/cyclecounter_addsub0000<7>
+   u_rx_line/cyclecounter_addsub0000<6>.Y
+         0.072  u_rx_line/cyclecounter<7>.F1
+
+u_rx_line/cyclecounter_addsub0000<8>
+   u_rx_line/cyclecounter_addsub0000<8>.X
+         0.086  u_rx_line/cyclecounter<9>.G1
+
+u_rx_line/cyclecounter_addsub0000<9>
+   u_rx_line/cyclecounter_addsub0000<8>.Y
+         0.119  u_rx_line/cyclecounter<9>.F1
+
+u_rx_line/data<0>
+   u_rx_line/data<0>.YQ
+         1.004  rows_and0000.G1
+         1.616  columns<1>.BY
+         1.581  fwd_uart_data<1>.BY
+         1.270  fwd_uart_ena.G4
+         1.585  rows<1>.BY
+
+u_rx_line/data<1>
+   u_rx_line/data<1>.YQ
+         1.444  rows_and0000.G3
+         1.136  columns<1>.BX
+         1.315  fwd_uart_data<1>.BX
+         1.319  fwd_uart_ena.G3
+         1.320  rows<1>.BX
+
+u_rx_line/data<2>
+   u_rx_line/data<2>.YQ
+         1.012  fwd_uart_data_and00004.F4
+         1.078  columns<3>.BY
+         1.110  fwd_uart_data<3>.BY
+         1.078  rows<3>.BY
+         0.716  escape_FSM_FFd2.F2
+
+u_rx_line/data<3>
+   u_rx_line/data<3>.YQ
+         1.126  columns<3>.BX
+         0.836  fwd_uart_data<3>.BX
+         0.774  fwd_uart_ena.G2
+         1.104  rows<3>.BX
+         1.105  escape_FSM_FFd2.F3
+
+u_rx_line/data<4>
+   u_rx_line/data<4>.YQ
+         1.622  columns<5>.BY
+         1.314  fwd_uart_data<5>.BY
+         0.776  fwd_uart_ena.G1
+         1.338  rows<5>.BY
+         1.114  escape_FSM_FFd2.G4
+
+u_rx_line/data<5>
+   u_rx_line/data<5>.YQ
+         1.065  fwd_uart_data_and00004.F3
+         1.627  columns<5>.BX
+         1.802  fwd_uart_data<5>.BX
+         1.622  rows<5>.BX
+         1.460  escape_FSM_FFd2.G2
+
+u_rx_line/data<6>
+   u_rx_line/data<6>.YQ
+         0.452  fwd_uart_data_and00004.F2
+         1.376  columns<7>.BY
+         1.087  fwd_uart_data<7>.BY
+         1.076  rows<7>.BY
+         0.748  escape_FSM_FFd2.G3
+
+u_rx_line/data<7>
+   u_rx_line/data<7>.YQ
+         0.451  fwd_uart_data_and00004.F1
+         1.737  columns<7>.BX
+         1.338  fwd_uart_data<7>.BX
+         1.442  rows<7>.BX
+         1.012  escape_FSM_FFd2.G1
+
+u_rx_line/data_0_not0001
+   u_rx_line/data_1_not0001.Y
+         0.841  u_rx_line/data<0>.CE
+
+u_rx_line/data_1_not0001
+   u_rx_line/data_1_not0001.X
+         0.282  u_rx_line/data<1>.CE
+
+u_rx_line/data_2_not0001
+   u_rx_line/data_2_not0001.X
+         0.856  u_rx_line/data<2>.CE
+
+u_rx_line/data_3_not0001
+   u_rx_line/data_4_not0001.Y
+         0.583  u_rx_line/data<3>.CE
+
+u_rx_line/data_4_not0001
+   u_rx_line/data_4_not0001.X
+         1.133  u_rx_line/data<4>.CE
+
+u_rx_line/data_5_not0001
+   u_rx_line/data_5_not0001.Y
+         1.109  u_rx_line/data<5>.CE
+
+u_rx_line/data_6_not0001
+   u_rx_line/data_6_not0001.X
+         0.818  u_rx_line/data<6>.CE
+
+u_rx_line/data_7_not0001
+   u_rx_line/writeen.X
+         0.840  u_rx_line/data<7>.CE
+
+u_rx_line/resetcycles
+   u_rx_line/resetcycles.X
+         0.830  u_rx_line/N7.BX
+         0.043  u_rx_line/active.G2
+         0.967  u_rx_line/cyclecounter<1>.F3
+         1.299  u_rx_line/cyclecounter<1>.G3
+         0.799  u_rx_line/cyclecounter<3>.F3
+         1.178  u_rx_line/cyclecounter<3>.G3
+         0.887  u_rx_line/cyclecounter<5>.F3
+         0.863  u_rx_line/cyclecounter<5>.G3
+         1.074  u_rx_line/cyclecounter<7>.F3
+         1.453  u_rx_line/cyclecounter<7>.G3
+         1.074  u_rx_line/cyclecounter<9>.F3
+         1.074  u_rx_line/cyclecounter<9>.G3
+         0.833  u_rx_line/data_6_not0001.G2
+
+u_rx_line/resetcycles103
+   u_rx_line/resetcycles103.X
+         0.915  u_rx_line/active.F1
+         1.048  u_rx_line/resetcycles.F1
+
+u_rx_line/resetcycles16
+   u_rx_line/resetcycles58.Y
+         0.358  u_rx_line/resetcycles27.F3
+
+u_rx_line/resetcycles27
+   u_rx_line/resetcycles27.X
+         0.416  u_rx_line/active.F3
+         0.494  u_rx_line/resetcycles.F2
+
+u_rx_line/resetcycles47
+   u_rx_line/data_2_not0001.Y
+         0.024  u_rx_line/resetcycles.G3
+
+u_rx_line/resetcycles58
+   u_rx_line/resetcycles58.X
+         0.644  u_rx_line/resetcycles.G1
+
+u_rx_line/resetcycles69
+   u_rx_line/resetcycles.Y
+         0.093  u_rx_line/active.F2
+         0.044  u_rx_line/resetcycles.F3
+
+u_rx_line/uart_rx_int
+   UART_RX.IQ1
+         1.549  u_rx_line/uart_rx_retimed.BY
+
+u_rx_line/uart_rx_retimed
+   u_rx_line/uart_rx_retimed.YQ
+         2.010  u_rx_line/active.G3
+         3.081  u_rx_line/data<0>.BY
+         2.520  u_rx_line/data<1>.BY
+         3.081  u_rx_line/data<2>.BY
+         2.349  u_rx_line/data<3>.BY
+         2.344  u_rx_line/data<4>.BY
+         2.344  u_rx_line/data<5>.BY
+         2.340  u_rx_line/data<6>.BY
+         2.349  u_rx_line/data<7>.BY
+
+u_rx_line/writeen
+   u_rx_line/writeen.YQ
+         0.823  row_column_update.F3
+         0.799  row_column_update.G1
+         0.745  rows_and0000.F1
+         1.193  escape_FSM_FFd2.CE
+
+u_vga/Madd_row_share0000_cy<5>
+   u_vga/Madd_row_share0000_cy<5>.X
+         0.063  u_vga/row<7>.F2
+         0.128  u_vga/row<7>.G2
+         0.063  u_vga/row<6>.F2
+
+u_vga/Mcompar_row_cmp_gt0000_cy<1>
+   u_vga/Mcompar_row_cmp_gt0000_cy<1>.COUT
+         0.000  u_vga/Mcompar_row_cmp_gt0000_cy<3>.CIN
+
+u_vga/Mcompar_row_cmp_gt0000_cy<3>
+   u_vga/Mcompar_row_cmp_gt0000_cy<3>.COUT
+         0.000  u_vga/Mcompar_row_cmp_gt0000_cy<5>.CIN
+
+u_vga/Mcompar_row_cmp_gt0000_cy<5>
+   u_vga/Mcompar_row_cmp_gt0000_cy<5>.COUT
+         0.000  u_vga/Mcompar_row_cmp_gt0000_cy<7>.CIN
+
+u_vga/Mcompar_row_cmp_gt0000_cy<7>
+   u_vga/Mcompar_row_cmp_gt0000_cy<7>.COUT
+         0.000  N35.CIN
+
+u_vga/Mcompar_row_cmp_gt0000_cy<8>
+   N35.XB
+         0.464  u_vga/row<7>.F1
+         0.464  u_vga/row<6>.F1
+         0.720  u_vga/row<5>.G4
+         0.838  u_vga/row<2>.F1
+         0.720  u_vga/row<0>.F4
+         0.720  u_vga/row<0>.G3
+         0.742  u_vga/row_mux0000<4>15.F1
+         0.798  N49.F2
+         0.843  u_vga/row<1>.G1
+         1.312  u_vga/row<4>.G1
+
+u_vga/Mcompar_row_cmp_gt0001_cy<1>
+   u_vga/Mcompar_row_cmp_gt0001_cy<1>.COUT
+         0.000  u_vga/Mcompar_row_cmp_gt0001_cy<3>.CIN
+
+u_vga/Mcompar_row_cmp_gt0001_cy<3>
+   u_vga/Mcompar_row_cmp_gt0001_cy<3>.COUT
+         0.000  u_vga/Mcompar_row_cmp_gt0001_cy<5>.CIN
+
+u_vga/Mcompar_row_cmp_gt0001_cy<5>
+   u_vga/Mcompar_row_cmp_gt0001_cy<5>.COUT
+         0.000  u_vga/Mcompar_row_cmp_gt0001_cy<7>.CIN
+
+u_vga/Mcompar_row_cmp_gt0001_cy<7>
+   u_vga/Mcompar_row_cmp_gt0001_cy<7>.COUT
+         0.000  N45.CIN
+
+u_vga/Mcompar_row_cmp_gt0001_cy<8>
+   N45.XB
+         0.630  u_vga/row<3>.F4
+         1.993  u_vga/N3.BX
+         1.286  u_vga/row<5>.F1
+         1.695  u_vga/column<1>.G4
+         0.996  N49.G2
+         1.337  N61.F2
+         1.824  u_vga/column<6>.G2
+         0.996  u_vga/row<4>.G4
+
+u_vga/N0
+   u_vga/column<6>.Y
+         0.183  u_vga/column<7>.F3
+         0.159  u_vga/column<7>.G3
+         0.887  u_vga/column<5>.F3
+         0.927  u_vga/column<5>.G3
+         0.105  u_vga/column<1>.F1
+         0.500  u_vga/column<4>.F1
+         0.534  u_vga/column<4>.G4
+         0.105  u_vga/column<6>.F4
+         0.893  u_vga/column<3>.F1
+
+u_vga/N10
+   u_vga/column<3>.Y
+         0.023  u_vga/column<3>.F4
+
+u_vga/N11
+   u_vga/N11.X
+         0.843  u_vga/column<7>.BX
+         0.844  u_vga/column<6>.F3
+
+u_vga/N15
+   u_vga/N11.Y
+         0.724  u_vga/column<5>.BX
+         0.129  u_vga/column<4>.F4
+         0.051  u_vga/N11.F4
+
+u_vga/N16
+   u_vga/Madd_row_share0000_cy<5>.Y
+         0.747  u_vga/row<6>.G2
+         0.604  u_vga/row<5>.G2
+         0.539  u_vga/row<0>.F2
+         0.058  u_vga/Madd_row_share0000_cy<5>.F3
+         0.672  N49.F1
+         0.910  u_vga/row<4>.F3
+
+u_vga/N2
+   u_vga/N2.X
+         0.575  u_vga/column<4>.G3
+         0.938  u_vga/N11.G2
+
+u_vga/N21
+   u_vga/row_sub0000<6>.Y
+         0.588  u_vga/Mcompar_row_cmp_gt0000_cy<5>.F3
+         1.040  u_vga/Mcompar_row_cmp_gt0000_cy<5>.G2
+         0.728  u_vga/row_sub0000<7>.BX
+         0.070  u_vga/row_sub0000<6>.F4
+         1.134  N35.F1
+         0.637  u_vga/row_sub0000<5>.F2
+         0.677  u_vga/row_sub0000<5>.G2
+
+u_vga/N22
+   u_vga/row_sub0001<6>.Y
+         0.466  u_vga/Mcompar_row_cmp_gt0001_cy<5>.F3
+         0.469  u_vga/Mcompar_row_cmp_gt0001_cy<5>.G4
+         0.547  u_vga/row_sub0001<7>.BX
+         0.079  u_vga/row_sub0001<6>.F4
+         0.824  N45.F1
+         0.504  u_vga/row_sub0001<5>.F3
+         0.544  u_vga/row_sub0001<5>.G2
+
+u_vga/N27
+   u_vga/ramb_ena.Y
+         1.251  u_vga/row<3>.F3
+         1.005  u_vga/row<5>.F2
+         1.764  u_vga/column<1>.G3
+         0.990  N49.G1
+         0.024  u_vga/ramb_ena.F2
+         1.764  u_vga/column<6>.G1
+
+u_vga/N3
+   u_vga/N3.X
+         0.445  u_vga/row<5>.G1
+         0.405  u_vga/row<0>.F3
+         0.445  u_vga/row<0>.G1
+
+u_vga/N41
+   N49.Y
+         0.643  u_vga/row<7>.F4
+         0.643  u_vga/row<6>.F3
+         0.596  u_vga/row<2>.F4
+         0.164  u_vga/row<0>.G4
+         0.063  N49.F3
+         0.636  u_vga/row<1>.G3
+
+u_vga/N48
+   u_vga/row<4>.Y
+         0.562  u_vga/row<3>.G1
+         0.767  u_vga/row<7>.G1
+         1.145  u_vga/row<6>.G4
+         0.508  u_vga/row<2>.G1
+         0.508  u_vga/row<1>.F1
+         0.044  u_vga/row<4>.F4
+
+u_vga/VGA_BLUE
+   u_vga/VGA_BLUE.YQ
+         0.652  VGA_RED.O1
+         0.898  VGA_BLUE.O1
+         0.895  VGA_GREEN.O1
+
+u_vga/column<0>
+   u_vga/column<1>.YQ
+         2.161  u_vga/Mcompar_row_cmp_gt0001_cy<1>.F2
+         1.778  u_vga/u_daddr/blio/in2_reg<0>.G2
+         1.057  u_vga/column<1>.F4
+         1.239  u_vga/column<1>.G2
+         0.777  u_vga/column_mux0000<1>14.F1
+         0.727  u_vga/N2.F2
+         1.398  u_vga/column<3>.G3
+
+u_vga/column<1>
+   u_vga/column<1>.XQ
+         1.520  u_vga/Mcompar_row_cmp_gt0001_cy<1>.G4
+         1.999  u_vga/u_daddr/blio/in2_reg<1>.G4
+         0.594  u_vga/column<1>.F2
+         0.631  u_vga/column_mux0000<1>14.F2
+         0.845  u_vga/N2.F1
+         0.945  u_vga/column<3>.G2
+
+u_vga/column<2>
+   u_vga/column<4>.YQ
+         1.361  u_vga/Mcompar_row_cmp_gt0001_cy<3>.F3
+         1.399  u_vga/u_daddr/blio/in2_reg<3>.G4
+         0.736  u_vga/column<4>.G1
+         0.695  u_vga/column_mux0000<1>14.F3
+         0.929  u_vga/column<3>.G4
+         0.627  u_vga/N11.G4
+
+u_vga/column<3>
+   u_vga/column<3>.XQ
+         1.100  u_vga/Mcompar_row_cmp_gt0001_cy<3>.G2
+         1.536  u_vga/u_daddr/blio/in2_reg<3>.F4
+         0.835  u_vga/column_mux0000<1>14.F4
+         0.896  u_vga/column<3>.F2
+         0.936  u_vga/N11.G3
+
+u_vga/column<4>
+   u_vga/column<4>.XQ
+         1.327  u_vga/Mcompar_row_cmp_gt0001_cy<5>.F4
+         0.715  u_vga/column<5>.F4
+         0.715  u_vga/column<5>.G2
+         2.918  u_vga/u_daddr/blio/in2_reg<5>.G4
+         0.544  u_vga/column<4>.F2
+         0.822  u_vga/column_mux0000<1>118.G1
+         0.640  u_vga/N11.F3
+
+u_vga/column<5>
+   u_vga/column<5>.XQ
+         1.908  u_vga/Mcompar_row_cmp_gt0001_cy<5>.G3
+         0.524  u_vga/column<5>.F1
+         0.589  u_vga/column<5>.G1
+         1.978  u_vga/u_daddr/blio/in2_reg<5>.F4
+         0.913  u_vga/column_mux0000<1>118.G2
+         0.848  u_vga/N11.F2
+
+u_vga/column<6>
+   u_vga/column<6>.XQ
+         1.386  u_vga/Mcompar_row_cmp_gt0001_cy<7>.F2
+         1.312  u_vga/column<7>.F2
+         1.353  u_vga/column<7>.G4
+         2.472  u_vga/u_daddr/blio/in2_reg<7>.G4
+         0.575  u_vga/column_mux0000<1>118.G3
+         1.179  u_vga/column<6>.F1
+
+u_vga/column<7>
+   u_vga/column<7>.XQ
+         1.728  u_vga/Mcompar_row_cmp_gt0001_cy<7>.G2
+         0.581  u_vga/column<7>.F1
+         0.584  u_vga/column<7>.G1
+         2.945  u_vga/u_daddr/blio/in2_reg<7>.F4
+         1.134  u_vga/column_mux0000<1>118.G4
+
+u_vga/column_cmp_eq00011
+   u_vga/N2.Y
+         1.041  u_vga/row<3>.F1
+         0.350  u_vga/column<7>.F4
+         0.384  u_vga/column<7>.G2
+         1.470  u_vga/column<5>.F2
+         1.475  u_vga/column<5>.G4
+         0.662  u_vga/row<5>.F3
+         0.399  u_vga/column<1>.F3
+         1.052  u_vga/column<4>.F3
+         0.680  u_vga/column<4>.G2
+         0.836  N49.G3
+         0.626  u_vga/column_mux0000<1>118.F1
+         0.399  u_vga/column<6>.F2
+         0.045  u_vga/N2.F3
+         1.506  u_vga/column<3>.F3
+         1.591  u_vga/column<3>.G1
+         0.652  u_vga/N11.F1
+         0.626  u_vga/N11.G1
+
+u_vga/column_mux0000<1>118
+   u_vga/column_mux0000<1>118.X
+         0.426  u_vga/column<1>.G1
+         0.426  u_vga/column<6>.G3
+
+u_vga/column_mux0000<1>14
+   u_vga/column_mux0000<1>14.X
+         0.399  u_vga/column_mux0000<1>118.F2
+
+u_vga/column_mux0000<1>19
+   u_vga/column_mux0000<1>118.Y
+         0.023  u_vga/column_mux0000<1>118.F3
+
+u_vga/columns_pxclk<0>
+   u_vga/columns_pxclk<1>.YQ
+         1.757  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B0
+
+u_vga/columns_pxclk<1>
+   u_vga/columns_pxclk<1>.XQ
+         1.728  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B1
+
+u_vga/columns_pxclk<2>
+   u_vga/columns_pxclk<3>.YQ
+         1.912  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B2
+
+u_vga/columns_pxclk<3>
+   u_vga/columns_pxclk<3>.XQ
+         1.582  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B3
+
+u_vga/columns_pxclk<4>
+   u_vga/columns_pxclk<5>.YQ
+         1.270  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B4
+
+u_vga/columns_pxclk<5>
+   u_vga/columns_pxclk<5>.XQ
+         1.551  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B5
+
+u_vga/columns_pxclk<6>
+   u_vga/columns_pxclk<7>.YQ
+         1.315  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B6
+
+u_vga/columns_pxclk<7>
+   u_vga/columns_pxclk<7>.XQ
+         1.332  u_vga/u_dotaddr/u_mult/Mmult__mult0000.B7
+
+u_vga/pixel3
+   u_vga/u_charmap/Mrom__varindex0000.DOA0
+         0.875  u_vga/VGA_BLUE.BY
+
+u_vga/ram0/_and0000
+   u_vga/ram0/_and0004.Y
+         2.356  u_vga/ram0/u_ram0/Mram_prom1.ENA
+         3.933  u_vga/ram0/u_ram0/Mram_prom2.ENA
+
+u_vga/ram0/_and0002
+   u_vga/ram0/_and0006.Y
+         1.401  u_vga/ram0/u_ram0/Mram_prom1.ENB
+         1.399  u_vga/ram0/u_ram0/Mram_prom1.WEB
+         1.096  u_vga/ram0/u_ram0/Mram_prom2.ENB
+         0.718  u_vga/ram0/u_ram0/Mram_prom2.WEB
+
+u_vga/ram0/_and0004
+   u_vga/ram0/_and0004.X
+         0.964  u_vga/ram0/u_ram1/Mram_prom1.ENA
+         3.218  u_vga/ram0/u_ram1/Mram_prom2.ENA
+
+u_vga/ram0/_and0006
+   u_vga/ram0/_and0006.X
+         2.097  u_vga/ram0/u_ram1/Mram_prom1.ENB
+         2.347  u_vga/ram0/u_ram1/Mram_prom1.WEB
+         1.879  u_vga/ram0/u_ram1/Mram_prom2.ENB
+         1.874  u_vga/ram0/u_ram1/Mram_prom2.WEB
+
+u_vga/ram0/_and0008
+   u_vga/ram0/_and0008.X
+         0.989  u_vga/ram0/u_ram2/Mram_prom1.ENA
+         3.163  u_vga/ram0/u_ram2/Mram_prom2.ENA
+
+u_vga/ram0/_and0010
+   u_vga/ram0/_and0014.Y
+         0.880  u_vga/ram0/u_ram2/Mram_prom1.ENB
+         0.887  u_vga/ram0/u_ram2/Mram_prom1.WEB
+         3.107  u_vga/ram0/u_ram2/Mram_prom2.ENB
+         3.356  u_vga/ram0/u_ram2/Mram_prom2.WEB
+
+u_vga/ram0/_and0012
+   u_vga/ram0/_and0008.Y
+         0.648  u_vga/ram0/u_ram3/Mram_prom1.ENA
+         2.528  u_vga/ram0/u_ram3/Mram_prom2.ENA
+
+u_vga/ram0/_and0014
+   u_vga/ram0/_and0014.X
+         1.300  u_vga/ram0/u_ram3/Mram_prom1.ENB
+         2.099  u_vga/ram0/u_ram3/Mram_prom1.WEB
+         2.071  u_vga/ram0/u_ram3/Mram_prom2.ENB
+         2.595  u_vga/ram0/u_ram3/Mram_prom2.WEB
+
+u_vga/ram0/_and0016
+   u_vga/ram0/_and0016.Y
+         1.592  u_vga/ram0/u_ram4/Mram_prom1.ENA
+         2.430  u_vga/ram0/u_ram4/Mram_prom2.ENA
+
+u_vga/ram0/_and0018
+   u_vga/ram0/_and0018.Y
+         1.247  u_vga/ram0/u_ram4/Mram_prom1.ENB
+         1.496  u_vga/ram0/u_ram4/Mram_prom1.WEB
+         0.598  u_vga/ram0/u_ram4/Mram_prom2.ENB
+         0.626  u_vga/ram0/u_ram4/Mram_prom2.WEB
+
+u_vga/ram0/old_addra<0>
+   u_vga/ram0/old_addra<1>.YQ
+         1.205  u_vga/rama_data_out<0>.G1
+         1.531  u_vga/rama_data_out<1>.G1
+         1.322  u_vga/rama_data_out<2>.G1
+         1.322  u_vga/rama_data_out<3>.G1
+         2.585  u_vga/rama_data_out<4>.G1
+         2.377  u_vga/rama_data_out<5>.G1
+         3.241  u_vga/rama_data_out<6>.G1
+         0.841  u_vga/ram0/outa<1>11.F2
+         0.846  u_vga/ram0/outa<1>11.G2
+         0.525  u_vga/ram0/outa<2>11.F2
+         0.833  u_vga/ram0/outa<2>11.G1
+         0.881  u_vga/ram0/outa<3>11.F2
+         0.684  u_vga/ram0/outa<3>11.G1
+         1.221  u_vga/ram0/outa<4>11.F2
+         1.224  u_vga/ram0/outa<4>11.G1
+         1.775  u_vga/ram0/outa<5>11.F2
+         1.484  u_vga/ram0/outa<5>11.G1
+         2.909  u_vga/ram0/outa<6>11.F2
+         2.974  u_vga/ram0/outa<6>11.G1
+         2.258  u_vga/ram0/outa<6>25.F1
+         2.601  u_vga/ram0/outa<6>25.G1
+
+u_vga/ram0/old_addra<1>
+   u_vga/ram0/old_addra<1>.XQ
+         1.595  u_vga/rama_data_out<0>.G2
+         1.475  u_vga/rama_data_out<1>.G2
+         2.358  u_vga/rama_data_out<2>.G2
+         2.358  u_vga/rama_data_out<3>.G2
+         2.956  u_vga/rama_data_out<4>.G2
+         2.832  u_vga/rama_data_out<5>.G2
+         3.811  u_vga/rama_data_out<6>.G2
+         1.048  u_vga/ram0/outa<1>11.F4
+         1.415  u_vga/ram0/outa<1>11.G4
+         0.635  u_vga/ram0/outa<2>11.F4
+         0.611  u_vga/ram0/outa<2>11.G2
+         0.774  u_vga/ram0/outa<3>11.F4
+         0.515  u_vga/ram0/outa<3>11.G2
+         2.269  u_vga/ram0/outa<4>11.F4
+         2.303  u_vga/ram0/outa<4>11.G2
+         2.293  u_vga/ram0/outa<5>11.F4
+         2.334  u_vga/ram0/outa<5>11.G2
+         3.904  u_vga/ram0/outa<6>11.F4
+         3.421  u_vga/ram0/outa<6>11.G2
+         2.816  u_vga/ram0/outa<6>25.F2
+         2.575  u_vga/ram0/outa<6>25.G2
+
+u_vga/ram0/old_addra<2>
+   u_vga/ram0/old_addra<2>.YQ
+         1.861  u_vga/rama_data_out<0>.F2
+         1.423  u_vga/rama_data_out<1>.F2
+         2.131  u_vga/rama_data_out<2>.F2
+         2.131  u_vga/rama_data_out<3>.F2
+         3.220  u_vga/rama_data_out<4>.F2
+         2.792  u_vga/rama_data_out<5>.F2
+         3.770  u_vga/rama_data_out<6>.F2
+         1.398  u_vga/ram0/outa<1>11.F3
+         1.398  u_vga/ram0/outa<1>11.G3
+         1.032  u_vga/ram0/outa<2>11.F3
+         1.036  u_vga/ram0/outa<3>11.F3
+         2.264  u_vga/ram0/outa<4>11.F3
+         1.699  u_vga/ram0/outa<5>11.F3
+         3.343  u_vga/ram0/outa<6>11.F3
+
+u_vga/ram0/outa0<0>
+   u_vga/ram0/u_ram0/Mram_prom1.DOA0
+         0.888  u_vga/rama_data_out<0>.G3
+
+u_vga/ram0/outa0<1>
+   u_vga/ram0/u_ram0/Mram_prom1.DOA1
+         0.581  u_vga/rama_data_out<1>.G3
+
+u_vga/ram0/outa0<2>
+   u_vga/ram0/u_ram0/Mram_prom1.DOA2
+         0.666  u_vga/rama_data_out<2>.G3
+
+u_vga/ram0/outa0<3>
+   u_vga/ram0/u_ram0/Mram_prom1.DOA3
+         0.731  u_vga/rama_data_out<3>.G3
+
+u_vga/ram0/outa0<4>
+   u_vga/ram0/u_ram0/Mram_prom2.DOA0
+         0.922  u_vga/rama_data_out<4>.G3
+
+u_vga/ram0/outa0<5>
+   u_vga/ram0/u_ram0/Mram_prom2.DOA1
+         0.403  u_vga/rama_data_out<5>.G3
+
+u_vga/ram0/outa0<6>
+   u_vga/ram0/u_ram0/Mram_prom2.DOA2
+         1.120  u_vga/rama_data_out<6>.G3
+
+u_vga/ram0/outa1<0>
+   u_vga/ram0/u_ram1/Mram_prom1.DOA0
+         1.202  u_vga/ram0/outa<2>11.G3
+
+u_vga/ram0/outa1<1>
+   u_vga/ram0/u_ram1/Mram_prom1.DOA1
+         0.965  u_vga/ram0/outa<3>11.G3
+
+u_vga/ram0/outa1<2>
+   u_vga/ram0/u_ram1/Mram_prom1.DOA2
+         1.529  u_vga/ram0/outa<4>11.G3
+
+u_vga/ram0/outa1<3>
+   u_vga/ram0/u_ram1/Mram_prom1.DOA3
+         1.635  u_vga/ram0/outa<5>11.G3
+
+u_vga/ram0/outa1<4>
+   u_vga/ram0/u_ram1/Mram_prom2.DOA0
+         1.020  u_vga/ram0/outa<6>11.G3
+
+u_vga/ram0/outa1<5>
+   u_vga/ram0/u_ram1/Mram_prom2.DOA1
+         0.661  u_vga/ram0/outa<6>25.G3
+
+u_vga/ram0/outa1<6>
+   u_vga/ram0/u_ram1/Mram_prom2.DOA2
+         0.676  u_vga/ram0/outa<6>25.F3
+
+u_vga/ram0/outa2<0>
+   u_vga/ram0/u_ram2/Mram_prom1.DOA0
+         0.372  u_vga/rama_data_out<0>.G4
+
+u_vga/ram0/outa2<1>
+   u_vga/ram0/u_ram2/Mram_prom1.DOA1
+         0.439  u_vga/rama_data_out<1>.G4
+
+u_vga/ram0/outa2<2>
+   u_vga/ram0/u_ram2/Mram_prom1.DOA2
+         0.643  u_vga/rama_data_out<2>.G4
+
+u_vga/ram0/outa2<3>
+   u_vga/ram0/u_ram2/Mram_prom1.DOA3
+         1.139  u_vga/rama_data_out<3>.G4
+
+u_vga/ram0/outa2<4>
+   u_vga/ram0/u_ram2/Mram_prom2.DOA0
+         1.539  u_vga/rama_data_out<4>.G4
+
+u_vga/ram0/outa2<5>
+   u_vga/ram0/u_ram2/Mram_prom2.DOA1
+         2.023  u_vga/rama_data_out<5>.G4
+
+u_vga/ram0/outa2<6>
+   u_vga/ram0/u_ram2/Mram_prom2.DOA2
+         1.846  u_vga/rama_data_out<6>.G4
+
+u_vga/ram0/outa3<0>
+   u_vga/ram0/u_ram3/Mram_prom1.DOA0
+         0.985  u_vga/ram0/outa<2>11.G4
+
+u_vga/ram0/outa3<1>
+   u_vga/ram0/u_ram3/Mram_prom1.DOA1
+         0.814  u_vga/ram0/outa<3>11.G4
+
+u_vga/ram0/outa3<2>
+   u_vga/ram0/u_ram3/Mram_prom1.DOA2
+         1.890  u_vga/ram0/outa<4>11.G4
+
+u_vga/ram0/outa3<3>
+   u_vga/ram0/u_ram3/Mram_prom1.DOA3
+         1.382  u_vga/ram0/outa<5>11.G4
+
+u_vga/ram0/outa3<4>
+   u_vga/ram0/u_ram3/Mram_prom2.DOA0
+         1.451  u_vga/ram0/outa<6>11.G4
+
+u_vga/ram0/outa3<5>
+   u_vga/ram0/u_ram3/Mram_prom2.DOA1
+         1.273  u_vga/ram0/outa<6>25.G4
+
+u_vga/ram0/outa3<6>
+   u_vga/ram0/u_ram3/Mram_prom2.DOA2
+         1.118  u_vga/ram0/outa<6>25.F4
+
+u_vga/ram0/outa4<0>
+   u_vga/ram0/u_ram4/Mram_prom1.DOA0
+         0.875  u_vga/ram0/outa<1>11.G1
+
+u_vga/ram0/outa4<1>
+   u_vga/ram0/u_ram4/Mram_prom1.DOA1
+         0.880  u_vga/ram0/outa<1>11.F1
+
+u_vga/ram0/outa4<2>
+   u_vga/ram0/u_ram4/Mram_prom1.DOA2
+         0.475  u_vga/ram0/outa<2>11.F1
+
+u_vga/ram0/outa4<3>
+   u_vga/ram0/u_ram4/Mram_prom1.DOA3
+         0.475  u_vga/ram0/outa<3>11.F1
+
+u_vga/ram0/outa4<4>
+   u_vga/ram0/u_ram4/Mram_prom2.DOA0
+         0.918  u_vga/ram0/outa<4>11.F1
+
+u_vga/ram0/outa4<5>
+   u_vga/ram0/u_ram4/Mram_prom2.DOA1
+         0.420  u_vga/ram0/outa<5>11.F1
+
+u_vga/ram0/outa4<6>
+   u_vga/ram0/u_ram4/Mram_prom2.DOA2
+         1.071  u_vga/ram0/outa<6>11.F1
+
+u_vga/ram0/outa<0>11
+   u_vga/ram0/outa<1>11.Y
+         0.648  u_vga/rama_data_out<0>.F4
+
+u_vga/ram0/outa<0>25
+   u_vga/ram0/outa<2>11.Y
+         1.031  u_vga/rama_data_out<0>.F3
+
+u_vga/ram0/outa<0>40/O
+   u_vga/rama_data_out<0>.Y
+         0.023  u_vga/rama_data_out<0>.F1
+
+u_vga/ram0/outa<1>11
+   u_vga/ram0/outa<1>11.X
+         0.658  u_vga/rama_data_out<1>.F4
+
+u_vga/ram0/outa<1>25
+   u_vga/ram0/outa<3>11.Y
+         0.691  u_vga/rama_data_out<1>.F3
+
+u_vga/ram0/outa<1>40/O
+   u_vga/rama_data_out<1>.Y
+         0.343  u_vga/rama_data_out<1>.F1
+
+u_vga/ram0/outa<2>11
+   u_vga/ram0/outa<2>11.X
+         0.894  u_vga/rama_data_out<2>.F4
+
+u_vga/ram0/outa<2>25
+   u_vga/ram0/outa<4>11.Y
+         0.072  u_vga/rama_data_out<2>.F3
+
+u_vga/ram0/outa<2>40/O
+   u_vga/rama_data_out<2>.Y
+         0.683  u_vga/rama_data_out<2>.F1
+
+u_vga/ram0/outa<3>11
+   u_vga/ram0/outa<3>11.X
+         0.898  u_vga/rama_data_out<3>.F4
+
+u_vga/ram0/outa<3>25
+   u_vga/ram0/outa<5>11.Y
+         0.361  u_vga/rama_data_out<3>.F3
+
+u_vga/ram0/outa<3>40/O
+   u_vga/rama_data_out<3>.Y
+         0.439  u_vga/rama_data_out<3>.F1
+
+u_vga/ram0/outa<4>11
+   u_vga/ram0/outa<4>11.X
+         1.081  u_vga/rama_data_out<4>.F4
+
+u_vga/ram0/outa<4>25
+   u_vga/ram0/outa<6>11.Y
+         0.585  u_vga/rama_data_out<4>.F3
+
+u_vga/ram0/outa<4>40/O
+   u_vga/rama_data_out<4>.Y
+         0.023  u_vga/rama_data_out<4>.F1
+
+u_vga/ram0/outa<5>11
+   u_vga/ram0/outa<5>11.X
+         1.025  u_vga/rama_data_out<5>.F4
+
+u_vga/ram0/outa<5>25
+   u_vga/ram0/outa<6>25.Y
+         0.361  u_vga/rama_data_out<5>.F3
+
+u_vga/ram0/outa<5>40/O
+   u_vga/rama_data_out<5>.Y
+         0.023  u_vga/rama_data_out<5>.F1
+
+u_vga/ram0/outa<6>11
+   u_vga/ram0/outa<6>11.X
+         0.023  u_vga/rama_data_out<6>.F4
+
+u_vga/ram0/outa<6>25
+   u_vga/ram0/outa<6>25.X
+         1.051  u_vga/rama_data_out<6>.F3
+
+u_vga/ram0/outa<6>40/O
+   u_vga/rama_data_out<6>.Y
+         0.023  u_vga/rama_data_out<6>.F1
+
+u_vga/rama_data_out<0>
+   u_vga/rama_data_out<0>.X
+         1.289  u_vga/u_charmap/Mrom__varindex0000.ADDRA6
+
+u_vga/rama_data_out<1>
+   u_vga/rama_data_out<1>.X
+         1.554  u_vga/u_charmap/Mrom__varindex0000.ADDRA7
+
+u_vga/rama_data_out<2>
+   u_vga/rama_data_out<2>.X
+         1.926  u_vga/u_charmap/Mrom__varindex0000.ADDRA8
+
+u_vga/rama_data_out<3>
+   u_vga/rama_data_out<3>.X
+         1.621  u_vga/u_charmap/Mrom__varindex0000.ADDRA9
+
+u_vga/rama_data_out<4>
+   u_vga/rama_data_out<4>.X
+         1.911  u_vga/u_charmap/Mrom__varindex0000.ADDRA10
+
+u_vga/rama_data_out<5>
+   u_vga/rama_data_out<5>.X
+         1.432  u_vga/u_charmap/Mrom__varindex0000.ADDRA11
+
+u_vga/rama_data_out<6>
+   u_vga/rama_data_out<6>.X
+         1.606  u_vga/u_charmap/Mrom__varindex0000.ADDRA12
+
+u_vga/ramb_data_in<0>
+   u_vga/ramb_data_in<1>.YQ
+         0.472  u_vga/ramb_data_in_dly<1>.BY
+
+u_vga/ramb_data_in<1>
+   u_vga/ramb_data_in<1>.XQ
+         0.472  u_vga/ramb_data_in_dly<1>.BX
+
+u_vga/ramb_data_in<2>
+   u_vga/ramb_data_in<3>.YQ
+         0.734  u_vga/ramb_data_in_dly<3>.BY
+
+u_vga/ramb_data_in<3>
+   u_vga/ramb_data_in<3>.XQ
+         1.014  u_vga/ramb_data_in_dly<3>.BX
+
+u_vga/ramb_data_in<4>
+   u_vga/ramb_data_in<5>.YQ
+         0.472  u_vga/ramb_data_in_dly<5>.BY
+
+u_vga/ramb_data_in<5>
+   u_vga/ramb_data_in<5>.XQ
+         0.472  u_vga/ramb_data_in_dly<5>.BX
+
+u_vga/ramb_data_in<6>
+   u_vga/ramb_data_in<7>.YQ
+         0.474  u_vga/ramb_data_in_dly<7>.BY
+
+u_vga/ramb_data_in<7>
+   u_vga/ramb_data_in<7>.XQ
+         0.455  u_vga/ramb_data_in_dly<7>.BX
+
+u_vga/ramb_data_in_dly<0>
+   u_vga/ramb_data_in_dly<1>.YQ
+         1.596  u_vga/ram0/u_ram1/Mram_prom1.DIB0
+         1.716  u_vga/ram0/u_ram2/Mram_prom1.DIB0
+         0.970  u_vga/ram0/u_ram3/Mram_prom1.DIB0
+         0.583  u_vga/ram0/u_ram4/Mram_prom1.DIB0
+         1.182  u_vga/ram0/u_ram0/Mram_prom1.DIB0
+
+u_vga/ramb_data_in_dly<1>
+   u_vga/ramb_data_in_dly<1>.XQ
+         1.495  u_vga/ram0/u_ram1/Mram_prom1.DIB1
+         1.231  u_vga/ram0/u_ram2/Mram_prom1.DIB1
+         0.826  u_vga/ram0/u_ram3/Mram_prom1.DIB1
+         0.547  u_vga/ram0/u_ram4/Mram_prom1.DIB1
+         1.231  u_vga/ram0/u_ram0/Mram_prom1.DIB1
+
+u_vga/ramb_data_in_dly<2>
+   u_vga/ramb_data_in_dly<3>.YQ
+         2.169  u_vga/ram0/u_ram1/Mram_prom1.DIB2
+         1.324  u_vga/ram0/u_ram2/Mram_prom1.DIB2
+         1.665  u_vga/ram0/u_ram3/Mram_prom1.DIB2
+         0.997  u_vga/ram0/u_ram4/Mram_prom1.DIB2
+         0.876  u_vga/ram0/u_ram0/Mram_prom1.DIB2
+
+u_vga/ramb_data_in_dly<3>
+   u_vga/ramb_data_in_dly<3>.XQ
+         1.366  u_vga/ram0/u_ram1/Mram_prom1.DIB3
+         0.968  u_vga/ram0/u_ram2/Mram_prom1.DIB3
+         1.113  u_vga/ram0/u_ram3/Mram_prom1.DIB3
+         1.365  u_vga/ram0/u_ram4/Mram_prom1.DIB3
+         0.714  u_vga/ram0/u_ram0/Mram_prom1.DIB3
+
+u_vga/ramb_data_in_dly<4>
+   u_vga/ramb_data_in_dly<5>.YQ
+         2.041  u_vga/ram0/u_ram1/Mram_prom2.DIB0
+         2.746  u_vga/ram0/u_ram2/Mram_prom2.DIB0
+         2.665  u_vga/ram0/u_ram3/Mram_prom2.DIB0
+         1.247  u_vga/ram0/u_ram4/Mram_prom2.DIB0
+         1.636  u_vga/ram0/u_ram0/Mram_prom2.DIB0
+
+u_vga/ramb_data_in_dly<5>
+   u_vga/ramb_data_in_dly<5>.XQ
+         2.130  u_vga/ram0/u_ram1/Mram_prom2.DIB1
+         3.860  u_vga/ram0/u_ram2/Mram_prom2.DIB1
+         2.382  u_vga/ram0/u_ram3/Mram_prom2.DIB1
+         1.172  u_vga/ram0/u_ram4/Mram_prom2.DIB1
+         1.311  u_vga/ram0/u_ram0/Mram_prom2.DIB1
+
+u_vga/ramb_data_in_dly<6>
+   u_vga/ramb_data_in_dly<7>.YQ
+         2.701  u_vga/ram0/u_ram1/Mram_prom2.DIB2
+         2.465  u_vga/ram0/u_ram2/Mram_prom2.DIB2
+         3.088  u_vga/ram0/u_ram3/Mram_prom2.DIB2
+         1.408  u_vga/ram0/u_ram4/Mram_prom2.DIB2
+         2.081  u_vga/ram0/u_ram0/Mram_prom2.DIB2
+
+u_vga/ramb_data_in_dly<7>
+   u_vga/ramb_data_in_dly<7>.XQ
+         2.463  u_vga/ram0/u_ram1/Mram_prom2.DIB3
+         2.659  u_vga/ram0/u_ram2/Mram_prom2.DIB3
+         1.962  u_vga/ram0/u_ram3/Mram_prom2.DIB3
+         1.636  u_vga/ram0/u_ram4/Mram_prom2.DIB3
+         2.022  u_vga/ram0/u_ram0/Mram_prom2.DIB3
+
+u_vga/ramb_ena
+   u_vga/ramb_ena.XQ
+         1.017  u_vga/ramb_ena_dly.BY
+
+u_vga/ramb_ena_dly
+   u_vga/ramb_ena_dly.YQ
+         0.757  u_vga/ram0/_and0006.F3
+         0.760  u_vga/ram0/_and0006.G3
+         0.853  u_vga/ram0/_and0014.F3
+         0.858  u_vga/ram0/_and0014.G3
+         0.691  u_vga/ram0/_and0018.G1
+
+u_vga/row<0>
+   u_vga/row<0>.YQ
+         1.544  u_vga/Mcompar_row_cmp_gt0000_cy<1>.F2
+         1.725  u_vga/u_daddr/Mmult__mult0000.A0
+         0.731  u_vga/row<3>.G2
+         1.683  u_vga/row<2>.F3
+         0.829  u_vga/row<2>.G3
+         0.883  u_vga/row<0>.G2
+         0.957  u_vga/Madd_row_share0000_cy<5>.G2
+         1.207  u_vga/row_mux0000<4>15.F3
+         0.824  u_vga/row<1>.F3
+         1.748  u_vga/row<1>.G2
+
+u_vga/row<1>
+   u_vga/row<1>.XQ
+         1.373  u_vga/Mcompar_row_cmp_gt0000_cy<1>.G4
+         1.462  u_vga/u_daddr/Mmult__mult0000.A1
+         0.759  u_vga/row<3>.G3
+         0.669  u_vga/row<2>.F2
+         0.814  u_vga/row<2>.G2
+         0.602  u_vga/Madd_row_share0000_cy<5>.G1
+         0.747  u_vga/row_mux0000<4>15.F4
+         0.774  u_vga/row<1>.F2
+
+u_vga/row<2>
+   u_vga/row<2>.XQ
+         0.955  u_vga/Mcompar_row_cmp_gt0000_cy<3>.F3
+         1.974  u_vga/u_daddr/Mmult__mult0000.A2
+         0.717  u_vga/row<3>.G4
+         0.638  u_vga/row<2>.BX
+         0.504  u_vga/Madd_row_share0000_cy<5>.G4
+         0.676  u_vga/row_mux0000<4>15.F2
+
+u_vga/row<3>
+   u_vga/row<3>.XQ
+         0.993  u_vga/Mcompar_row_cmp_gt0000_cy<3>.G2
+         1.276  u_vga/u_daddr/Mmult__mult0000.A3
+         0.568  u_vga/row<3>.BX
+         0.489  u_vga/Madd_row_share0000_cy<5>.G3
+
+u_vga/row<4>
+   u_vga/row<4>.XQ
+         1.075  u_vga/Mcompar_row_cmp_gt0000_cy<5>.F4
+         1.798  u_vga/u_daddr/Mmult__mult0000.A4
+         0.526  u_vga/row<6>.G3
+         1.206  u_vga/row<5>.G3
+         1.201  u_vga/row<0>.F1
+         0.604  u_vga/Madd_row_share0000_cy<5>.F2
+         1.105  u_vga/row<4>.F1
+
+u_vga/row<5>
+   u_vga/row<5>.XQ
+         1.019  u_vga/Mcompar_row_cmp_gt0000_cy<5>.G3
+         1.554  u_vga/u_daddr/Mmult__mult0000.A5
+         0.787  u_vga/row<6>.G1
+         0.554  u_vga/row<5>.BX
+         0.855  u_vga/Madd_row_share0000_cy<5>.F1
+
+u_vga/row<6>
+   u_vga/row<6>.XQ
+         0.856  u_vga/Mcompar_row_cmp_gt0000_cy<7>.F2
+         1.698  u_vga/u_daddr/Mmult__mult0000.A6
+         0.652  u_vga/row<7>.F3
+         0.692  u_vga/row<7>.G3
+         0.913  u_vga/row<6>.BX
+
+u_vga/row<7>
+   u_vga/row<7>.XQ
+         0.713  u_vga/Mcompar_row_cmp_gt0000_cy<7>.G2
+         1.594  u_vga/u_daddr/Mmult__mult0000.A7
+         0.568  u_vga/row<7>.BX
+
+u_vga/row_and0000
+   u_vga/row_and0000.X
+         0.752  u_vga/N3.F1
+         0.817  u_vga/N3.G4
+         0.314  u_vga/ramb_ena.G3
+         0.887  u_vga/row<4>.G2
+         0.817  u_vga/N2.G3
+
+u_vga/row_mux0000<4>15
+   u_vga/row_mux0000<4>15.X
+         0.156  u_vga/row<3>.F2
+
+u_vga/row_sub0000<0>
+   u_vga/row_sub0000<1>.Y
+         0.101  u_vga/Mcompar_row_cmp_gt0000_cy<1>.F1
+
+u_vga/row_sub0000<1>
+   u_vga/row_sub0000<1>.X
+         0.399  u_vga/Mcompar_row_cmp_gt0000_cy<1>.G1
+
+u_vga/row_sub0000<2>
+   u_vga/row_sub0000<3>.Y
+         0.721  u_vga/Mcompar_row_cmp_gt0000_cy<3>.BX
+
+u_vga/row_sub0000<3>
+   u_vga/row_sub0000<3>.X
+         0.511  u_vga/Mcompar_row_cmp_gt0000_cy<3>.G1
+
+u_vga/row_sub0000<4>
+   u_vga/row_sub0000<5>.Y
+         0.156  u_vga/Mcompar_row_cmp_gt0000_cy<5>.F1
+
+u_vga/row_sub0000<5>
+   u_vga/row_sub0000<5>.X
+         0.441  u_vga/Mcompar_row_cmp_gt0000_cy<5>.BY
+
+u_vga/row_sub0000<6>
+   u_vga/row_sub0000<6>.X
+         0.747  u_vga/Mcompar_row_cmp_gt0000_cy<7>.F1
+
+u_vga/row_sub0000<7>
+   u_vga/row_sub0000<7>.X
+         0.399  u_vga/Mcompar_row_cmp_gt0000_cy<7>.G1
+
+u_vga/row_sub0001<0>
+   u_vga/row_sub0001<1>.Y
+         0.156  u_vga/Mcompar_row_cmp_gt0001_cy<1>.F1
+
+u_vga/row_sub0001<1>
+   u_vga/row_sub0001<1>.X
+         0.399  u_vga/Mcompar_row_cmp_gt0001_cy<1>.G1
+
+u_vga/row_sub0001<2>
+   u_vga/row_sub0001<3>.Y
+         0.433  u_vga/Mcompar_row_cmp_gt0001_cy<3>.BX
+
+u_vga/row_sub0001<3>
+   u_vga/row_sub0001<3>.X
+         0.511  u_vga/Mcompar_row_cmp_gt0001_cy<3>.G1
+
+u_vga/row_sub0001<4>
+   u_vga/row_sub0001<5>.Y
+         0.156  u_vga/Mcompar_row_cmp_gt0001_cy<5>.F1
+
+u_vga/row_sub0001<5>
+   u_vga/row_sub0001<5>.X
+         0.441  u_vga/Mcompar_row_cmp_gt0001_cy<5>.BY
+
+u_vga/row_sub0001<6>
+   u_vga/row_sub0001<6>.X
+         0.772  u_vga/Mcompar_row_cmp_gt0001_cy<7>.F1
+
+u_vga/row_sub0001<7>
+   u_vga/row_sub0001<7>.X
+         0.511  u_vga/Mcompar_row_cmp_gt0001_cy<7>.G1
+
+u_vga/u_charmap/N0
+   u_vga/u_charmap/N0.Y
+         1.663  u_vga/u_charmap/Mrom__varindex0000.SSRA
+
+u_vga/u_charmap/hsync_out
+   u_vga/u_charmap/hsync_out.YQ
+         0.332  VGA_HSYNC.O1
+
+u_vga/u_charmap/vsync_out
+   u_vga/u_charmap/vsync_out.YQ
+         0.885  VGA_VSYNC.O1
+
+u_vga/u_daddr/_mult0000<0>
+   u_vga/u_daddr/Mmult__mult0000.P0
+         0.950  u_vga/u_daddr/blio/in1_reg<0>.F4
+         1.015  u_vga/u_daddr/blio/in1_reg<0>.G4
+
+u_vga/u_daddr/_mult0000<10>
+   u_vga/u_daddr/Mmult__mult0000.P10
+         1.111  u_vga/u_daddr/blio/in1_reg<2>.F2
+         1.151  u_vga/u_daddr/blio/in1_reg<2>.G1
+
+u_vga/u_daddr/_mult0000<11>
+   u_vga/u_daddr/Mmult__mult0000.P11
+         1.160  u_vga/u_daddr/blio/in1_reg<3>.F2
+         1.136  u_vga/u_daddr/blio/in1_reg<3>.G1
+
+u_vga/u_daddr/_mult0000<12>
+   u_vga/u_daddr/Mmult__mult0000.P12
+         1.869  u_vga/u_daddr/blio/in1_reg<4>.F2
+         1.874  u_vga/u_daddr/blio/in1_reg<4>.G1
+
+u_vga/u_daddr/_mult0000<13>
+   u_vga/u_daddr/Mmult__mult0000.P13
+         1.318  u_vga/u_daddr/blio/in1_reg<5>.F2
+         1.383  u_vga/u_daddr/blio/in1_reg<5>.G1
+
+u_vga/u_daddr/_mult0000<14>
+   u_vga/u_daddr/Mmult__mult0000.P14
+         1.600  u_vga/u_daddr/blio/in1_reg<6>.F2
+         1.634  u_vga/u_daddr/blio/in1_reg<6>.G1
+
+u_vga/u_daddr/_mult0000<15>
+   u_vga/u_daddr/Mmult__mult0000.P15
+         0.992  u_vga/u_daddr/blio/in1_reg<7>.F2
+         0.992  u_vga/u_daddr/blio/in1_reg<7>.G1
+
+u_vga/u_daddr/_mult0000<1>
+   u_vga/u_daddr/Mmult__mult0000.P1
+         1.541  u_vga/u_daddr/blio/in1_reg<1>.F4
+         1.544  u_vga/u_daddr/blio/in1_reg<1>.G4
+
+u_vga/u_daddr/_mult0000<2>
+   u_vga/u_daddr/Mmult__mult0000.P2
+         1.376  u_vga/u_daddr/blio/in1_reg<2>.BX
+
+u_vga/u_daddr/_mult0000<3>
+   u_vga/u_daddr/Mmult__mult0000.P3
+         2.706  u_vga/u_daddr/blio/in1_reg<3>.BX
+
+u_vga/u_daddr/_mult0000<4>
+   u_vga/u_daddr/Mmult__mult0000.P4
+         2.085  u_vga/u_daddr/blio/in1_reg<4>.BX
+
+u_vga/u_daddr/_mult0000<5>
+   u_vga/u_daddr/Mmult__mult0000.P5
+         1.671  u_vga/u_daddr/blio/in1_reg<5>.BX
+
+u_vga/u_daddr/_mult0000<6>
+   u_vga/u_daddr/Mmult__mult0000.P6
+         1.455  u_vga/u_daddr/blio/in1_reg<6>.BX
+
+u_vga/u_daddr/_mult0000<7>
+   u_vga/u_daddr/Mmult__mult0000.P7
+         1.453  u_vga/u_daddr/blio/in1_reg<7>.BX
+
+u_vga/u_daddr/_mult0000<8>
+   u_vga/u_daddr/Mmult__mult0000.P8
+         1.504  u_vga/u_daddr/blio/in1_reg<0>.BX
+
+u_vga/u_daddr/_mult0000<9>
+   u_vga/u_daddr/Mmult__mult0000.P9
+         2.112  u_vga/u_daddr/blio/in1_reg<1>.BX
+
+u_vga/u_daddr/blio/asd/c2
+   u_vga/u_daddr/blio/result<10>.Y
+         0.038  u_vga/u_daddr/blio/result<10>.F3
+         0.612  u_vga/u_daddr/blio/asd/c4.G2
+
+u_vga/u_daddr/blio/asd/c3
+   u_vga/u_daddr/blio/asd/c4.Y
+         0.619  u_vga/u_daddr/blio/result<11>.G3
+         0.030  u_vga/u_daddr/blio/asd/c4.F2
+
+u_vga/u_daddr/blio/asd/c4
+   u_vga/u_daddr/blio/asd/c4.X
+         0.732  u_vga/u_daddr/blio/result<13>.G3
+         0.738  u_vga/u_daddr/blio/asd/c6.G2
+
+u_vga/u_daddr/blio/asd/c5
+   u_vga/u_daddr/blio/asd/c6.Y
+         0.449  u_vga/u_daddr/blio/result<13>.F3
+         0.045  u_vga/u_daddr/blio/asd/c6.F2
+
+u_vga/u_daddr/blio/asd/c6
+   u_vga/u_daddr/blio/asd/c6.X
+         1.073  u_vga/u_daddr/blio/result<6>.G3
+         1.018  u_vga/u_daddr/blio/result<7>.G2
+
+u_vga/u_daddr/blio/asd/c7
+   u_vga/u_daddr/blio/result<7>.Y
+         0.131  u_vga/u_daddr/blio/dummie.G3
+         0.042  u_vga/u_daddr/blio/result<7>.F3
+
+u_vga/u_daddr/blio/dummie
+   u_vga/u_daddr/blio/dummie.XQ
+         0.367  u_vga/u_daddr/blio/dummie.F1
+         1.394  u_vga/u_daddr/blio/in2_reg<0>.G3
+         3.168  u_vga/u_daddr/blio/result<16>.BY
+
+u_vga/u_daddr/blio/in1_reg<0>
+   u_vga/u_daddr/blio/in1_reg<0>.XQ
+         0.545  u_vga/u_daddr/blio/in1_reg<0>.F3
+         0.585  u_vga/u_daddr/blio/in1_reg<0>.G2
+         1.026  u_vga/u_daddr/blio/result<1>.F4
+         1.026  u_vga/u_daddr/blio/result<1>.G1
+         1.080  u_vga/u_daddr/blio/result<10>.G2
+
+u_vga/u_daddr/blio/in1_reg<1>
+   u_vga/u_daddr/blio/in1_reg<1>.XQ
+         0.888  u_vga/u_daddr/blio/in1_reg<1>.F3
+         0.922  u_vga/u_daddr/blio/in1_reg<1>.G2
+         1.193  u_vga/u_daddr/blio/result<1>.F1
+         1.367  u_vga/u_daddr/blio/result<10>.G1
+
+u_vga/u_daddr/blio/in1_reg<2>
+   u_vga/u_daddr/blio/in1_reg<2>.XQ
+         0.489  u_vga/u_daddr/blio/in1_reg<2>.F4
+         0.554  u_vga/u_daddr/blio/in1_reg<2>.G4
+         1.071  u_vga/u_daddr/blio/result<10>.F1
+         1.828  u_vga/u_daddr/blio/asd/c4.G3
+
+u_vga/u_daddr/blio/in1_reg<3>
+   u_vga/u_daddr/blio/in1_reg<3>.XQ
+         0.888  u_vga/u_daddr/blio/in1_reg<3>.F4
+         0.922  u_vga/u_daddr/blio/in1_reg<3>.G4
+         1.476  u_vga/u_daddr/blio/result<11>.G1
+         2.049  u_vga/u_daddr/blio/asd/c4.F3
+
+u_vga/u_daddr/blio/in1_reg<4>
+   u_vga/u_daddr/blio/in1_reg<4>.XQ
+         0.480  u_vga/u_daddr/blio/in1_reg<4>.F4
+         0.545  u_vga/u_daddr/blio/in1_reg<4>.G4
+         0.738  u_vga/u_daddr/blio/result<13>.G1
+         0.491  u_vga/u_daddr/blio/asd/c6.G3
+
+u_vga/u_daddr/blio/in1_reg<5>
+   u_vga/u_daddr/blio/in1_reg<5>.XQ
+         0.578  u_vga/u_daddr/blio/in1_reg<5>.F4
+         0.618  u_vga/u_daddr/blio/in1_reg<5>.G4
+         0.824  u_vga/u_daddr/blio/result<13>.F1
+         0.823  u_vga/u_daddr/blio/asd/c6.F3
+
+u_vga/u_daddr/blio/in1_reg<6>
+   u_vga/u_daddr/blio/in1_reg<6>.XQ
+         0.477  u_vga/u_daddr/blio/in1_reg<6>.F4
+         0.480  u_vga/u_daddr/blio/in1_reg<6>.G4
+         1.528  u_vga/u_daddr/blio/result<6>.G1
+         1.637  u_vga/u_daddr/blio/result<7>.G3
+
+u_vga/u_daddr/blio/in1_reg<7>
+   u_vga/u_daddr/blio/in1_reg<7>.XQ
+         1.111  u_vga/u_daddr/blio/dummie.G2
+         0.949  u_vga/u_daddr/blio/in1_reg<7>.F4
+         0.989  u_vga/u_daddr/blio/in1_reg<7>.G4
+         1.010  u_vga/u_daddr/blio/result<7>.F1
+
+u_vga/u_daddr/blio/in2_reg<0>
+   u_vga/u_daddr/blio/in2_reg<0>.XQ
+         0.428  u_vga/u_daddr/blio/in2_reg<0>.F1
+         1.115  u_vga/u_daddr/blio/result<1>.F3
+         1.120  u_vga/u_daddr/blio/result<1>.G2
+         1.022  u_vga/u_daddr/blio/result<10>.G3
+
+u_vga/u_daddr/blio/in2_reg<1>
+   u_vga/u_daddr/blio/in2_reg<1>.YQ
+         0.447  u_vga/u_daddr/blio/in2_reg<1>.G2
+         1.269  u_vga/u_daddr/blio/result<1>.F2
+         1.254  u_vga/u_daddr/blio/result<10>.G4
+
+u_vga/u_daddr/blio/in2_reg<2>
+   u_vga/u_daddr/blio/in2_reg<3>.YQ
+         0.414  u_vga/u_daddr/blio/in2_reg<3>.G2
+         0.988  u_vga/u_daddr/blio/result<10>.F2
+         1.496  u_vga/u_daddr/blio/asd/c4.G1
+
+u_vga/u_daddr/blio/in2_reg<3>
+   u_vga/u_daddr/blio/in2_reg<3>.XQ
+         0.549  u_vga/u_daddr/blio/in2_reg<3>.F2
+         1.498  u_vga/u_daddr/blio/result<11>.G2
+         1.631  u_vga/u_daddr/blio/asd/c4.F1
+
+u_vga/u_daddr/blio/in2_reg<4>
+   u_vga/u_daddr/blio/in2_reg<5>.YQ
+         0.442  u_vga/u_daddr/blio/in2_reg<5>.G2
+         0.468  u_vga/u_daddr/blio/result<13>.G2
+         0.711  u_vga/u_daddr/blio/asd/c6.G1
+
+u_vga/u_daddr/blio/in2_reg<5>
+   u_vga/u_daddr/blio/in2_reg<5>.XQ
+         0.548  u_vga/u_daddr/blio/in2_reg<5>.F2
+         0.458  u_vga/u_daddr/blio/result<13>.F2
+         0.922  u_vga/u_daddr/blio/asd/c6.F1
+
+u_vga/u_daddr/blio/in2_reg<6>
+   u_vga/u_daddr/blio/in2_reg<7>.YQ
+         0.793  u_vga/u_daddr/blio/in2_reg<7>.G2
+         0.582  u_vga/u_daddr/blio/result<6>.G2
+         0.484  u_vga/u_daddr/blio/result<7>.G1
+
+u_vga/u_daddr/blio/in2_reg<7>
+   u_vga/u_daddr/blio/in2_reg<7>.XQ
+         1.285  u_vga/u_daddr/blio/dummie.G1
+         1.353  u_vga/u_daddr/blio/in2_reg<7>.F2
+         1.353  u_vga/u_daddr/blio/result<7>.F2
+
+u_vga/u_daddr/blio/result<0>
+   u_vga/u_daddr/blio/result<1>.YQ
+         2.200  u_vga/u_daddr/result<1>.BX
+
+u_vga/u_daddr/blio/result<10>
+   u_vga/u_daddr/blio/result<10>.XQ
+         1.435  u_vga/u_daddr/result<11>.BX
+
+u_vga/u_daddr/blio/result<11>
+   u_vga/u_daddr/blio/result<11>.YQ
+         3.547  u_vga/u_daddr/result<13>.BY
+
+u_vga/u_daddr/blio/result<12>
+   u_vga/u_daddr/blio/result<13>.YQ
+         2.314  u_vga/u_daddr/result<13>.BX
+
+u_vga/u_daddr/blio/result<13>
+   u_vga/u_daddr/blio/result<13>.XQ
+         2.279  u_vga/u_daddr/result<14>.BY
+
+u_vga/u_daddr/blio/result<16>
+   u_vga/u_daddr/blio/result<16>.YQ
+         0.474  u_vga/u_daddr/result<1>.BY
+
+u_vga/u_daddr/blio/result<1>
+   u_vga/u_daddr/blio/result<1>.XQ
+         1.117  u_vga/u_daddr/result<3>.BY
+
+u_vga/u_daddr/blio/result<2>
+   u_vga/u_daddr/blio/result<3>.YQ
+         0.455  u_vga/u_daddr/result<3>.BX
+
+u_vga/u_daddr/blio/result<3>
+   u_vga/u_daddr/blio/result<3>.XQ
+         0.474  u_vga/u_daddr/result<5>.BY
+
+u_vga/u_daddr/blio/result<4>
+   u_vga/u_daddr/blio/result<5>.YQ
+         0.688  u_vga/u_daddr/result<5>.BX
+
+u_vga/u_daddr/blio/result<5>
+   u_vga/u_daddr/blio/result<5>.XQ
+         0.474  u_vga/u_daddr/result<7>.BY
+
+u_vga/u_daddr/blio/result<6>
+   u_vga/u_daddr/blio/result<6>.YQ
+         0.900  u_vga/u_daddr/result<7>.BX
+
+u_vga/u_daddr/blio/result<7>
+   u_vga/u_daddr/blio/result<7>.XQ
+         1.136  u_vga/u_daddr/result<9>.BY
+
+u_vga/u_daddr/blio/result<8>
+   u_vga/u_daddr/blio/result<9>.YQ
+         0.900  u_vga/u_daddr/result<9>.BX
+
+u_vga/u_daddr/blio/result<9>
+   u_vga/u_daddr/blio/result<9>.XQ
+         1.166  u_vga/u_daddr/result<11>.BY
+
+u_vga/u_daddr/blio/result_15_cmp_eq0000
+   u_vga/u_daddr/blio/in2_reg<1>.X
+         0.862  u_vga/u_daddr/blio/result<11>.CE
+         0.867  u_vga/u_daddr/blio/result<13>.CE
+         1.225  u_vga/u_daddr/blio/result<10>.CE
+         1.225  u_vga/u_daddr/blio/result<9>.CE
+
+u_vga/u_daddr/blio/result_16_cmp_eq0000
+   u_vga/u_daddr/blio/result_16_cmp_eq0000.Y
+         1.565  u_vga/u_daddr/blio/result<16>.CE
+
+u_vga/u_daddr/blio/result_7_not0001_inv
+   u_vga/u_daddr/blio/state<1>.X
+         0.682  u_vga/u_daddr/blio/result<1>.CE
+         1.068  u_vga/u_daddr/blio/result<6>.CE
+         0.611  u_vga/u_daddr/blio/result<7>.CE
+         0.777  u_vga/u_daddr/blio/result<3>.CE
+         1.125  u_vga/u_daddr/blio/result<5>.CE
+
+u_vga/u_daddr/blio/result_reg<0>
+   u_vga/u_daddr/blio/result<1>.Y
+         0.714  u_vga/u_daddr/blio/result<9>.BY
+
+u_vga/u_daddr/blio/result_reg<1>
+   u_vga/u_daddr/blio/result<1>.X
+         0.433  u_vga/u_daddr/blio/result<9>.BX
+
+u_vga/u_daddr/blio/result_reg<2>
+   u_vga/u_daddr/blio/result<10>.X
+         0.705  u_vga/u_daddr/blio/result<3>.BY
+
+u_vga/u_daddr/blio/result_reg<3>
+   u_vga/u_daddr/blio/result<11>.Y
+         0.957  u_vga/u_daddr/blio/result<3>.BX
+
+u_vga/u_daddr/blio/result_reg<4>
+   u_vga/u_daddr/blio/result<13>.Y
+         0.647  u_vga/u_daddr/blio/result<5>.BY
+
+u_vga/u_daddr/blio/result_reg<5>
+   u_vga/u_daddr/blio/result<13>.X
+         0.369  u_vga/u_daddr/blio/result<5>.BX
+
+u_vga/u_daddr/blio/state<0>
+   u_vga/u_daddr/blio/state<0>.YQ
+         2.160  u_vga/u_daddr/blio/in2_reg<0>.G1
+         1.375  u_vga/u_daddr/blio/in1_reg<0>.F1
+         1.375  u_vga/u_daddr/blio/in1_reg<0>.G3
+         0.820  u_vga/u_daddr/blio/in1_reg<1>.F1
+         0.796  u_vga/u_daddr/blio/in1_reg<1>.G3
+         1.606  u_vga/u_daddr/blio/in1_reg<2>.F3
+         1.611  u_vga/u_daddr/blio/in1_reg<2>.G3
+         1.461  u_vga/u_daddr/blio/in1_reg<3>.F3
+         1.464  u_vga/u_daddr/blio/in1_reg<3>.G3
+         0.687  u_vga/u_daddr/blio/in1_reg<4>.F3
+         0.727  u_vga/u_daddr/blio/in1_reg<4>.G3
+         0.742  u_vga/u_daddr/blio/in1_reg<5>.F3
+         0.742  u_vga/u_daddr/blio/in1_reg<5>.G3
+         2.064  u_vga/u_daddr/blio/in1_reg<6>.F3
+         2.040  u_vga/u_daddr/blio/in1_reg<6>.G3
+         1.548  u_vga/u_daddr/blio/in1_reg<7>.F3
+         1.553  u_vga/u_daddr/blio/in1_reg<7>.G3
+         1.021  u_vga/u_daddr/blio/state<1>.F2
+         1.024  u_vga/u_daddr/blio/state<1>.G2
+         0.933  u_vga/u_daddr/blio/in2_reg<1>.F1
+         1.204  u_vga/u_daddr/blio/in2_reg<1>.G3
+         1.115  u_vga/u_daddr/blio/in2_reg<3>.F3
+         1.447  u_vga/u_daddr/blio/in2_reg<3>.G3
+         1.157  u_vga/u_daddr/blio/in2_reg<5>.F3
+         1.162  u_vga/u_daddr/blio/in2_reg<5>.G3
+         1.240  u_vga/u_daddr/blio/in2_reg<7>.F3
+         1.572  u_vga/u_daddr/blio/in2_reg<7>.G3
+         3.800  u_vga/u_daddr/blio/result_16_cmp_eq0000.G1
+
+u_vga/u_daddr/blio/state<1>
+   u_vga/u_daddr/blio/state<1>.YQ
+         1.097  u_vga/u_daddr/blio/dummie.BX
+         2.144  u_vga/u_daddr/blio/in2_reg<0>.BX
+         1.451  u_vga/u_daddr/blio/in1_reg<0>.F2
+         1.456  u_vga/u_daddr/blio/in1_reg<0>.G1
+         1.812  u_vga/u_daddr/blio/in1_reg<1>.F2
+         1.853  u_vga/u_daddr/blio/in1_reg<1>.G1
+         1.737  u_vga/u_daddr/blio/in1_reg<2>.F1
+         1.737  u_vga/u_daddr/blio/in1_reg<2>.G2
+         0.947  u_vga/u_daddr/blio/in1_reg<3>.F1
+         0.988  u_vga/u_daddr/blio/in1_reg<3>.G2
+         1.391  u_vga/u_daddr/blio/in1_reg<4>.F1
+         1.391  u_vga/u_daddr/blio/in1_reg<4>.G2
+         1.963  u_vga/u_daddr/blio/in1_reg<5>.F1
+         1.968  u_vga/u_daddr/blio/in1_reg<5>.G2
+         1.394  u_vga/u_daddr/blio/in1_reg<6>.F1
+         1.435  u_vga/u_daddr/blio/in1_reg<6>.G2
+         1.270  u_vga/u_daddr/blio/in1_reg<7>.F1
+         1.335  u_vga/u_daddr/blio/in1_reg<7>.G2
+         0.788  u_vga/u_daddr/blio/state<1>.F1
+         0.829  u_vga/u_daddr/blio/state<1>.G1
+         1.400  u_vga/u_daddr/blio/in2_reg<1>.F2
+         1.909  u_vga/u_daddr/blio/in2_reg<1>.G1
+         2.086  u_vga/u_daddr/blio/in2_reg<3>.F1
+         2.538  u_vga/u_daddr/blio/in2_reg<3>.G1
+         1.354  u_vga/u_daddr/blio/in2_reg<5>.F1
+         1.419  u_vga/u_daddr/blio/in2_reg<5>.G1
+         1.097  u_vga/u_daddr/blio/in2_reg<7>.F1
+         0.553  u_vga/u_daddr/blio/in2_reg<7>.G1
+         1.671  u_vga/u_daddr/blio/state<0>.SR
+         3.421  u_vga/u_daddr/blio/result_16_cmp_eq0000.G2
+
+u_vga/u_daddr/result<0>
+   u_vga/u_daddr/result<1>.YQ
+         3.079  u_vga/ram0/u_ram1/Mram_prom1.ADDRB2
+         2.070  u_vga/ram0/u_ram1/Mram_prom2.ADDRB2
+         0.969  u_vga/ram0/u_ram2/Mram_prom1.ADDRB2
+         4.376  u_vga/ram0/u_ram2/Mram_prom2.ADDRB2
+         2.576  u_vga/ram0/u_ram3/Mram_prom1.ADDRB2
+         2.734  u_vga/ram0/u_ram3/Mram_prom2.ADDRB2
+         1.813  u_vga/ram0/u_ram4/Mram_prom1.ADDRB2
+         1.485  u_vga/ram0/u_ram4/Mram_prom2.ADDRB2
+         0.957  u_vga/ram0/u_ram0/Mram_prom1.ADDRB2
+         1.692  u_vga/ram0/u_ram0/Mram_prom2.ADDRB2
+
+u_vga/u_daddr/result<10>
+   u_vga/u_daddr/result<11>.YQ
+         3.328  u_vga/ram0/u_ram1/Mram_prom1.ADDRB12
+         1.143  u_vga/ram0/u_ram1/Mram_prom2.ADDRB12
+         2.885  u_vga/ram0/u_ram2/Mram_prom1.ADDRB12
+         4.106  u_vga/ram0/u_ram2/Mram_prom2.ADDRB12
+         3.331  u_vga/ram0/u_ram3/Mram_prom1.ADDRB12
+         1.239  u_vga/ram0/u_ram3/Mram_prom2.ADDRB12
+         2.774  u_vga/ram0/u_ram4/Mram_prom1.ADDRB12
+         2.509  u_vga/ram0/u_ram4/Mram_prom2.ADDRB12
+         2.608  u_vga/ram0/u_ram0/Mram_prom1.ADDRB12
+         2.491  u_vga/ram0/u_ram0/Mram_prom2.ADDRB12
+
+u_vga/u_daddr/result<11>
+   u_vga/u_daddr/result<11>.XQ
+         3.250  u_vga/ram0/u_ram1/Mram_prom1.ADDRB13
+         1.316  u_vga/ram0/u_ram1/Mram_prom2.ADDRB13
+         2.153  u_vga/ram0/u_ram2/Mram_prom1.ADDRB13
+         3.259  u_vga/ram0/u_ram2/Mram_prom2.ADDRB13
+         3.509  u_vga/ram0/u_ram3/Mram_prom1.ADDRB13
+         0.934  u_vga/ram0/u_ram3/Mram_prom2.ADDRB13
+         2.678  u_vga/ram0/u_ram4/Mram_prom1.ADDRB13
+         2.049  u_vga/ram0/u_ram4/Mram_prom2.ADDRB13
+         2.162  u_vga/ram0/u_ram0/Mram_prom1.ADDRB13
+         1.916  u_vga/ram0/u_ram0/Mram_prom2.ADDRB13
+
+u_vga/u_daddr/result<12>
+   u_vga/u_daddr/result<13>.YQ
+         0.621  u_vga/ram0/_and0006.F1
+         0.662  u_vga/ram0/_and0006.G2
+         0.488  u_vga/ram0/_and0014.F1
+         0.553  u_vga/ram0/_and0014.G4
+         0.528  u_vga/ram0/_and0018.G2
+
+u_vga/u_daddr/result<13>
+   u_vga/u_daddr/result<13>.XQ
+         0.469  u_vga/ram0/_and0006.F4
+         0.503  u_vga/ram0/_and0006.G4
+         0.518  u_vga/ram0/_and0014.F4
+         0.558  u_vga/ram0/_and0014.G1
+         0.485  u_vga/ram0/_and0018.G4
+
+u_vga/u_daddr/result<14>
+   u_vga/u_daddr/result<14>.YQ
+         0.648  u_vga/ram0/_and0006.F2
+         0.624  u_vga/ram0/_and0006.G1
+         0.570  u_vga/ram0/_and0014.F2
+         0.570  u_vga/ram0/_and0014.G2
+         0.512  u_vga/ram0/_and0018.G3
+
+u_vga/u_daddr/result<1>
+   u_vga/u_daddr/result<1>.XQ
+         2.777  u_vga/ram0/u_ram1/Mram_prom1.ADDRB3
+         2.131  u_vga/ram0/u_ram1/Mram_prom2.ADDRB3
+         1.085  u_vga/ram0/u_ram2/Mram_prom1.ADDRB3
+         3.552  u_vga/ram0/u_ram2/Mram_prom2.ADDRB3
+         2.269  u_vga/ram0/u_ram3/Mram_prom1.ADDRB3
+         2.131  u_vga/ram0/u_ram3/Mram_prom2.ADDRB3
+         1.374  u_vga/ram0/u_ram4/Mram_prom1.ADDRB3
+         1.242  u_vga/ram0/u_ram4/Mram_prom2.ADDRB3
+         0.989  u_vga/ram0/u_ram0/Mram_prom1.ADDRB3
+         2.264  u_vga/ram0/u_ram0/Mram_prom2.ADDRB3
+
+u_vga/u_daddr/result<2>
+   u_vga/u_daddr/result<3>.YQ
+         2.265  u_vga/ram0/u_ram1/Mram_prom1.ADDRB4
+         2.004  u_vga/ram0/u_ram1/Mram_prom2.ADDRB4
+         2.441  u_vga/ram0/u_ram2/Mram_prom1.ADDRB4
+         3.462  u_vga/ram0/u_ram2/Mram_prom2.ADDRB4
+         2.477  u_vga/ram0/u_ram3/Mram_prom1.ADDRB4
+         0.718  u_vga/ram0/u_ram3/Mram_prom2.ADDRB4
+         2.492  u_vga/ram0/u_ram4/Mram_prom1.ADDRB4
+         2.244  u_vga/ram0/u_ram4/Mram_prom2.ADDRB4
+         2.693  u_vga/ram0/u_ram0/Mram_prom1.ADDRB4
+         2.497  u_vga/ram0/u_ram0/Mram_prom2.ADDRB4
+
+u_vga/u_daddr/result<3>
+   u_vga/u_daddr/result<3>.XQ
+         3.861  u_vga/ram0/u_ram1/Mram_prom1.ADDRB5
+         1.889  u_vga/ram0/u_ram1/Mram_prom2.ADDRB5
+         2.626  u_vga/ram0/u_ram2/Mram_prom1.ADDRB5
+         3.460  u_vga/ram0/u_ram2/Mram_prom2.ADDRB5
+         3.409  u_vga/ram0/u_ram3/Mram_prom1.ADDRB5
+         1.028  u_vga/ram0/u_ram3/Mram_prom2.ADDRB5
+         3.683  u_vga/ram0/u_ram4/Mram_prom1.ADDRB5
+         3.313  u_vga/ram0/u_ram4/Mram_prom2.ADDRB5
+         3.025  u_vga/ram0/u_ram0/Mram_prom1.ADDRB5
+         2.798  u_vga/ram0/u_ram0/Mram_prom2.ADDRB5
+
+u_vga/u_daddr/result<4>
+   u_vga/u_daddr/result<5>.YQ
+         2.483  u_vga/ram0/u_ram1/Mram_prom1.ADDRB6
+         1.985  u_vga/ram0/u_ram1/Mram_prom2.ADDRB6
+         2.357  u_vga/ram0/u_ram2/Mram_prom1.ADDRB6
+         3.805  u_vga/ram0/u_ram2/Mram_prom2.ADDRB6
+         2.476  u_vga/ram0/u_ram3/Mram_prom1.ADDRB6
+         0.909  u_vga/ram0/u_ram3/Mram_prom2.ADDRB6
+         2.793  u_vga/ram0/u_ram4/Mram_prom1.ADDRB6
+         2.208  u_vga/ram0/u_ram4/Mram_prom2.ADDRB6
+         2.355  u_vga/ram0/u_ram0/Mram_prom1.ADDRB6
+         2.101  u_vga/ram0/u_ram0/Mram_prom2.ADDRB6
+
+u_vga/u_daddr/result<5>
+   u_vga/u_daddr/result<5>.XQ
+         4.527  u_vga/ram0/u_ram1/Mram_prom1.ADDRB7
+         1.255  u_vga/ram0/u_ram1/Mram_prom2.ADDRB7
+         2.286  u_vga/ram0/u_ram2/Mram_prom1.ADDRB7
+         3.449  u_vga/ram0/u_ram2/Mram_prom2.ADDRB7
+         3.671  u_vga/ram0/u_ram3/Mram_prom1.ADDRB7
+         0.744  u_vga/ram0/u_ram3/Mram_prom2.ADDRB7
+         3.505  u_vga/ram0/u_ram4/Mram_prom1.ADDRB7
+         2.630  u_vga/ram0/u_ram4/Mram_prom2.ADDRB7
+         2.636  u_vga/ram0/u_ram0/Mram_prom1.ADDRB7
+         1.905  u_vga/ram0/u_ram0/Mram_prom2.ADDRB7
+
+u_vga/u_daddr/result<6>
+   u_vga/u_daddr/result<7>.YQ
+         3.190  u_vga/ram0/u_ram1/Mram_prom1.ADDRB8
+         1.482  u_vga/ram0/u_ram1/Mram_prom2.ADDRB8
+         3.250  u_vga/ram0/u_ram2/Mram_prom1.ADDRB8
+         3.875  u_vga/ram0/u_ram2/Mram_prom2.ADDRB8
+         3.146  u_vga/ram0/u_ram3/Mram_prom1.ADDRB8
+         1.022  u_vga/ram0/u_ram3/Mram_prom2.ADDRB8
+         3.153  u_vga/ram0/u_ram4/Mram_prom1.ADDRB8
+         2.631  u_vga/ram0/u_ram4/Mram_prom2.ADDRB8
+         3.611  u_vga/ram0/u_ram0/Mram_prom1.ADDRB8
+         2.491  u_vga/ram0/u_ram0/Mram_prom2.ADDRB8
+
+u_vga/u_daddr/result<7>
+   u_vga/u_daddr/result<7>.XQ
+         4.070  u_vga/ram0/u_ram1/Mram_prom1.ADDRB9
+         1.615  u_vga/ram0/u_ram1/Mram_prom2.ADDRB9
+         2.390  u_vga/ram0/u_ram2/Mram_prom1.ADDRB9
+         4.099  u_vga/ram0/u_ram2/Mram_prom2.ADDRB9
+         3.565  u_vga/ram0/u_ram3/Mram_prom1.ADDRB9
+         0.912  u_vga/ram0/u_ram3/Mram_prom2.ADDRB9
+         2.713  u_vga/ram0/u_ram4/Mram_prom1.ADDRB9
+         3.208  u_vga/ram0/u_ram4/Mram_prom2.ADDRB9
+         2.438  u_vga/ram0/u_ram0/Mram_prom1.ADDRB9
+         2.306  u_vga/ram0/u_ram0/Mram_prom2.ADDRB9
+
+u_vga/u_daddr/result<8>
+   u_vga/u_daddr/result<9>.YQ
+         3.197  u_vga/ram0/u_ram1/Mram_prom1.ADDRB10
+         0.996  u_vga/ram0/u_ram1/Mram_prom2.ADDRB10
+         2.358  u_vga/ram0/u_ram2/Mram_prom1.ADDRB10
+         3.701  u_vga/ram0/u_ram2/Mram_prom2.ADDRB10
+         3.111  u_vga/ram0/u_ram3/Mram_prom1.ADDRB10
+         1.094  u_vga/ram0/u_ram3/Mram_prom2.ADDRB10
+         3.988  u_vga/ram0/u_ram4/Mram_prom1.ADDRB10
+         2.313  u_vga/ram0/u_ram4/Mram_prom2.ADDRB10
+         2.449  u_vga/ram0/u_ram0/Mram_prom1.ADDRB10
+         2.484  u_vga/ram0/u_ram0/Mram_prom2.ADDRB10
+
+u_vga/u_daddr/result<9>
+   u_vga/u_daddr/result<9>.XQ
+         2.547  u_vga/ram0/u_ram1/Mram_prom1.ADDRB11
+         1.292  u_vga/ram0/u_ram1/Mram_prom2.ADDRB11
+         2.509  u_vga/ram0/u_ram2/Mram_prom1.ADDRB11
+         3.785  u_vga/ram0/u_ram2/Mram_prom2.ADDRB11
+         2.540  u_vga/ram0/u_ram3/Mram_prom1.ADDRB11
+         1.532  u_vga/ram0/u_ram3/Mram_prom2.ADDRB11
+         2.264  u_vga/ram0/u_ram4/Mram_prom1.ADDRB11
+         2.054  u_vga/ram0/u_ram4/Mram_prom2.ADDRB11
+         2.509  u_vga/ram0/u_ram0/Mram_prom1.ADDRB11
+         2.300  u_vga/ram0/u_ram0/Mram_prom2.ADDRB11
+
+u_vga/u_dotaddr/de_out
+   u_vga/u_dotaddr/de_out.YQ
+         0.531  u_vga/ram0/_and0004.F3
+         0.571  u_vga/ram0/_and0004.G3
+         1.758  u_vga/ram0/_and0008.F3
+         1.823  u_vga/ram0/_and0008.G3
+         1.064  u_vga/ram0/_and0016.G1
+         3.540  u_vga/u_fetch/de_out.BY
+
+u_vga/u_dotaddr/hctr_out<0>
+   u_vga/u_dotaddr/hctr_out<1>.YQ
+         0.474  u_vga/u_fetch/hctr_out<1>.BY
+
+u_vga/u_dotaddr/hctr_out<1>
+   u_vga/u_dotaddr/hctr_out<1>.XQ
+         0.754  u_vga/u_fetch/hctr_out<1>.BX
+
+u_vga/u_dotaddr/hctr_out<2>
+   u_vga/u_dotaddr/hctr_out<2>.YQ
+         0.729  u_vga/u_fetch/hctr_out<2>.BY
+
+u_vga/u_dotaddr/hsync_out
+   u_vga/u_dotaddr/hsync_out.YQ
+         1.299  u_vga/u_fetch/hsync_out.BY
+
+u_vga/u_dotaddr/u_mult/_mult0000<0>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P0
+         1.222  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.G1
+         1.168  u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.G4
+
+u_vga/u_dotaddr/u_mult/_mult0000<10>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P10
+         1.038  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<11>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P11
+         0.826  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<12>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P12
+         0.512  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<13>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P13
+         1.000  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<14>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P14
+         0.904  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<15>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P15
+         0.727  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<1>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P1
+         0.715  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.G1
+         0.813  N96.G4
+
+u_vga/u_dotaddr/u_mult/_mult0000<2>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P2
+         1.120  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.G1
+         0.854  N90.G4
+
+u_vga/u_dotaddr/u_mult/_mult0000<3>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P3
+         0.740  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.G1
+         0.818  u_vga/u_dotaddr/u_mult/blio/result<11>.F4
+
+u_vga/u_dotaddr/u_mult/_mult0000<4>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P4
+         0.574  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.G1
+         0.589  N87.F4
+
+u_vga/u_dotaddr/u_mult/_mult0000<5>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P5
+         1.283  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.G1
+         0.774  N90.F4
+
+u_vga/u_dotaddr/u_mult/_mult0000<6>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P6
+         0.737  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.G1
+         0.830  u_vga/u_dotaddr/u_mult/blio/result<6>.F4
+
+u_vga/u_dotaddr/u_mult/_mult0000<7>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P7
+         0.641  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.G1
+         0.636  N96.F4
+
+u_vga/u_dotaddr/u_mult/_mult0000<8>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P8
+         1.061  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.F1
+
+u_vga/u_dotaddr/u_mult/_mult0000<9>
+   u_vga/u_dotaddr/u_mult/Mmult__mult0000.P9
+         0.884  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.F1
+
+u_vga/u_dotaddr/u_mult/blio/asd/c2
+   u_vga/u_dotaddr/u_mult/blio/result<10>.Y
+         0.042  u_vga/u_dotaddr/u_mult/blio/result<10>.F3
+         0.131  u_vga/u_dotaddr/u_mult/blio/asd/c4.G3
+
+u_vga/u_dotaddr/u_mult/blio/asd/c3
+   u_vga/u_dotaddr/u_mult/blio/asd/c4.Y
+         0.044  u_vga/u_dotaddr/u_mult/blio/asd/c4.F3
+         0.614  u_vga/u_dotaddr/u_mult/blio/result<11>.G3
+
+u_vga/u_dotaddr/u_mult/blio/asd/c4
+   u_vga/u_dotaddr/u_mult/blio/asd/c4.X
+         0.135  u_vga/u_dotaddr/u_mult/blio/asd/c6.G3
+         0.393  u_vga/u_dotaddr/u_mult/blio/result<13>.G3
+
+u_vga/u_dotaddr/u_mult/blio/asd/c5
+   u_vga/u_dotaddr/u_mult/blio/asd/c6.Y
+         0.048  u_vga/u_dotaddr/u_mult/blio/asd/c6.F3
+         0.381  u_vga/u_dotaddr/u_mult/blio/result<13>.F3
+
+u_vga/u_dotaddr/u_mult/blio/asd/c6
+   u_vga/u_dotaddr/u_mult/blio/asd/c6.X
+         0.045  u_vga/u_dotaddr/u_mult/blio/result<7>.G3
+         0.608  u_vga/u_dotaddr/u_mult/blio/result<6>.G3
+
+u_vga/u_dotaddr/u_mult/blio/asd/c7
+   u_vga/u_dotaddr/u_mult/blio/result<7>.Y
+         0.420  u_vga/u_dotaddr/u_mult/blio/dummie.G1
+         0.045  u_vga/u_dotaddr/u_mult/blio/result<7>.F3
+
+u_vga/u_dotaddr/u_mult/blio/dummie
+   u_vga/u_dotaddr/u_mult/blio/dummie.XQ
+         0.419  u_vga/u_dotaddr/u_mult/blio/dummie.F1
+         1.415  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.F2
+         1.391  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.G1
+         0.861  u_vga/u_dotaddr/u_mult/blio/result<16>.BY
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<0>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.XQ
+         0.661  u_vga/u_dotaddr/u_mult/blio/result<10>.G4
+         0.646  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.G3
+         1.472  u_vga/u_dotaddr/u_mult/blio/result<1>.F4
+         1.181  u_vga/u_dotaddr/u_mult/blio/result<1>.G1
+         0.537  u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.G2
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<1>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.XQ
+         0.964  u_vga/u_dotaddr/u_mult/blio/result<10>.G3
+         0.926  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.G3
+         1.500  u_vga/u_dotaddr/u_mult/blio/result<1>.F1
+         0.872  N96.G2
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<2>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.XQ
+         0.893  u_vga/u_dotaddr/u_mult/blio/result<10>.F1
+         0.994  u_vga/u_dotaddr/u_mult/blio/asd/c4.G2
+         0.484  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.G3
+         0.582  N90.G2
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<3>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.XQ
+         0.752  u_vga/u_dotaddr/u_mult/blio/asd/c4.F2
+         0.603  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.G3
+         0.671  u_vga/u_dotaddr/u_mult/blio/result<11>.F2
+         0.712  u_vga/u_dotaddr/u_mult/blio/result<11>.G1
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<4>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.XQ
+         1.029  u_vga/u_dotaddr/u_mult/blio/asd/c6.G1
+         0.651  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.G3
+         1.152  u_vga/u_dotaddr/u_mult/blio/result<13>.G1
+         0.477  N87.F2
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<5>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.XQ
+         1.055  u_vga/u_dotaddr/u_mult/blio/asd/c6.F2
+         0.551  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.G3
+         1.391  u_vga/u_dotaddr/u_mult/blio/result<13>.F1
+         0.486  N90.F2
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.XQ
+         1.107  u_vga/u_dotaddr/u_mult/blio/result<7>.G1
+         1.403  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.G3
+         1.229  u_vga/u_dotaddr/u_mult/blio/result<6>.F2
+         0.574  u_vga/u_dotaddr/u_mult/blio/result<6>.G1
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.XQ
+         1.134  u_vga/u_dotaddr/u_mult/blio/dummie.G2
+         1.393  u_vga/u_dotaddr/u_mult/blio/result<7>.F1
+         0.749  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.G3
+         0.665  N96.F2
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<0>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.Y
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<1>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.Y
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<2>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.Y
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.Y
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<4>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.Y
+         0.343  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<5>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.Y
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.Y
+         0.378  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1/O
+   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.Y
+         0.023  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.F3
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<0>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.XQ
+         0.622  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.F4
+         0.663  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.G4
+         0.663  u_vga/u_dotaddr/u_mult/blio/result<10>.G2
+         1.280  u_vga/u_dotaddr/u_mult/blio/result<1>.F3
+         1.321  u_vga/u_dotaddr/u_mult/blio/result<1>.G2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<1>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.YQ
+         0.686  u_vga/u_dotaddr/u_mult/blio/result<10>.G1
+         0.528  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.G2
+         1.165  u_vga/u_dotaddr/u_mult/blio/result<1>.F2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<2>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.YQ
+         1.259  u_vga/u_dotaddr/u_mult/blio/result<10>.F2
+         1.191  u_vga/u_dotaddr/u_mult/blio/asd/c4.G1
+         0.528  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.G2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<3>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.XQ
+         0.688  u_vga/u_dotaddr/u_mult/blio/asd/c4.F1
+         0.480  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.F2
+         0.529  u_vga/u_dotaddr/u_mult/blio/result<11>.G2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<4>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.YQ
+         0.813  u_vga/u_dotaddr/u_mult/blio/asd/c6.G2
+         0.646  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.G2
+         0.713  u_vga/u_dotaddr/u_mult/blio/result<13>.G2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<5>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.XQ
+         0.716  u_vga/u_dotaddr/u_mult/blio/asd/c6.F1
+         0.522  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.F2
+         0.676  u_vga/u_dotaddr/u_mult/blio/result<13>.F2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<6>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.YQ
+         0.762  u_vga/u_dotaddr/u_mult/blio/result<7>.G2
+         0.466  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.G2
+         1.087  u_vga/u_dotaddr/u_mult/blio/result<6>.G2
+
+u_vga/u_dotaddr/u_mult/blio/in2_reg<7>
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.XQ
+         0.630  u_vga/u_dotaddr/u_mult/blio/dummie.G3
+         1.000  u_vga/u_dotaddr/u_mult/blio/result<7>.F2
+         1.167  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.F2
+
+u_vga/u_dotaddr/u_mult/blio/result<0>
+   u_vga/u_dotaddr/u_mult/blio/result<1>.YQ
+         1.073  u_vga/u_dotaddr/u_mult/result<1>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<10>
+   u_vga/u_dotaddr/u_mult/blio/result<10>.XQ
+         1.694  u_vga/u_dotaddr/u_mult/result<11>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<11>
+   u_vga/u_dotaddr/u_mult/blio/result<11>.YQ
+         1.683  u_vga/u_dotaddr/u_mult/result<13>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<12>
+   u_vga/u_dotaddr/u_mult/blio/result<13>.YQ
+         1.308  u_vga/u_dotaddr/u_mult/result<13>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<13>
+   u_vga/u_dotaddr/u_mult/blio/result<13>.XQ
+         1.614  u_vga/u_dotaddr/u_mult/result<14>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<16>
+   u_vga/u_dotaddr/u_mult/blio/result<16>.YQ
+         1.468  u_vga/u_dotaddr/u_mult/result<1>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<1>
+   u_vga/u_dotaddr/u_mult/blio/result<1>.XQ
+         1.331  u_vga/u_dotaddr/u_mult/result<3>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<2>
+   u_vga/u_dotaddr/u_mult/blio/result<3>.YQ
+         0.870  u_vga/u_dotaddr/u_mult/result<3>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<3>
+   u_vga/u_dotaddr/u_mult/blio/result<3>.XQ
+         1.155  u_vga/u_dotaddr/u_mult/result<5>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<4>
+   u_vga/u_dotaddr/u_mult/blio/result<5>.YQ
+         1.949  u_vga/u_dotaddr/u_mult/result<5>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<5>
+   u_vga/u_dotaddr/u_mult/blio/result<5>.XQ
+         1.754  u_vga/u_dotaddr/u_mult/result<7>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<6>
+   u_vga/u_dotaddr/u_mult/blio/result<6>.YQ
+         1.118  u_vga/u_dotaddr/u_mult/result<7>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<7>
+   u_vga/u_dotaddr/u_mult/blio/result<7>.XQ
+         1.546  u_vga/u_dotaddr/u_mult/result<9>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result<8>
+   u_vga/u_dotaddr/u_mult/blio/result<9>.YQ
+         1.047  u_vga/u_dotaddr/u_mult/result<9>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result<9>
+   u_vga/u_dotaddr/u_mult/blio/result<9>.XQ
+         0.802  u_vga/u_dotaddr/u_mult/result<11>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result_15_cmp_eq0000
+   u_vga/u_dotaddr/u_mult/blio/state<1>.X
+         0.579  u_vga/u_dotaddr/u_mult/blio/result<10>.CE
+         1.373  u_vga/u_dotaddr/u_mult/blio/result<11>.CE
+         0.652  u_vga/u_dotaddr/u_mult/blio/result<13>.CE
+         1.002  u_vga/u_dotaddr/u_mult/blio/result<9>.CE
+
+u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000
+   u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.X
+         0.631  u_vga/u_dotaddr/u_mult/blio/result<16>.CE
+
+u_vga/u_dotaddr/u_mult/blio/result_7_not0001_inv
+   u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.X
+         0.889  u_vga/u_dotaddr/u_mult/blio/result<7>.CE
+         0.971  u_vga/u_dotaddr/u_mult/blio/result<1>.CE
+         0.877  u_vga/u_dotaddr/u_mult/blio/result<6>.CE
+         1.264  u_vga/u_dotaddr/u_mult/blio/result<3>.CE
+         0.665  u_vga/u_dotaddr/u_mult/blio/result<5>.CE
+
+u_vga/u_dotaddr/u_mult/blio/result_reg<0>
+   u_vga/u_dotaddr/u_mult/blio/result<1>.Y
+         0.360  u_vga/u_dotaddr/u_mult/blio/result<9>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result_reg<1>
+   u_vga/u_dotaddr/u_mult/blio/result<1>.X
+         0.433  u_vga/u_dotaddr/u_mult/blio/result<9>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result_reg<2>
+   u_vga/u_dotaddr/u_mult/blio/result<10>.X
+         1.581  u_vga/u_dotaddr/u_mult/blio/result<3>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result_reg<3>
+   u_vga/u_dotaddr/u_mult/blio/result<11>.Y
+         1.020  u_vga/u_dotaddr/u_mult/blio/result<3>.BX
+
+u_vga/u_dotaddr/u_mult/blio/result_reg<4>
+   u_vga/u_dotaddr/u_mult/blio/result<13>.Y
+         0.714  u_vga/u_dotaddr/u_mult/blio/result<5>.BY
+
+u_vga/u_dotaddr/u_mult/blio/result_reg<5>
+   u_vga/u_dotaddr/u_mult/blio/result<13>.X
+         0.721  u_vga/u_dotaddr/u_mult/blio/result<5>.BX
+
+u_vga/u_dotaddr/u_mult/blio/state<0>
+   u_vga/u_dotaddr/u_mult/blio/state<0>.YQ
+         1.262  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.F3
+         1.265  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.G3
+         1.830  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.G4
+         0.910  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.G4
+         1.279  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.G4
+         1.249  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.G4
+         0.718  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.G4
+         1.334  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.G4
+         1.194  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.G4
+         1.434  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.G4
+         1.371  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.F2
+         1.553  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.G3
+         2.045  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.F3
+         2.770  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.G3
+         2.337  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.F3
+         2.535  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.G3
+         2.505  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.F3
+         1.004  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.G3
+         1.160  u_vga/u_dotaddr/u_mult/blio/result<11>.F3
+         1.209  u_vga/u_dotaddr/u_mult/blio/result<6>.F3
+         0.830  u_vga/u_dotaddr/u_mult/blio/state<1>.F1
+         0.895  u_vga/u_dotaddr/u_mult/blio/state<1>.G2
+         1.923  u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.F1
+         2.194  u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.G3
+         0.925  N96.F3
+         0.965  N96.G3
+         0.603  N90.F3
+         1.334  N90.G3
+         0.664  N87.F3
+
+u_vga/u_dotaddr/u_mult/blio/state<1>
+   u_vga/u_dotaddr/u_mult/blio/state<1>.YQ
+         1.459  u_vga/u_dotaddr/u_mult/blio/dummie.BX
+         1.459  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.F1
+         1.493  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.G2
+         1.316  u_vga/u_dotaddr/u_mult/blio/in1_reg<0>.G2
+         0.884  u_vga/u_dotaddr/u_mult/blio/in1_reg<1>.G2
+         1.136  u_vga/u_dotaddr/u_mult/blio/in1_reg<2>.G2
+         1.383  u_vga/u_dotaddr/u_mult/blio/in1_reg<3>.G2
+         1.444  u_vga/u_dotaddr/u_mult/blio/in1_reg<4>.G2
+         1.962  u_vga/u_dotaddr/u_mult/blio/in1_reg<5>.G2
+         1.440  u_vga/u_dotaddr/u_mult/blio/in1_reg<6>.G2
+         0.775  u_vga/u_dotaddr/u_mult/blio/in1_reg<7>.G2
+         2.101  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.F1
+         2.395  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.G1
+         2.301  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.F1
+         1.691  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.G1
+         1.764  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.F1
+         1.798  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.G1
+         2.678  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.F1
+         2.286  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.G1
+         1.679  u_vga/u_dotaddr/u_mult/blio/result<11>.F1
+         1.386  u_vga/u_dotaddr/u_mult/blio/result<6>.F1
+         1.686  u_vga/u_dotaddr/u_mult/blio/state<1>.F2
+         1.691  u_vga/u_dotaddr/u_mult/blio/state<1>.G1
+         0.724  u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.F2
+         1.103  u_vga/u_dotaddr/u_mult/blio/result_16_cmp_eq0000.G1
+         0.710  N96.F1
+         0.775  N96.G1
+         1.957  N90.F1
+         0.720  N90.G1
+         1.537  N87.F1
+         2.132  u_vga/u_dotaddr/u_mult/blio/state<0>.SR
+
+u_vga/u_dotaddr/u_mult/result<0>
+   u_vga/u_dotaddr/u_mult/result<1>.YQ
+         2.339  u_vga/ram0/u_ram1/Mram_prom1.ADDRA2
+         2.111  u_vga/ram0/u_ram1/Mram_prom2.ADDRA2
+         1.555  u_vga/ram0/u_ram2/Mram_prom1.ADDRA2
+         3.887  u_vga/ram0/u_ram2/Mram_prom2.ADDRA2
+         2.346  u_vga/ram0/u_ram3/Mram_prom1.ADDRA2
+         3.269  u_vga/ram0/u_ram3/Mram_prom2.ADDRA2
+         1.313  u_vga/ram0/u_ram4/Mram_prom1.ADDRA2
+         1.446  u_vga/ram0/u_ram4/Mram_prom2.ADDRA2
+         0.922  u_vga/ram0/u_ram0/Mram_prom1.ADDRA2
+         1.681  u_vga/ram0/u_ram0/Mram_prom2.ADDRA2
+
+u_vga/u_dotaddr/u_mult/result<10>
+   u_vga/u_dotaddr/u_mult/result<11>.YQ
+         1.951  u_vga/ram0/u_ram1/Mram_prom1.ADDRA12
+         3.001  u_vga/ram0/u_ram1/Mram_prom2.ADDRA12
+         1.893  u_vga/ram0/u_ram2/Mram_prom1.ADDRA12
+         3.608  u_vga/ram0/u_ram2/Mram_prom2.ADDRA12
+         1.689  u_vga/ram0/u_ram3/Mram_prom1.ADDRA12
+         3.228  u_vga/ram0/u_ram3/Mram_prom2.ADDRA12
+         1.570  u_vga/ram0/u_ram4/Mram_prom1.ADDRA12
+         2.854  u_vga/ram0/u_ram4/Mram_prom2.ADDRA12
+         1.308  u_vga/ram0/u_ram0/Mram_prom1.ADDRA12
+         2.177  u_vga/ram0/u_ram0/Mram_prom2.ADDRA12
+
+u_vga/u_dotaddr/u_mult/result<11>
+   u_vga/u_dotaddr/u_mult/result<11>.XQ
+         2.174  u_vga/ram0/u_ram1/Mram_prom1.ADDRA13
+         2.044  u_vga/ram0/u_ram1/Mram_prom2.ADDRA13
+         1.501  u_vga/ram0/u_ram2/Mram_prom1.ADDRA13
+         4.096  u_vga/ram0/u_ram2/Mram_prom2.ADDRA13
+         2.171  u_vga/ram0/u_ram3/Mram_prom1.ADDRA13
+         2.283  u_vga/ram0/u_ram3/Mram_prom2.ADDRA13
+         1.553  u_vga/ram0/u_ram4/Mram_prom1.ADDRA13
+         1.865  u_vga/ram0/u_ram4/Mram_prom2.ADDRA13
+         1.492  u_vga/ram0/u_ram0/Mram_prom1.ADDRA13
+         2.523  u_vga/ram0/u_ram0/Mram_prom2.ADDRA13
+
+u_vga/u_dotaddr/u_mult/result<12>
+   u_vga/u_dotaddr/u_mult/result<13>.YQ
+         1.840  u_vga/ram0/old_addra<1>.BY
+         1.831  u_vga/ram0/_and0004.F1
+         1.896  u_vga/ram0/_and0004.G2
+         1.745  u_vga/ram0/_and0008.F4
+         1.745  u_vga/ram0/_and0008.G1
+         2.218  u_vga/ram0/_and0016.G2
+
+u_vga/u_dotaddr/u_mult/result<13>
+   u_vga/u_dotaddr/u_mult/result<13>.XQ
+         0.921  u_vga/ram0/old_addra<1>.BX
+         1.997  u_vga/ram0/_and0004.F4
+         1.997  u_vga/ram0/_and0004.G4
+         1.351  u_vga/ram0/_and0008.F1
+         1.391  u_vga/ram0/_and0008.G4
+         2.000  u_vga/ram0/_and0016.G4
+
+u_vga/u_dotaddr/u_mult/result<14>
+   u_vga/u_dotaddr/u_mult/result<14>.YQ
+         0.774  u_vga/ram0/old_addra<2>.BY
+         1.801  u_vga/ram0/_and0004.F2
+         1.806  u_vga/ram0/_and0004.G1
+         0.933  u_vga/ram0/_and0008.F2
+         0.938  u_vga/ram0/_and0008.G2
+         1.994  u_vga/ram0/_and0016.G3
+
+u_vga/u_dotaddr/u_mult/result<1>
+   u_vga/u_dotaddr/u_mult/result<1>.XQ
+         2.411  u_vga/ram0/u_ram1/Mram_prom1.ADDRA3
+         2.392  u_vga/ram0/u_ram1/Mram_prom2.ADDRA3
+         2.022  u_vga/ram0/u_ram2/Mram_prom1.ADDRA3
+         3.442  u_vga/ram0/u_ram2/Mram_prom2.ADDRA3
+         2.120  u_vga/ram0/u_ram3/Mram_prom1.ADDRA3
+         2.601  u_vga/ram0/u_ram3/Mram_prom2.ADDRA3
+         1.915  u_vga/ram0/u_ram4/Mram_prom1.ADDRA3
+         1.810  u_vga/ram0/u_ram4/Mram_prom2.ADDRA3
+         1.551  u_vga/ram0/u_ram0/Mram_prom1.ADDRA3
+         2.160  u_vga/ram0/u_ram0/Mram_prom2.ADDRA3
+
+u_vga/u_dotaddr/u_mult/result<2>
+   u_vga/u_dotaddr/u_mult/result<3>.YQ
+         2.177  u_vga/ram0/u_ram1/Mram_prom1.ADDRA4
+         1.967  u_vga/ram0/u_ram1/Mram_prom2.ADDRA4
+         2.140  u_vga/ram0/u_ram2/Mram_prom1.ADDRA4
+         3.995  u_vga/ram0/u_ram2/Mram_prom2.ADDRA4
+         2.085  u_vga/ram0/u_ram3/Mram_prom1.ADDRA4
+         2.284  u_vga/ram0/u_ram3/Mram_prom2.ADDRA4
+         1.726  u_vga/ram0/u_ram4/Mram_prom1.ADDRA4
+         2.235  u_vga/ram0/u_ram4/Mram_prom2.ADDRA4
+         0.940  u_vga/ram0/u_ram0/Mram_prom1.ADDRA4
+         1.804  u_vga/ram0/u_ram0/Mram_prom2.ADDRA4
+
+u_vga/u_dotaddr/u_mult/result<3>
+   u_vga/u_dotaddr/u_mult/result<3>.XQ
+         2.476  u_vga/ram0/u_ram1/Mram_prom1.ADDRA5
+         2.404  u_vga/ram0/u_ram1/Mram_prom2.ADDRA5
+         1.551  u_vga/ram0/u_ram2/Mram_prom1.ADDRA5
+         3.873  u_vga/ram0/u_ram2/Mram_prom2.ADDRA5
+         1.893  u_vga/ram0/u_ram3/Mram_prom1.ADDRA5
+         2.797  u_vga/ram0/u_ram3/Mram_prom2.ADDRA5
+         2.144  u_vga/ram0/u_ram4/Mram_prom1.ADDRA5
+         1.628  u_vga/ram0/u_ram4/Mram_prom2.ADDRA5
+         1.848  u_vga/ram0/u_ram0/Mram_prom1.ADDRA5
+         1.972  u_vga/ram0/u_ram0/Mram_prom2.ADDRA5
+
+u_vga/u_dotaddr/u_mult/result<4>
+   u_vga/u_dotaddr/u_mult/result<5>.YQ
+         2.091  u_vga/ram0/u_ram1/Mram_prom1.ADDRA6
+         3.273  u_vga/ram0/u_ram1/Mram_prom2.ADDRA6
+         1.668  u_vga/ram0/u_ram2/Mram_prom1.ADDRA6
+         3.932  u_vga/ram0/u_ram2/Mram_prom2.ADDRA6
+         1.985  u_vga/ram0/u_ram3/Mram_prom1.ADDRA6
+         3.501  u_vga/ram0/u_ram3/Mram_prom2.ADDRA6
+         1.222  u_vga/ram0/u_ram4/Mram_prom1.ADDRA6
+         1.675  u_vga/ram0/u_ram4/Mram_prom2.ADDRA6
+         0.745  u_vga/ram0/u_ram0/Mram_prom1.ADDRA6
+         3.197  u_vga/ram0/u_ram0/Mram_prom2.ADDRA6
+
+u_vga/u_dotaddr/u_mult/result<5>
+   u_vga/u_dotaddr/u_mult/result<5>.XQ
+         1.716  u_vga/ram0/u_ram1/Mram_prom1.ADDRA7
+         2.487  u_vga/ram0/u_ram1/Mram_prom2.ADDRA7
+         1.334  u_vga/ram0/u_ram2/Mram_prom1.ADDRA7
+         3.914  u_vga/ram0/u_ram2/Mram_prom2.ADDRA7
+         1.947  u_vga/ram0/u_ram3/Mram_prom1.ADDRA7
+         2.995  u_vga/ram0/u_ram3/Mram_prom2.ADDRA7
+         1.189  u_vga/ram0/u_ram4/Mram_prom1.ADDRA7
+         2.001  u_vga/ram0/u_ram4/Mram_prom2.ADDRA7
+         0.706  u_vga/ram0/u_ram0/Mram_prom1.ADDRA7
+         2.638  u_vga/ram0/u_ram0/Mram_prom2.ADDRA7
+
+u_vga/u_dotaddr/u_mult/result<6>
+   u_vga/u_dotaddr/u_mult/result<7>.YQ
+         3.601  u_vga/ram0/u_ram1/Mram_prom1.ADDRA8
+         1.759  u_vga/ram0/u_ram1/Mram_prom2.ADDRA8
+         1.279  u_vga/ram0/u_ram2/Mram_prom1.ADDRA8
+         3.483  u_vga/ram0/u_ram2/Mram_prom2.ADDRA8
+         4.112  u_vga/ram0/u_ram3/Mram_prom1.ADDRA8
+         1.971  u_vga/ram0/u_ram3/Mram_prom2.ADDRA8
+         2.412  u_vga/ram0/u_ram4/Mram_prom1.ADDRA8
+         0.959  u_vga/ram0/u_ram4/Mram_prom2.ADDRA8
+         1.369  u_vga/ram0/u_ram0/Mram_prom1.ADDRA8
+         1.310  u_vga/ram0/u_ram0/Mram_prom2.ADDRA8
+
+u_vga/u_dotaddr/u_mult/result<7>
+   u_vga/u_dotaddr/u_mult/result<7>.XQ
+         2.766  u_vga/ram0/u_ram1/Mram_prom1.ADDRA9
+         2.299  u_vga/ram0/u_ram1/Mram_prom2.ADDRA9
+         1.229  u_vga/ram0/u_ram2/Mram_prom1.ADDRA9
+         3.546  u_vga/ram0/u_ram2/Mram_prom2.ADDRA9
+         2.009  u_vga/ram0/u_ram3/Mram_prom1.ADDRA9
+         2.530  u_vga/ram0/u_ram3/Mram_prom2.ADDRA9
+         2.456  u_vga/ram0/u_ram4/Mram_prom1.ADDRA9
+         1.795  u_vga/ram0/u_ram4/Mram_prom2.ADDRA9
+         1.937  u_vga/ram0/u_ram0/Mram_prom1.ADDRA9
+         1.908  u_vga/ram0/u_ram0/Mram_prom2.ADDRA9
+
+u_vga/u_dotaddr/u_mult/result<8>
+   u_vga/u_dotaddr/u_mult/result<9>.YQ
+         2.338  u_vga/ram0/u_ram1/Mram_prom1.ADDRA10
+         3.253  u_vga/ram0/u_ram1/Mram_prom2.ADDRA10
+         1.829  u_vga/ram0/u_ram2/Mram_prom1.ADDRA10
+         4.116  u_vga/ram0/u_ram2/Mram_prom2.ADDRA10
+         1.844  u_vga/ram0/u_ram3/Mram_prom1.ADDRA10
+         4.049  u_vga/ram0/u_ram3/Mram_prom2.ADDRA10
+         1.567  u_vga/ram0/u_ram4/Mram_prom1.ADDRA10
+         2.343  u_vga/ram0/u_ram4/Mram_prom2.ADDRA10
+         0.705  u_vga/ram0/u_ram0/Mram_prom1.ADDRA10
+         2.486  u_vga/ram0/u_ram0/Mram_prom2.ADDRA10
+
+u_vga/u_dotaddr/u_mult/result<9>
+   u_vga/u_dotaddr/u_mult/result<9>.XQ
+         1.752  u_vga/ram0/u_ram1/Mram_prom1.ADDRA11
+         3.439  u_vga/ram0/u_ram1/Mram_prom2.ADDRA11
+         1.673  u_vga/ram0/u_ram2/Mram_prom1.ADDRA11
+         4.147  u_vga/ram0/u_ram2/Mram_prom2.ADDRA11
+         1.350  u_vga/ram0/u_ram3/Mram_prom1.ADDRA11
+         3.950  u_vga/ram0/u_ram3/Mram_prom2.ADDRA11
+         1.350  u_vga/ram0/u_ram4/Mram_prom1.ADDRA11
+         1.664  u_vga/ram0/u_ram4/Mram_prom2.ADDRA11
+         0.659  u_vga/ram0/u_ram0/Mram_prom1.ADDRA11
+         2.769  u_vga/ram0/u_ram0/Mram_prom2.ADDRA11
+
+u_vga/u_dotaddr/vctr_out<0>
+   u_vga/u_dotaddr/vctr_out<1>.YQ
+         0.964  u_vga/u_fetch/vctr_out<1>.BY
+
+u_vga/u_dotaddr/vctr_out<1>
+   u_vga/u_dotaddr/vctr_out<1>.XQ
+         1.244  u_vga/u_fetch/vctr_out<1>.BX
+
+u_vga/u_dotaddr/vctr_out<2>
+   u_vga/u_dotaddr/vctr_out<2>.YQ
+         0.734  u_vga/u_fetch/vctr_out<2>.BY
+
+u_vga/u_dotaddr/vsync_out
+   u_vga/u_dotaddr/vsync_out.YQ
+         0.711  u_vga/u_fetch/vsync_out.BY
+
+u_vga/u_dotclock/Madd_vctr_int_addsub0000_cy<1>
+   u_vga/u_dotclock/vctr_int_addsub0000<0>.COUT
+         0.000  u_vga/u_dotclock/vctr_int_addsub0000<2>.CIN
+
+u_vga/u_dotclock/Madd_vctr_int_addsub0000_cy<3>
+   u_vga/u_dotclock/vctr_int_addsub0000<2>.COUT
+         0.000  u_vga/u_dotclock/vctr_int_addsub0000<4>.CIN
+
+u_vga/u_dotclock/Madd_vctr_int_addsub0000_cy<5>
+   u_vga/u_dotclock/vctr_int_addsub0000<4>.COUT
+         0.000  u_vga/u_dotclock/vctr_int_addsub0000<6>.CIN
+
+u_vga/u_dotclock/Madd_vctr_int_addsub0000_cy<7>
+   u_vga/u_dotclock/vctr_int_addsub0000<6>.COUT
+         0.000  u_vga/u_dotclock/vctr_int_addsub0000<8>.CIN
+
+u_vga/u_dotclock/Madd_vctr_int_addsub0000_cy<9>
+   u_vga/u_dotclock/vctr_int_addsub0000<8>.COUT
+         0.000  u_vga/u_dotclock/vctr_int_addsub0000<10>.CIN
+
+u_vga/u_dotclock/Mcount_hctr_int_cy<1>
+   u_vga/u_dotclock/Result<0>.COUT
+         0.000  u_vga/u_dotclock/Result<2>.CIN
+
+u_vga/u_dotclock/Mcount_hctr_int_cy<3>
+   u_vga/u_dotclock/Result<2>.COUT
+         0.000  u_vga/u_dotclock/Result<4>.CIN
+
+u_vga/u_dotclock/Mcount_hctr_int_cy<5>
+   u_vga/u_dotclock/Result<4>.COUT
+         0.000  u_vga/u_dotclock/Result<6>.CIN
+
+u_vga/u_dotclock/Mcount_hctr_int_cy<7>
+   u_vga/u_dotclock/Result<6>.COUT
+         0.000  u_vga/u_dotclock/Result<8>.CIN
+
+u_vga/u_dotclock/Mcount_hctr_int_cy<9>
+   u_vga/u_dotclock/Result<8>.COUT
+         0.000  u_vga/u_dotclock/Result<10>.CIN
+
+u_vga/u_dotclock/N01
+   u_vga/u_dotclock/N01.X
+         0.418  u_vga/u_dotclock/vctr_int<0>.G4
+         0.455  u_vga/u_dotclock/vsync.G1
+         0.516  u_vga/u_dotclock/de_v.G3
+
+u_vga/u_dotclock/N4
+   u_vga/u_dotclock/hsync_and0000.Y
+         0.042  u_vga/u_dotclock/hsync_and0000.F4
+         0.107  u_vga/u_dotclock/de_h.G3
+
+u_vga/u_dotclock/Result<0>
+   u_vga/u_dotclock/Result<0>.X
+         0.273  u_vga/u_dotclock/hctr_int<0>.F1
+
+u_vga/u_dotclock/Result<10>
+   u_vga/u_dotclock/Result<10>.X
+         0.411  u_vga/u_dotclock/hctr_int<1>.G1
+
+u_vga/u_dotclock/Result<1>
+   u_vga/u_dotclock/Result<0>.Y
+         0.522  u_vga/u_dotclock/hctr_int<1>.F1
+
+u_vga/u_dotclock/Result<2>
+   u_vga/u_dotclock/Result<2>.X
+         0.310  u_vga/u_dotclock/hctr_int<3>.G1
+
+u_vga/u_dotclock/Result<3>
+   u_vga/u_dotclock/Result<2>.Y
+         0.409  u_vga/u_dotclock/hctr_int<3>.F1
+
+u_vga/u_dotclock/Result<4>
+   u_vga/u_dotclock/Result<4>.X
+         0.402  u_vga/u_dotclock/hctr_int<5>.G1
+
+u_vga/u_dotclock/Result<5>
+   u_vga/u_dotclock/Result<4>.Y
+         0.398  u_vga/u_dotclock/hctr_int<5>.F1
+
+u_vga/u_dotclock/Result<6>
+   u_vga/u_dotclock/Result<6>.X
+         0.086  u_vga/u_dotclock/hctr_int<7>.G1
+
+u_vga/u_dotclock/Result<7>
+   u_vga/u_dotclock/Result<6>.Y
+         0.119  u_vga/u_dotclock/hctr_int<7>.F1
+
+u_vga/u_dotclock/Result<8>
+   u_vga/u_dotclock/Result<8>.X
+         0.434  u_vga/u_dotclock/hctr_int<9>.G1
+
+u_vga/u_dotclock/Result<9>
+   u_vga/u_dotclock/Result<8>.Y
+         0.313  u_vga/u_dotclock/hctr_int<9>.F1
+
+u_vga/u_dotclock/de_h
+   u_vga/u_dotclock/de_h.XQ
+         2.413  u_vga/u_dotaddr/de_out.G2
+         0.484  u_vga/u_dotclock/de_h.F2
+
+u_vga/u_dotclock/de_h_and0000
+   u_vga/u_dotclock/de_h.Y
+         0.023  u_vga/u_dotclock/de_h.F4
+
+u_vga/u_dotclock/de_v
+   u_vga/u_dotclock/de_v.XQ
+         2.005  u_vga/u_dotaddr/de_out.G1
+         0.416  u_vga/u_dotclock/de_v.F1
+
+u_vga/u_dotclock/hctr<0>
+   u_vga/u_dotclock/hctr<1>.YQ
+         1.658  u_vga/u_dotaddr/hctr_out<1>.BY
+         0.752  u_vga/u_dotclock/vcounter_tick_cmp_eq00005.F3
+
+u_vga/u_dotclock/hctr<10>
+   u_vga/u_dotclock/hctr<10>.YQ
+         0.896  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.F4
+         1.428  u_vga/u_dotclock/vcounter_tick_cmp_eq00005.F1
+
+u_vga/u_dotclock/hctr<1>
+   u_vga/u_dotclock/hctr<1>.XQ
+         1.002  u_vga/u_dotaddr/hctr_out<1>.BX
+         0.776  u_vga/u_dotclock/vcounter_tick_cmp_eq00005.F2
+
+u_vga/u_dotclock/hctr<2>
+   u_vga/u_dotclock/hctr<3>.YQ
+         1.984  u_vga/u_dotaddr/hctr_out<2>.BY
+         0.413  u_vga/u_dotclock/vcounter_tick_cmp_eq000016.F3
+
+u_vga/u_dotclock/hctr<3>
+   u_vga/u_dotclock/hctr<3>.XQ
+         1.649  u_vga/u_dotaddr/u_mult/blio/in2_reg<0>.BX
+         0.483  u_vga/u_dotclock/vcounter_tick_cmp_eq000016.F4
+
+u_vga/u_dotclock/hctr<4>
+   u_vga/u_dotclock/hctr<5>.YQ
+         0.781  u_vga/u_dotaddr/u_mult/blio/in2_reg<1>.G4
+         0.481  u_vga/u_dotclock/vcounter_tick_cmp_eq000016.F1
+
+u_vga/u_dotclock/hctr<5>
+   u_vga/u_dotclock/hctr<5>.XQ
+         0.680  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.G4
+         0.403  u_vga/u_dotclock/vcounter_tick_cmp_eq000016.F2
+
+u_vga/u_dotclock/hctr<6>
+   u_vga/u_dotclock/hctr<7>.YQ
+         0.671  u_vga/u_dotaddr/u_mult/blio/in2_reg<3>.F4
+         0.596  u_vga/u_dotclock/vcounter_tick.G4
+
+u_vga/u_dotclock/hctr<7>
+   u_vga/u_dotclock/hctr<7>.XQ
+         1.254  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.G4
+         0.967  u_vga/u_dotclock/vcounter_tick.G3
+
+u_vga/u_dotclock/hctr<8>
+   u_vga/u_dotclock/hctr<9>.YQ
+         0.915  u_vga/u_dotaddr/u_mult/blio/in2_reg<5>.F4
+         0.471  u_vga/u_dotclock/vcounter_tick.G2
+
+u_vga/u_dotclock/hctr<9>
+   u_vga/u_dotclock/hctr<9>.XQ
+         0.728  u_vga/u_dotaddr/u_mult/blio/in2_reg<7>.G4
+         0.685  u_vga/u_dotclock/vcounter_tick.G1
+
+u_vga/u_dotclock/hctr_int<0>
+   u_vga/u_dotclock/hctr_int<0>.XQ
+         0.628  u_vga/u_dotclock/Result<0>.F1
+         0.551  u_vga/u_dotclock/hsync_and0000.G1
+         0.619  u_vga/u_dotclock/hsync.F1
+         2.137  u_vga/u_dotclock/hctr<1>.BY
+
+u_vga/u_dotclock/hctr_int<10>
+   u_vga/u_dotclock/hctr_int<1>.YQ
+         0.482  u_vga/u_dotclock/Result<10>.F1
+         0.602  u_vga/u_dotclock/hsync_and0000.F1
+         1.468  u_vga/u_dotclock/hctr<10>.BY
+         0.602  u_vga/u_dotclock/de_h.F1
+         0.583  u_vga/u_dotclock/hctr_int<0>.G2
+
+u_vga/u_dotclock/hctr_int<1>
+   u_vga/u_dotclock/hctr_int<1>.XQ
+         0.878  u_vga/u_dotclock/Result<0>.G1
+         0.512  u_vga/u_dotclock/hctr_int_cmp_eq000010.G3
+         0.512  u_vga/u_dotclock/hctr_int<0>.G1
+         1.479  u_vga/u_dotclock/hctr<1>.BX
+
+u_vga/u_dotclock/hctr_int<2>
+   u_vga/u_dotclock/hctr_int<3>.YQ
+         0.400  u_vga/u_dotclock/Result<2>.F1
+         0.510  u_vga/u_dotclock/hsync.F3
+         0.599  u_vga/u_dotclock/hctr_int_cmp_eq000010.G2
+         1.485  u_vga/u_dotclock/hctr<3>.BY
+
+u_vga/u_dotclock/hctr_int<3>
+   u_vga/u_dotclock/hctr_int<3>.XQ
+         0.636  u_vga/u_dotclock/Result<2>.G1
+         0.588  u_vga/u_dotclock/hctr_int_cmp_eq000010.F4
+         0.593  u_vga/u_dotclock/hctr_int_cmp_eq000010.G1
+         2.007  u_vga/u_dotclock/hctr<3>.BX
+
+u_vga/u_dotclock/hctr_int<4>
+   u_vga/u_dotclock/hctr_int<5>.YQ
+         0.447  u_vga/u_dotclock/Result<4>.F1
+         0.561  u_vga/u_dotclock/hsync.F4
+         1.075  u_vga/u_dotclock/hsync.G4
+         0.483  u_vga/u_dotclock/de_h.G1
+         1.430  u_vga/u_dotclock/hctr<5>.BY
+
+u_vga/u_dotclock/hctr_int<5>
+   u_vga/u_dotclock/hctr_int<5>.XQ
+         0.600  u_vga/u_dotclock/Result<4>.G1
+         0.600  u_vga/u_dotclock/hsync_and0000.F2
+         0.538  u_vga/u_dotclock/hsync.F2
+         0.639  u_vga/u_dotclock/de_h.G2
+         1.815  u_vga/u_dotclock/hctr<5>.BX
+
+u_vga/u_dotclock/hctr_int<6>
+   u_vga/u_dotclock/hctr_int<7>.YQ
+         0.468  u_vga/u_dotclock/Result<6>.F1
+         1.388  u_vga/u_dotclock/hsync_and0000.G3
+         0.831  u_vga/u_dotclock/hctr_int<0>.G3
+         1.149  u_vga/u_dotclock/hctr<7>.BY
+
+u_vga/u_dotclock/hctr_int<7>
+   u_vga/u_dotclock/hctr_int<7>.XQ
+         0.496  u_vga/u_dotclock/Result<6>.G1
+         1.071  u_vga/u_dotclock/hsync.G3
+         0.417  u_vga/u_dotclock/hctr_int_cmp_eq000010.F1
+         1.106  u_vga/u_dotclock/de_h.G4
+         1.481  u_vga/u_dotclock/hctr<7>.BX
+
+u_vga/u_dotclock/hctr_int<8>
+   u_vga/u_dotclock/hctr_int<9>.YQ
+         0.387  u_vga/u_dotclock/Result<8>.F1
+         1.009  u_vga/u_dotclock/hsync_and0000.F3
+         0.680  u_vga/u_dotclock/hctr_int_cmp_eq000010.F2
+         0.715  u_vga/u_dotclock/de_h.F3
+         1.469  u_vga/u_dotclock/hctr<9>.BY
+
+u_vga/u_dotclock/hctr_int<9>
+   u_vga/u_dotclock/hctr_int<9>.XQ
+         0.568  u_vga/u_dotclock/Result<8>.G1
+         0.514  u_vga/u_dotclock/hsync_and0000.G2
+         1.137  u_vga/u_dotclock/hctr_int_cmp_eq000010.F3
+         1.461  u_vga/u_dotclock/hctr<9>.BX
+
+u_vga/u_dotclock/hctr_int_cmp_eq000010
+   u_vga/u_dotclock/hctr_int_cmp_eq000010.X
+         1.003  u_vga/u_dotclock/hctr_int<1>.F2
+         0.923  u_vga/u_dotclock/hctr_int<1>.G2
+         0.460  u_vga/u_dotclock/hctr_int<3>.F2
+         0.525  u_vga/u_dotclock/hctr_int<3>.G2
+         0.465  u_vga/u_dotclock/hctr_int<5>.F2
+         0.465  u_vga/u_dotclock/hctr_int<5>.G2
+         0.460  u_vga/u_dotclock/hctr_int<7>.F2
+         0.737  u_vga/u_dotclock/hctr_int<7>.G2
+         1.003  u_vga/u_dotclock/hctr_int<9>.F2
+         0.923  u_vga/u_dotclock/hctr_int<9>.G2
+         0.138  u_vga/u_dotclock/hctr_int<0>.F2
+
+u_vga/u_dotclock/hctr_int_cmp_eq000018
+   u_vga/u_dotclock/hsync.X
+         0.544  u_vga/u_dotclock/hctr_int<1>.F3
+         0.609  u_vga/u_dotclock/hctr_int<1>.G3
+         1.264  u_vga/u_dotclock/hctr_int<3>.F3
+         0.642  u_vga/u_dotclock/hctr_int<3>.G3
+         0.637  u_vga/u_dotclock/hctr_int<5>.F3
+         0.642  u_vga/u_dotclock/hctr_int<5>.G3
+         1.264  u_vga/u_dotclock/hctr_int<7>.F3
+         1.304  u_vga/u_dotclock/hctr_int<7>.G3
+         0.544  u_vga/u_dotclock/hctr_int<9>.F3
+         0.609  u_vga/u_dotclock/hctr_int<9>.G3
+         0.391  u_vga/u_dotclock/hctr_int<0>.F3
+
+u_vga/u_dotclock/hctr_int_cmp_eq000023
+   u_vga/u_dotclock/hctr_int<0>.Y
+         1.104  u_vga/u_dotclock/hctr_int<1>.F4
+         0.423  u_vga/u_dotclock/hctr_int<1>.G4
+         0.889  u_vga/u_dotclock/hctr_int<3>.F4
+         0.425  u_vga/u_dotclock/hctr_int<3>.G4
+         0.944  u_vga/u_dotclock/hctr_int<5>.F4
+         0.740  u_vga/u_dotclock/hctr_int<5>.G4
+         0.889  u_vga/u_dotclock/hctr_int<7>.F4
+         0.715  u_vga/u_dotclock/hctr_int<7>.G4
+         1.104  u_vga/u_dotclock/hctr_int<9>.F4
+         1.109  u_vga/u_dotclock/hctr_int<9>.G4
+         0.786  u_vga/u_dotclock/hctr_int<0>.F4
+
+u_vga/u_dotclock/hsync
+   u_vga/u_dotclock/hsync.YQ
+         0.585  u_vga/u_dotclock/hsync.G2
+         2.369  u_vga/u_dotaddr/hsync_out.BY
+
+u_vga/u_dotclock/hsync_and0000
+   u_vga/u_dotclock/hsync_and0000.X
+         0.024  u_vga/u_dotclock/hsync.G1
+
+u_vga/u_dotclock/vcounter_tick
+   u_vga/u_dotclock/vcounter_tick.X
+         1.803  u_vga/u_dotclock/vctr_int<0>.CE
+         2.604  u_vga/u_dotclock/vctr_int<10>.CE
+         3.135  u_vga/u_dotclock/vctr_int<3>.CE
+         3.128  u_vga/u_dotclock/vctr_int<5>.CE
+         1.553  u_vga/u_dotclock/vctr_int<7>.CE
+         2.091  u_vga/u_dotclock/vctr_int<9>.CE
+
+u_vga/u_dotclock/vcounter_tick_cmp_eq000016
+   u_vga/u_dotclock/vcounter_tick_cmp_eq000016.X
+         0.023  u_vga/u_dotclock/vcounter_tick.F2
+
+u_vga/u_dotclock/vcounter_tick_cmp_eq000036
+   u_vga/u_dotclock/vcounter_tick.Y
+         0.023  u_vga/u_dotclock/vcounter_tick.F3
+
+u_vga/u_dotclock/vcounter_tick_cmp_eq00005
+   u_vga/u_dotclock/vcounter_tick_cmp_eq00005.X
+         1.106  u_vga/u_dotclock/vcounter_tick.F1
+
+u_vga/u_dotclock/vctr<0>
+   u_vga/u_dotclock/vctr<1>.YQ
+         0.549  u_vga/u_dotclock/vctr_int_addsub0000<0>.F1
+         1.098  u_vga/u_dotaddr/vctr_out<1>.BY
+
+u_vga/u_dotclock/vctr<10>
+   u_vga/u_dotclock/vctr<10>.YQ
+         0.432  u_vga/u_dotclock/vctr_int_addsub0000<10>.F1
+         1.045  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A7
+
+u_vga/u_dotclock/vctr<1>
+   u_vga/u_dotclock/vctr<1>.XQ
+         0.484  u_vga/u_dotclock/vctr_int_addsub0000<0>.G1
+         1.397  u_vga/u_dotaddr/vctr_out<1>.BX
+
+u_vga/u_dotclock/vctr<2>
+   u_vga/u_dotclock/vctr<3>.YQ
+         0.681  u_vga/u_dotclock/vctr_int_addsub0000<2>.F1
+         2.095  u_vga/u_dotaddr/vctr_out<2>.BY
+
+u_vga/u_dotclock/vctr<3>
+   u_vga/u_dotclock/vctr<3>.XQ
+         0.966  u_vga/u_dotclock/vctr_int_addsub0000<2>.G1
+         1.026  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A0
+
+u_vga/u_dotclock/vctr<4>
+   u_vga/u_dotclock/vctr<5>.YQ
+         0.432  u_vga/u_dotclock/vctr_int_addsub0000<4>.F1
+         1.045  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A1
+
+u_vga/u_dotclock/vctr<5>
+   u_vga/u_dotclock/vctr<5>.XQ
+         0.757  u_vga/u_dotclock/vctr_int_addsub0000<4>.G1
+         1.055  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A2
+
+u_vga/u_dotclock/vctr<6>
+   u_vga/u_dotclock/vctr<7>.YQ
+         0.747  u_vga/u_dotclock/vctr_int_addsub0000<6>.F1
+         1.647  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A3
+
+u_vga/u_dotclock/vctr<7>
+   u_vga/u_dotclock/vctr<7>.XQ
+         0.717  u_vga/u_dotclock/vctr_int_addsub0000<6>.G1
+         1.671  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A4
+
+u_vga/u_dotclock/vctr<8>
+   u_vga/u_dotclock/vctr<9>.YQ
+         0.432  u_vga/u_dotclock/vctr_int_addsub0000<8>.F1
+         1.487  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A5
+
+u_vga/u_dotclock/vctr<9>
+   u_vga/u_dotclock/vctr<9>.XQ
+         0.572  u_vga/u_dotclock/vctr_int_addsub0000<8>.G1
+         1.487  u_vga/u_dotaddr/u_mult/Mmult__mult0000.A6
+
+u_vga/u_dotclock/vctr_int<0>
+   u_vga/u_dotclock/vctr_int<0>.XQ
+         0.560  N33.F3
+         1.126  u_vga/u_dotclock/vsync.F4
+         0.570  u_vga/u_dotclock/de_v.G4
+         0.856  u_vga/u_dotclock/vctr<1>.BY
+
+u_vga/u_dotclock/vctr_int<10>
+   u_vga/u_dotclock/vctr_int<10>.XQ
+         1.036  u_vga/u_dotclock/vctr_int<0>.G3
+         0.745  u_vga/u_dotclock/vsync.G2
+         1.347  u_vga/u_dotclock/vctr<10>.BY
+         0.561  u_vga/u_dotclock/de_v.F4
+
+u_vga/u_dotclock/vctr_int<1>
+   u_vga/u_dotclock/vctr_int<10>.YQ
+         0.755  u_vga/u_dotclock/N01.G3
+         0.818  u_vga/u_dotclock/vctr<1>.BX
+
+u_vga/u_dotclock/vctr_int<2>
+   u_vga/u_dotclock/vctr_int<3>.YQ
+         0.611  N33.F2
+         0.696  u_vga/u_dotclock/vsync.F2
+         0.820  u_vga/u_dotclock/de_v.F3
+         0.789  u_vga/u_dotclock/vctr<3>.BY
+
+u_vga/u_dotclock/vctr_int<3>
+   u_vga/u_dotclock/vctr_int<3>.XQ
+         0.416  N33.F1
+         0.815  u_vga/u_dotclock/vsync.G3
+         0.431  u_vga/u_dotclock/de_v.G2
+         0.845  u_vga/u_dotclock/vctr<3>.BX
+
+u_vga/u_dotclock/vctr_int<4>
+   u_vga/u_dotclock/vctr_int<5>.YQ
+         0.401  u_vga/u_dotclock/N01.G2
+         1.097  u_vga/u_dotclock/vctr<5>.BY
+
+u_vga/u_dotclock/vctr_int<5>
+   u_vga/u_dotclock/vctr_int<5>.XQ
+         0.540  u_vga/u_dotclock/vctr_int<0>.G1
+         1.157  u_vga/u_dotclock/vsync.G4
+         0.829  u_vga/u_dotclock/de_v.G1
+         1.151  u_vga/u_dotclock/vctr<5>.BX
+
+u_vga/u_dotclock/vctr_int<6>
+   u_vga/u_dotclock/vctr_int<7>.YQ
+         0.446  u_vga/u_dotclock/N01.G1
+         0.740  u_vga/u_dotclock/vctr<7>.BY
+
+u_vga/u_dotclock/vctr_int<7>
+   u_vga/u_dotclock/vctr_int<7>.XQ
+         1.002  u_vga/u_dotclock/N01.F3
+         0.502  u_vga/u_dotclock/vctr<7>.BX
+
+u_vga/u_dotclock/vctr_int<8>
+   u_vga/u_dotclock/vctr_int<9>.YQ
+         0.428  u_vga/u_dotclock/N01.F2
+         0.480  u_vga/u_dotclock/vctr<9>.BY
+
+u_vga/u_dotclock/vctr_int<9>
+   u_vga/u_dotclock/vctr_int<9>.XQ
+         0.524  u_vga/u_dotclock/N01.F1
+         0.480  u_vga/u_dotclock/vctr<9>.BX
+
+u_vga/u_dotclock/vctr_int_addsub0000<0>
+   u_vga/u_dotclock/vctr_int_addsub0000<0>.X
+         1.011  u_vga/u_dotclock/vctr_int<0>.F1
+
+u_vga/u_dotclock/vctr_int_addsub0000<10>
+   u_vga/u_dotclock/vctr_int_addsub0000<10>.X
+         0.275  u_vga/u_dotclock/vctr_int<10>.F1
+
+u_vga/u_dotclock/vctr_int_addsub0000<1>
+   u_vga/u_dotclock/vctr_int_addsub0000<0>.Y
+         0.110  u_vga/u_dotclock/vctr_int<10>.G1
+
+u_vga/u_dotclock/vctr_int_addsub0000<2>
+   u_vga/u_dotclock/vctr_int_addsub0000<2>.X
+         0.724  u_vga/u_dotclock/vctr_int<3>.G1
+
+u_vga/u_dotclock/vctr_int_addsub0000<3>
+   u_vga/u_dotclock/vctr_int_addsub0000<2>.Y
+         0.349  u_vga/u_dotclock/vctr_int<3>.F1
+
+u_vga/u_dotclock/vctr_int_addsub0000<4>
+   u_vga/u_dotclock/vctr_int_addsub0000<4>.X
+         0.021  u_vga/u_dotclock/vctr_int<5>.G1
+
+u_vga/u_dotclock/vctr_int_addsub0000<5>
+   u_vga/u_dotclock/vctr_int_addsub0000<4>.Y
+         0.072  u_vga/u_dotclock/vctr_int<5>.F1
+
+u_vga/u_dotclock/vctr_int_addsub0000<6>
+   u_vga/u_dotclock/vctr_int_addsub0000<6>.X
+         0.306  u_vga/u_dotclock/vctr_int<7>.G1
+
+u_vga/u_dotclock/vctr_int_addsub0000<7>
+   u_vga/u_dotclock/vctr_int_addsub0000<6>.Y
+         0.275  u_vga/u_dotclock/vctr_int<7>.F1
+
+u_vga/u_dotclock/vctr_int_addsub0000<8>
+   u_vga/u_dotclock/vctr_int_addsub0000<8>.X
+         0.021  u_vga/u_dotclock/vctr_int<9>.G1
+
+u_vga/u_dotclock/vctr_int_addsub0000<9>
+   u_vga/u_dotclock/vctr_int_addsub0000<8>.Y
+         0.072  u_vga/u_dotclock/vctr_int<9>.F1
+
+u_vga/u_dotclock/vctr_int_cmp_eq0000
+   u_vga/u_dotclock/vctr_int<0>.Y
+         0.092  u_vga/u_dotclock/vctr_int<0>.F2
+         0.467  u_vga/u_dotclock/vctr_int<10>.F2
+         0.467  u_vga/u_dotclock/vctr_int<10>.G2
+         0.141  u_vga/u_dotclock/vctr_int<3>.F2
+         0.181  u_vga/u_dotclock/vctr_int<3>.G2
+         0.424  u_vga/u_dotclock/vctr_int<5>.F2
+         0.803  u_vga/u_dotclock/vctr_int<5>.G2
+         0.783  u_vga/u_dotclock/vctr_int<7>.F2
+         0.759  u_vga/u_dotclock/vctr_int<7>.G2
+         0.697  u_vga/u_dotclock/vctr_int<9>.F2
+         1.076  u_vga/u_dotclock/vctr_int<9>.G2
+
+u_vga/u_dotclock/vctr_int_cmp_eq00001_SW0/O
+   u_vga/u_dotclock/N01.Y
+         0.023  u_vga/u_dotclock/N01.F4
+
+u_vga/u_dotclock/vsync
+   u_vga/u_dotclock/vsync.XQ
+         2.172  u_vga/u_dotaddr/vsync_out.BY
+         0.484  u_vga/u_dotclock/vsync.F1
+
+u_vga/u_fetch/de_out
+   u_vga/u_fetch/de_out.YQ
+         0.424  u_vga/u_charmap/N0.G2
+
+u_vga/u_fetch/hctr_out<0>
+   u_vga/u_fetch/hctr_out<1>.YQ
+         1.940  u_vga/u_charmap/Mrom__varindex0000.ADDRA0
+
+u_vga/u_fetch/hctr_out<1>
+   u_vga/u_fetch/hctr_out<1>.XQ
+         2.083  u_vga/u_charmap/Mrom__varindex0000.ADDRA1
+
+u_vga/u_fetch/hctr_out<2>
+   u_vga/u_fetch/hctr_out<2>.YQ
+         2.782  u_vga/u_charmap/Mrom__varindex0000.ADDRA2
+
+u_vga/u_fetch/hsync_out
+   u_vga/u_fetch/hsync_out.YQ
+         0.939  u_vga/u_charmap/hsync_out.BY
+
+u_vga/u_fetch/vctr_out<0>
+   u_vga/u_fetch/vctr_out<1>.YQ
+         0.883  u_vga/u_charmap/Mrom__varindex0000.ADDRA3
+
+u_vga/u_fetch/vctr_out<1>
+   u_vga/u_fetch/vctr_out<1>.XQ
+         1.131  u_vga/u_charmap/Mrom__varindex0000.ADDRA4
+
+u_vga/u_fetch/vctr_out<2>
+   u_vga/u_fetch/vctr_out<2>.YQ
+         1.935  u_vga/u_charmap/Mrom__varindex0000.ADDRA5
+
+u_vga/u_fetch/vsync_out
+   u_vga/u_fetch/vsync_out.YQ
+         0.474  u_vga/u_charmap/vsync_out.BY
+
+u_vga/u_rx/out<0>
+   u_vga/u_rx/out<1>.YQ
+         0.964  u_vga/columns_pxclk<1>.BY
+
+u_vga/u_rx/out<1>
+   u_vga/u_rx/out<1>.XQ
+         1.244  u_vga/columns_pxclk<1>.BX
+
+u_vga/u_rx/out<2>
+   u_vga/u_rx/out<3>.YQ
+         1.469  u_vga/columns_pxclk<3>.BY
+
+u_vga/u_rx/out<3>
+   u_vga/u_rx/out<3>.XQ
+         1.250  u_vga/columns_pxclk<3>.BX
+
+u_vga/u_rx/out<4>
+   u_vga/u_rx/out<5>.YQ
+         2.348  u_vga/columns_pxclk<5>.BY
+
+u_vga/u_rx/out<5>
+   u_vga/u_rx/out<5>.XQ
+         1.897  u_vga/columns_pxclk<5>.BX
+
+u_vga/u_rx/out<6>
+   u_vga/u_rx/out<7>.YQ
+         1.389  u_vga/columns_pxclk<7>.BY
+
+u_vga/u_rx/out<7>
+   u_vga/u_rx/out<7>.XQ
+         1.423  u_vga/columns_pxclk<7>.BX
+
+u_vga/u_rx/out_not0001
+   u_vga/u_rx/out_not0001.X
+         0.904  u_vga/u_rx/valid.SR
+
+u_vga/u_rx/out_not0001_inv
+   u_vga/u_rx/out_not0001.Y
+         0.301  u_vga/u_rx/rx.CE
+         0.754  u_vga/u_rx/out<1>.CE
+         1.369  u_vga/u_rx/out<3>.CE
+         0.388  u_vga/u_rx/out<5>.CE
+         1.036  u_vga/u_rx/out<7>.CE
+
+u_vga/u_rx/rx
+   u_vga/u_rx/rx.YQ
+         0.510  u_vga/u_tx/rx2.BY
+         0.480  u_vga/u_rx/out_not0001.F2
+         0.545  u_vga/u_rx/out_not0001.G2
+
+u_vga/u_rx/tx1
+   u_vga/u_rx/tx2.YQ
+         0.683  u_vga/u_rx/tx2.BX
+
+u_vga/u_rx/tx2
+   u_vga/u_rx/tx2.XQ
+         1.143  u_vga/u_rx/rx.BY
+         0.516  u_vga/u_rx/out_not0001.F1
+         0.556  u_vga/u_rx/out_not0001.G1
+
+u_vga/u_rx/valid
+   u_vga/u_rx/valid.YQ
+         1.003  u_vga/columns_pxclk<1>.CE
+         1.926  u_vga/columns_pxclk<3>.CE
+         1.926  u_vga/columns_pxclk<5>.CE
+         1.618  u_vga/columns_pxclk<7>.CE
+
+u_vga/u_tx/data<0>
+   u_vga/u_tx/data<1>.YQ
+         0.474  u_vga/u_rx/out<1>.BY
+
+u_vga/u_tx/data<1>
+   u_vga/u_tx/data<1>.XQ
+         0.455  u_vga/u_rx/out<1>.BX
+
+u_vga/u_tx/data<2>
+   u_vga/u_tx/data<3>.YQ
+         0.735  u_vga/u_rx/out<3>.BY
+
+u_vga/u_tx/data<3>
+   u_vga/u_tx/data<3>.XQ
+         0.455  u_vga/u_rx/out<3>.BX
+
+u_vga/u_tx/data<4>
+   u_vga/u_tx/data<5>.YQ
+         0.735  u_vga/u_rx/out<5>.BY
+
+u_vga/u_tx/data<5>
+   u_vga/u_tx/data<5>.XQ
+         0.455  u_vga/u_rx/out<5>.BX
+
+u_vga/u_tx/data<6>
+   u_vga/u_tx/data<7>.YQ
+         0.735  u_vga/u_rx/out<7>.BY
+
+u_vga/u_tx/data<7>
+   u_vga/u_tx/data<7>.XQ
+         1.015  u_vga/u_rx/out<7>.BX
+
+u_vga/u_tx/data_and0000
+   u_vga/u_tx/data_and0000.Y
+         1.163  u_vga/u_tx/tx.CE
+         1.515  u_vga/u_tx/data<1>.CE
+         1.000  u_vga/u_tx/data<3>.CE
+         1.162  u_vga/u_tx/data<5>.CE
+         2.070  u_vga/u_tx/data<7>.CE
+
+u_vga/u_tx/rx1
+   u_vga/u_tx/rx2.YQ
+         0.455  u_vga/u_tx/rx2.BX
+
+u_vga/u_tx/rx2
+   u_vga/u_tx/rx2.XQ
+         0.403  u_vga/u_tx/data_and0000.G3
+
+u_vga/u_tx/tx
+   u_vga/u_tx/tx.YQ
+         0.656  u_vga/u_tx/data_and0000.G2
+         0.857  u_vga/u_tx/tx.BY
+         0.477  u_vga/u_rx/tx2.BY
+

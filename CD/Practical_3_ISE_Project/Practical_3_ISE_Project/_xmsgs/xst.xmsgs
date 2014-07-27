@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;dotaddr.v&quot; line 98 </arg>Connection to output port &apos;<arg fmt="%s" index="2">result</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;simplemult.v&quot; line 27 </arg>Connection to input port &apos;<arg fmt="%s" index="2">in1</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;S3E500.v&quot; line 215 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="new" ><arg fmt="%s" index="1">&quot;S3E500.v&quot; line 222 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addrb</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;S3E500.v&quot; line 341 </arg>Connection to input port &apos;<arg fmt="%s" index="2">opa</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;S3E500.v&quot; line 344 </arg>Connection to output port &apos;<arg fmt="%s" index="2">result</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;simplemult.v&quot; line 27 </arg>Connection to input port &apos;<arg fmt="%s" index="2">in1</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="916" delta="new" >&quot;<arg fmt="%s" index="1">S3E500.v</arg>&quot; line <arg fmt="%d" index="2">285</arg>: Delay is ignored for synthesis.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">charmap</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2319" delta="old" >&quot;<arg fmt="%s" index="1">prom.v</arg>&quot; line <arg fmt="%d" index="2">182</arg>: Signal <arg fmt="%s" index="3">prom</arg> in initial block is partially initialized. The initialization will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">charmap</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000010010010000011000000000000000000000000000000110000010000000100000010000000010000000100000000110000000000000100000001000000010000000100000001000000010000000100000000000000110000000010000000100000000100000010000000100000110000000000000011110000001000000100000010000000111100000000000000000000111000010000000111000001001000010010000100100000000000000000000000000001000100001010000001000000101000010001000000000000000000000000000100010010101010100100101000001010000010000000000000000000000000000100000010100001000100010001000100010000000000000000000000000001011000001001000010010000100100001001000000000000000000000000000001000000010000000100000001000000111000000100000000000000000000000111000010000000011000000001000011100000000000000000000000000000000100000001000000010000001100001101000000000000000000001000000010000000111000001001000010010001011000000000000000000000001000000010000011100001001000010010000011010000000000000000000000000000111000010001000100010001000100001110000000000000000000000000000100100001001000010010000100100000110100000000000000000000000000100000101000001010010010100100100110110100000000000000000000000000010000000100000001000000010000000100000001000000011000000000000010010000010100000011000001010000100100000001000000010000001100000100000001000000010000000100000000000000010000000000000000000000010000000100000001000000010000000000000001000000000000000000000100010001000100010001000100110000110100000001000000010000111000010000000111100001000100010001001011100000000000000000000000000000001000000010000000100000011100000010000100100000110000000000000011100000000100011111000100010000111000000000000000000000000000101100000100100001001000010010000111000001000000010000000000000000111000000001000000010000000100001110000000000000000000000000000011010001001000010010000100100000111000000010000000100000000000101110000100010001000100011110000100000000111000000000000000000000000000000000000000000000000000000000000001000000001000111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100010000101000000100000000000000111000001000000010000000100000001000000010000000111000000000001000000001000000001000000001000000001000000001000000001000000000001110000000100000001000000010000000100000001000001110000000000001111100000001000000100000010000001000000100000001111100000000000001000000010000000100000001000000101000010001000100010000000000010001000100010000101000000100000010100001000100010001000000000000101000001010000101010001010100100000101000001010000010000000000001000000010000001010000010100001000100010001000100010000000000001110000100010001000100010001000100010001000100010001000000000000010000000100000001000000010000000100000001000001111100000000000011100001000100010000000011100000000100010001000011100000000000010001000010010000010100001111000100010001000100001111000110000000111000010001000100010001000100010001000100010000111000000000000000100000001000000010000011100001001000010010000011100000000000001110000100010001000100010001000100010001000100001110000000000001000100010001000110010001010100010101000100110001000100000000001000001010000010100000101001001010101010110001101000001000000000011110000000100000001000000010000000100000001000000010000000000001000100010001000010010000011100001001000100010001000100000000000001100000100100001001000010000000100000001000000111000000000000001110000001000000010000000100000001000000010000001110000000000001000100010001000100010001111100010001000100010001000100000000000011100001000100010001000111010000000100010001000011100000000000000001000000010000000100011111000000010000000100011111000000000001111100000001000000010000111100000001000000010001111100000000000011110001000100010001000100010001000100010001000011110000000000001110000100010000000100000001000000010001000100001110000000000000111100010001000100010000111100010001000100010000111100000000000100010001000100010001000111110001000100010001000011100000000000001110000000010001110100010101000111010001000100001110000000000000010000000000000001000000100000010000000100010000111000000000000000010000001000000100000010000000010000000010000000010000000000000000000000000011111110000000001111111000000000000000000000000000100000000100000000100000000100000010000001000000100000000100000010000000110000001100000000000000110000001100000000000000000000000000000011000000110000000000000011000000110000000000000000000000111000010001000100000001111000010001000100010000111000000000000011100001000100010001000011100001000100010001000011100000000000000010000000100000001000000100000010000001000000011111000000000000111000010001000100010000111100000001000100010000111000000000000011100001000100010000000011110000000100000001000111110000000000011100000010000000100000011111000010010000101000001100000000000000111000010001000100000000110000010000000100010000111000000000000111110000001000000100000010000001000000010001000011100000000000001110000001000000010000000100000001000000011000000100000000000000111000010001000100010001010100010001000100010000111000000000000000001000000100000010000001000000100000010000001000000000000000001100000011000000000000000000000000000000000000000000000000000000000000000000000000000011111110000000000000000000000000000100000010000000110000001100000000000000000000000000000000000000000000000100000001000000010000111111100001000000010000000100000000000000010000100100100101010000111000010101001001001000010000000000000000100000010000001000000010000000100000000100000000100000000000001000000001000000001000000010000000100000010000001000000000000000000000000000000000000000000000000000000001000000010000000000000101110000100010011000100001010000001000000101000001100000000000000000000110010001101000000100000010110001001100000000000000000000010000001111000101000000111000000101000111100000010000000000000010100000101000111111100010100011111110001010000010100000000000000000000000000000000000000000000000000000101000001010000000000000010000000000000001000000010000000100000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000010001111100000001000000010001111100000000000000000000000000000000000000000000000000000000000000000000000000011111000000010000000100001111000000010000000100011111000000000000000000000000000000000000000000000000000000000000000000000000000011110001000100010001000100010001000100010001000011110000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000000010000000100000001000100010000111000000000000000000000000000000000000000000000000000000000000000000000000000001111000100010001000100001111000100010001000100001111000000000000000000000000000000000000000000000000000000000000000000000000000100010001000100010001000111110001000100010001000011100000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000100000001111000010001000100010000111000000000000000000000000000000000000000000000000000000000000000000000000000001110000100010001000100001110000100010001000100001110000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000010000001000000100000010000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000100010001000000001111000000010000000100011111000000000000000000000000000000000000000000000000000000000000000000000000000001000000100000010000001111110001000000001000000001000000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000100000000110000010000000100010000111000000000000000000000000000000000000000000000000000000000000000000000000000011111000000100000010000001000000100000001000100001110000000000000000000000000000000000000000000000000000000000000000000000000000011100000010000000100000001000000010000000110000001000000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000100010001010100010001000100010000111000000000000000000000000000000000000000000000000000000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">max_rows</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ramb_data_out</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ramb_addr&lt;31:15&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rama_wena</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">rama_wen</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rama_addr&lt;31:15&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">fetch_wdata&lt;15:8&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">de&lt;3&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">color3</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">outa_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_ram0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">outa_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_ram1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">outa_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_ram2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">outa_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_ram3</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">outa_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_ram4</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">data_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_tx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u_rx</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3044" delta="old" >The ROM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as a read-only BLOCK RAM, absorbing the register: &lt;<arg fmt="%s" index="2">_varindex0000</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3225" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented as BLOCK RAM
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_prom</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_dotaddr/u_mult/blio/result_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_dotaddr/u_mult/blio/result_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_dotaddr/u_mult/result_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_dotaddr/u_mult/result_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_daddr/result_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_daddr/result_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_daddr/blio/result_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_daddr/blio/result_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/ram0/old_addrb_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/ram0/old_addrb_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/ram0/old_addrb_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_rx/out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_tx/data_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/de_out</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/u_charmap/color_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_vga/rows_pxclk_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+</messages>
+

@@ -1,0 +1,30 @@
+#include "<stdio.h>"
+
+/*
+ * print a table for Fahrenheit to Celsius
+ * from 0 F to 300 F
+ */
+
+main()
+{
+	int fahr;				/* fahrenheit temperature */
+	int celsius;				/* celsius temperature */
+				
+	
+	/*
+	 * print out the lines for the table
+	 */
+	fahr = lower;
+	while(fahr <= upper){
+		/* get corresponding temp in degrees C */
+		celsius = 5 * (fahr - 32) / 9;
+		/* print it */
+		
+		
+	}
+
+	/*
+	 * say goodbye
+	 */
+	return 1;
+}

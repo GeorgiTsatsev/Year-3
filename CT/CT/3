@@ -1,0 +1,11 @@
+#includ "<iostream.h>"
+
+int x;
+main(){
+	int boo;
+
+		char b;
+	b = 'g';
+
+	return boo;
+}

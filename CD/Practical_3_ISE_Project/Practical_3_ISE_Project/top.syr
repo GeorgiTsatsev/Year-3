@@ -1,0 +1,975 @@
+Release 13.2 - xst O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "adder.v" in library work
+Compiling verilog file "ripple.v" in library work
+Module <adder> compiled
+Compiling verilog file "adder16.v" in library work
+Module <ripple> compiled
+Compiling verilog file "simplemult.v" in library work
+Module <adder16> compiled
+Compiling verilog file "tx.v" in library work
+Module <simplemult> compiled
+Compiling verilog file "rx.v" in library work
+Module <tx> compiled
+Compiling verilog file "prom.v" in library work
+Module <rx> compiled
+Module <prom_ram_empty> compiled
+Compiling verilog file "dotfetch.v" in library work
+Module <prom_ram_small> compiled
+Compiling verilog file "dotclock.v" in library work
+Module <dotfetch> compiled
+Compiling verilog file "dotaddr.v" in library work
+Module <dotclock> compiled
+Compiling verilog file "charmap.v" in library work
+Module <dotaddr> compiled
+Compiling verilog file "S3E500.v" in library work
+Module <charmap> compiled
+Compiling verilog file "rx_line.v" in library work
+Module <VGA_S3E500> compiled
+Compiling verilog file "clockgen.v" in library work
+Module <rx_line> compiled
+Compiling verilog file "top.v" in library work
+Module <clockgen> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <VGA_S3E500> in library <work>.
+
+Analyzing hierarchy for module <rx_line> in library <work>.
+
+Analyzing hierarchy for module <clockgen> in library <work>.
+
+Analyzing hierarchy for module <dotclock> in library <work>.
+
+Analyzing hierarchy for module <dotaddr> in library <work>.
+
+Analyzing hierarchy for module <dotfetch> in library <work>.
+
+Analyzing hierarchy for module <charmap> in library <work>.
+
+Analyzing hierarchy for module <prom_ram_empty> in library <work>.
+
+Analyzing hierarchy for module <simplemult> in library <work>.
+
+Analyzing hierarchy for module <tx> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000010000"
+
+Analyzing hierarchy for module <rx> in library <work> with parameters.
+	WIDTH = "00000000000000000000000000010000"
+
+Analyzing hierarchy for module <prom_ram_small> in library <work> with parameters.
+	RAM_ADDR_BITS = "00000000000000000000000000001100"
+	RAM_WIDTH = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <adder16> in library <work> with parameters.
+	one = "00000000000000000000000000000001"
+	three = "00000000000000000000000000000011"
+	two = "00000000000000000000000000000010"
+	zero = "00000000000000000000000000000000"
+
+Analyzing hierarchy for module <ripple> in library <work>.
+
+Analyzing hierarchy for module <adder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <VGA_S3E500> in library <work>.
+WARNING:Xst:916 - "S3E500.v" line 285: Delay is ignored for synthesis.
+Module <VGA_S3E500> is correct for synthesis.
+ 
+Analyzing module <dotclock> in library <work>.
+Module <dotclock> is correct for synthesis.
+ 
+Analyzing module <dotaddr> in library <work>.
+Module <dotaddr> is correct for synthesis.
+ 
+Analyzing module <dotfetch> in library <work>.
+Module <dotfetch> is correct for synthesis.
+ 
+Analyzing module <charmap> in library <work>.
+INFO:Xst:1433 - Contents of array <charmap> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <charmap> is correct for synthesis.
+ 
+Analyzing module <prom_ram_empty> in library <work>.
+Module <prom_ram_empty> is correct for synthesis.
+ 
+Analyzing module <prom_ram_small> in library <work>.
+	RAM_ADDR_BITS = 32'sb00000000000000000000000000001100
+	RAM_WIDTH = 32'sb00000000000000000000000000001000
+WARNING:Xst:2319 - "prom.v" line 182: Signal prom in initial block is partially initialized. The initialization will be ignored.
+Module <prom_ram_small> is correct for synthesis.
+ 
+    Set property "ram_style = block" for signal <prom>.
+Analyzing module <simplemult> in library <work>.
+Module <simplemult> is correct for synthesis.
+ 
+Analyzing module <adder16> in library <work>.
+	one = 32'sb00000000000000000000000000000001
+	three = 32'sb00000000000000000000000000000011
+	two = 32'sb00000000000000000000000000000010
+	zero = 32'sb00000000000000000000000000000000
+Module <adder16> is correct for synthesis.
+ 
+Analyzing module <ripple> in library <work>.
+Module <ripple> is correct for synthesis.
+ 
+Analyzing module <adder> in library <work>.
+Module <adder> is correct for synthesis.
+ 
+Analyzing module <tx> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000010000
+Module <tx> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <u_rx1> in unit <tx>.
+    Set user-defined property "INIT =  0" for instance <u_rx2> in unit <tx>.
+Analyzing module <rx> in library <work>.
+	WIDTH = 32'sb00000000000000000000000000010000
+Module <rx> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <u_tx1> in unit <rx>.
+    Set user-defined property "INIT =  0" for instance <u_tx2> in unit <rx>.
+Analyzing module <rx_line> in library <work>.
+Module <rx_line> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <U_retime0> in unit <rx_line>.
+    Set user-defined property "INIT =  0" for instance <U_retime1> in unit <rx_line>.
+Analyzing module <clockgen> in library <work>.
+Module <clockgen> is correct for synthesis.
+ 
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLKFX_DIVIDE =  5" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLKFX_MULTIPLY =  18" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLKIN_PERIOD =  20.000000" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_inst_0> in unit <clockgen>.
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "CLKFX_DIVIDE =  25" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "CLKFX_MULTIPLY =  15" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "CLKIN_PERIOD =  5.555000" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_inst_1> in unit <clockgen>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_inst_1> in unit <clockgen>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dotclock>.
+    Related source file is "dotclock.v".
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <hsync>.
+    Found 11-bit register for signal <hctr>.
+    Found 11-bit register for signal <vctr>.
+    Found 1-bit register for signal <de_h>.
+    Found 1-bit register for signal <de_v>.
+    Found 11-bit up counter for signal <hctr_int>.
+    Found 11-bit register for signal <vctr_int>.
+    Found 11-bit adder for signal <vctr_int$addsub0000> created at line 83.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <dotclock> synthesized.
+
+
+Synthesizing Unit <dotfetch>.
+    Related source file is "dotfetch.v".
+    Found 1-bit register for signal <vsync_out>.
+    Found 3-bit register for signal <hctr_out>.
+    Found 3-bit register for signal <vctr_out>.
+    Found 1-bit register for signal <hsync_out>.
+    Found 1-bit register for signal <de_out>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <dotfetch> synthesized.
+
+
+Synthesizing Unit <charmap>.
+    Related source file is "charmap.v".
+WARNING:Xst:653 - Signal <charmap> is used but never assigned. This sourceless signal will be automatically connected to value
+   0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000001001001000001100000000000000000000000000000011000001000000010000001000000001000000010000000011000000000000010000000100000001000000010000000100000001000000010000000000000011000000001000000010000000010000001000000010000011000000000000001111000000100000010000001000000011110000000000000000000011100001000000011100000100100001001000010010000000000000000000000000000100010000101000000100000010100001000100000000000000000000000000010001001010101010010010100000101000001000000000000000000000000000010000001010000100010001000100010001000000000000000000000000000101100000100100001001000010010000100100000000000000000000000000000100000001000000010000000100000011100000010000000000000000000000011100001000000001100000000100001110000000000000000000000000000000010000000100000001000000110000110100000000000000000000100000001000000011100000100100001001000101100000000000000000000000100000001000001110000100100001001000001101000000000000000
+   0000000000000111000010001000100010001000100001110000000000000000000000000000100100001001000010010000100100000110100000000000000000000000000100000101000001010010010100100100110110100000000000000000000000000010000000100000001000000010000000100000001000000011000000000000010010000010100000011000001010000100100000001000000010000001100000100000001000000010000000100000000000000010000000000000000000000010000000100000001000000010000000000000001000000000000000000000100010001000100010001000100110000110100000001000000010000111000010000000111100001000100010001001011100000000000000000000000000000001000000010000000100000011100000010000100100000110000000000000011100000000100011111000100010000111000000000000000000000000000101100000100100001001000010010000111000001000000010000000000000000111000000001000000010000000100001110000000000000000000000000000011010001001000010010000100100000111000000010000000100000000000101110000100010001000100011110000100000000111000000000000000000000000000000000000000000000000000000000000001000000
+   0010001111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000100001010000001000000000000001110000010000000100000001000000010000000100000001110000000000010000000010000000010000000010000000010000000010000000010000000000011100000001000000010000000100000001000000010000011100000000000011111000000010000001000000100000010000001000000011111000000000000010000000100000001000000010000001010000100010001000100000000000100010001000100001010000001000000101000010001000100010000000000001010000010100001010100010101001000001010000010100000100000000000010000000100000010100000101000010001000100010001000100000000000011100001000100010001000100010001000100010001000100010000000000000100000001000000010000000100000001000000010000011111000000000000111000010001000100000000111000000001000100010000111000000000000100010000100100000101000011110001000100010001000011110001100000001110000100010001000100010001000100010001000100001110000000000000001000000010000000100000111000010010000100100
+   0001110000000000000111000010001000100010001000100010001000100010000111000000000000100010001000100011001000101010001010100010011000100010000000000100000101000001010000010100100101010101011000110100000100000000001111000000010000000100000001000000010000000100000001000000000000100010001000100001001000001110000100100010001000100010000000000000110000010010000100100001000000010000000100000011100000000000000111000000100000001000000010000000100000001000000111000000000000100010001000100010001000111110001000100010001000100010000000000001110000100010001000100011101000000010001000100001110000000000000000100000001000000010001111100000001000000010001111100000000000111110000000100000001000011110000000100000001000111110000000000001111000100010001000100010001000100010001000100001111000000000000111000010001000000010000000100000001000100010000111000000000000011110001000100010001000011110001000100010001000011110000000000010001000100010001000100011111000100010001000100001110000000000000111000000001000111010001010100011101000100
+   0100001110000000000000010000000000000001000000100000010000000100010000111000000000000000010000001000000100000010000000010000000010000000010000000000000000000000000011111110000000001111111000000000000000000000000000100000000100000000100000000100000010000001000000100000000100000010000000110000001100000000000000110000001100000000000000000000000000000011000000110000000000000011000000110000000000000000000000111000010001000100000001111000010001000100010000111000000000000011100001000100010001000011100001000100010001000011100000000000000010000000100000001000000100000010000001000000011111000000000000111000010001000100010000111100000001000100010000111000000000000011100001000100010000000011110000000100000001000111110000000000011100000010000000100000011111000010010000101000001100000000000000111000010001000100000000110000010000000100010000111000000000000111110000001000000100000010000001000000010001000011100000000000001110000001000000010000000100000001000000011000000100000000000000111000010001000100010001010100010001000
+   1000100001110000000000000000010000001000000100000010000001000000100000010000000000000000011000000110000000000000000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000001000000100000001100000011000000000000000000000000000000000000000000000001000000010000000100001111111000010000000100000001000000000000000100001001001001010100001110000101010010010010000100000000000000001000000100000010000000100000001000000001000000001000000000000010000000010000000010000000100000001000000100000010000000000000000000000000000000000000000000000000000000010000000100000000000001011100001000100110001000010100000010000001010000011000000000000000000001100100011010000001000000101100010011000000000000000000000100000011110001010000001110000001010001111000000100000000000000101000001010001111111000101000111111100010100000101000000000000000000000000000000000000000000000000000001010000010100000000000000100000000000000010000000100000001000000010000000100000000000000000000000000000000000000000000000000
+   0000000000000000000000000000000010000000100000001000111110000000100000001000111110000000000000000000000000000000000000000000000000000000000000000000000000001111100000001000000010000111100000001000000010001111100000000000000000000000000000000000000000000000000000000000000000000000000001111000100010001000100010001000100010001000100001111000000000000000000000000000000000000000000000000000000000000000000000000000011100001000100000001000000010000000100010001000011100000000000000000000000000000000000000000000000000000000000000000000000000000111100010001000100010000111100010001000100010000111100000000000000000000000000000000000000000000000000000000000000000000000000010001000100010001000100011111000100010001000100001110000000000000000000000000000000000000000000000000000000000000000000000000000011100001000100010000000111100001000100010001000011100000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000100010000111000010001000100010000111000000000000000000000000000000000000000000000
+   0000000000000000000000000000000000100000001000000010000001000000100000010000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000100010001000000001111000000010000000100011111000000000000000000000000000000000000000000000000000000000000000000000000000001000000100000010000001111110001000000001000000001000000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000100000000110000010000000100010000111000000000000000000000000000000000000000000000000000000000000000000000000000011111000000100000010000001000000100000001000100001110000000000000000000000000000000000000000000000000000000000000000000000000000011100000010000000100000001000000010000000110000001000000000000000000000000000000000000000000000000000000000000000000000000000000111000010001000100010001010100010001000100010000111000000000000000000000000000000000000000000
+   00000000000000000000000.
+    Found 8192x1-bit ROM for signal <$varindex0000> created at line 1118.
+    Found 1-bit register for signal <pixel_out>.
+    Found 8-bit register for signal <color_out>.
+    Found 1-bit register for signal <vsync_out>.
+    Found 1-bit register for signal <hsync_out>.
+    Found 1-bit register for signal <de_out>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  12 D-type flip-flop(s).
+Unit <charmap> synthesized.
+
+
+Synthesizing Unit <prom_ram_small>.
+    Related source file is "prom.v".
+    Found 4096x8-bit dual-port RAM <Mram_prom> for signal <prom>.
+    Found 8-bit register for signal <outa>.
+    Found 8-bit register for signal <outb>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <prom_ram_small> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "adder.v".
+    Found 1-bit xor3 for signal <o>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <rx_line>.
+    Related source file is "rx_line.v".
+    Found 1-bit register for signal <writeen>.
+    Found 8-bit register for signal <data>.
+    Found 1-bit register for signal <active>.
+    Found 1-bit 4-to-1 multiplexer for signal <active$mux0000> created at line 61.
+    Found 4-bit register for signal <bitcounter>.
+    Found 4-bit adder for signal <bitcounter$addsub0000> created at line 84.
+    Found 10-bit register for signal <cyclecounter>.
+    Found 10-bit adder for signal <cyclecounter$addsub0000> created at line 74.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <rx_line> synthesized.
+
+
+Synthesizing Unit <clockgen>.
+    Related source file is "clockgen.v".
+Unit <clockgen> synthesized.
+
+
+Synthesizing Unit <prom_ram_empty>.
+    Related source file is "prom.v".
+    Found 3-bit register for signal <old_addra>.
+    Found 3-bit register for signal <old_addrb>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <prom_ram_empty> synthesized.
+
+
+Synthesizing Unit <tx>.
+    Related source file is "tx.v".
+    Found 1-bit register for signal <tx>.
+    Found 16-bit register for signal <data>.
+    Found 1-bit xor2 for signal <send$xor0000> created at line 48.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+Unit <tx> synthesized.
+
+
+Synthesizing Unit <rx>.
+    Related source file is "rx.v".
+    Found 1-bit register for signal <rx>.
+    Found 1-bit register for signal <valid>.
+    Found 16-bit register for signal <out>.
+    Found 1-bit xor2 for signal <out$xor0000> created at line 53.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+Unit <rx> synthesized.
+
+
+Synthesizing Unit <ripple>.
+    Related source file is "ripple.v".
+Unit <ripple> synthesized.
+
+
+Synthesizing Unit <adder16>.
+    Related source file is "adder16.v".
+    Found 17-bit register for signal <result>.
+    Found 1-bit register for signal <dummie>.
+    Found 8-bit register for signal <in1_reg>.
+    Found 8-bit register for signal <in2_reg>.
+    Found 2-bit register for signal <state>.
+    Summary:
+	inferred  36 D-type flip-flop(s).
+Unit <adder16> synthesized.
+
+
+Synthesizing Unit <simplemult>.
+    Related source file is "simplemult.v".
+    Found 17-bit register for signal <result>.
+    Found 8x8-bit multiplier for signal <$mult0000> created at line 25.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+Unit <simplemult> synthesized.
+
+
+Synthesizing Unit <dotaddr>.
+    Related source file is "dotaddr.v".
+WARNING:Xst:647 - Input <max_rows> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <vsync_out>.
+    Found 3-bit register for signal <hctr_out>.
+    Found 3-bit register for signal <vctr_out>.
+    Found 1-bit register for signal <hsync_out>.
+    Found 1-bit register for signal <de_out>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <dotaddr> synthesized.
+
+
+Synthesizing Unit <VGA_S3E500>.
+    Related source file is "S3E500.v".
+WARNING:Xst:646 - Signal <ramb_data_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ramb_addr<31:15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rama_wena> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <rama_wen> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <rama_addr<31:15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fetch_wdata<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <de<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <color3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <ramb_wena> equivalent to <ramb_ena> has been removed
+    Register <ramb_wena_dly> equivalent to <ramb_ena_dly> has been removed
+    Register <VGA_GREEN> equivalent to <VGA_BLUE> has been removed
+    Register <VGA_RED> equivalent to <VGA_BLUE> has been removed
+    Found 1-bit register for signal <VGA_BLUE>.
+    Found 1-bit register for signal <VGA_HSYNC>.
+    Found 1-bit register for signal <VGA_VSYNC>.
+    Found 8-bit register for signal <column>.
+    Found 8-bit addsub for signal <column$share0000> created at line 249.
+    Found 8-bit register for signal <columns_pxclk>.
+    Found 8-bit register for signal <ramb_data_in>.
+    Found 8-bit register for signal <ramb_data_in_dly>.
+    Found 1-bit register for signal <ramb_ena>.
+    Found 1-bit register for signal <ramb_ena_dly>.
+    Found 8-bit register for signal <row>.
+    Found 10-bit comparator greater for signal <row$cmp_gt0000> created at line 252.
+    Found 10-bit comparator greater for signal <row$cmp_gt0001> created at line 267.
+    Found 8-bit adder for signal <row$share0000> created at line 249.
+    Found 10-bit subtractor for signal <row$sub0000> created at line 252.
+    Found 10-bit subtractor for signal <row$sub0001> created at line 267.
+    Found 8-bit register for signal <rows_pxclk>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <VGA_S3E500> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+    Found finite state machine <FSM_0> for signal <escape>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK_50MHz                 (rising_edge)        |
+    | Clock enable       | uart_data_en              (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <columns>.
+    Found 8-bit register for signal <fwd_uart_data>.
+    Found 1-bit register for signal <fwd_uart_ena>.
+    Found 1-bit register for signal <row_column_update>.
+    Found 8-bit register for signal <rows>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  10 D-type flip-flop(s).
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 4096x8-bit dual-port RAM                              : 5
+# ROMs                                                 : 1
+ 8192x1-bit ROM                                        : 1
+# Multipliers                                          : 2
+ 8x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 157
+ 1-bit register                                        : 120
+ 10-bit register                                       : 1
+ 11-bit register                                       : 3
+ 16-bit register                                       : 2
+ 2-bit register                                        : 2
+ 3-bit register                                        : 6
+ 4-bit register                                        : 1
+ 8-bit register                                        : 22
+# Comparators                                          : 2
+ 10-bit comparator greater                             : 2
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 18
+ 1-bit xor2                                            : 2
+ 1-bit xor3                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <escape/FSM> on signal <escape[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:2677 - Node <outa_7> of sequential type is unconnected in block <u_ram0>.
+WARNING:Xst:2677 - Node <outa_7> of sequential type is unconnected in block <u_ram1>.
+WARNING:Xst:2677 - Node <outa_7> of sequential type is unconnected in block <u_ram2>.
+WARNING:Xst:2677 - Node <outa_7> of sequential type is unconnected in block <u_ram3>.
+WARNING:Xst:2677 - Node <outa_7> of sequential type is unconnected in block <u_ram4>.
+WARNING:Xst:2677 - Node <data_8> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_9> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_10> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_11> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_12> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_13> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_14> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <data_15> of sequential type is unconnected in block <u_tx>.
+WARNING:Xst:2677 - Node <out_8> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_9> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_10> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_11> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_12> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_13> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_14> of sequential type is unconnected in block <u_rx>.
+WARNING:Xst:2677 - Node <out_15> of sequential type is unconnected in block <u_rx>.
+
+Synthesizing (advanced) Unit <charmap>.
+INFO:Xst:3044 - The ROM <Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <_varindex0000>.
+INFO:Xst:3225 - The RAM <Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK_108MHz>    | rise     |
+    |     enA            | connected to signal <reset_0>       | low      |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <hctr_in>       |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <pixel_out>     |          |
+    |     dorstA         | connected to signal <N0>            | high     |
+    | reset value        | 0                                              |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <charmap> synthesized (advanced).
+
+Synthesizing (advanced) Unit <prom_ram_small>.
+INFO:Xst:3226 - The RAM <Mram_prom> will be implemented as a BLOCK RAM, absorbing the following register(s): <outa> <outb>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clka>          | rise     |
+    |     enA            | connected to signal <ena>           | high     |
+    |     weA            | connected to signal <wea>           | high     |
+    |     addrA          | connected to signal <addra>         |          |
+    |     diA            | connected to signal <ina>           |          |
+    |     doA            | connected to signal <outa>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 4096-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clkb>          | rise     |
+    |     enB            | connected to signal <enb>           | high     |
+    |     weB            | connected to signal <web>           | high     |
+    |     addrB          | connected to signal <addrb>         |          |
+    |     diB            | connected to signal <inb>           |          |
+    |     doB            | connected to signal <outb>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <prom_ram_small> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 6
+ 4096x8-bit dual-port block RAM                        : 5
+ 8192x1-bit single-port block RAM                      : 1
+# Multipliers                                          : 2
+ 8x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 322
+ Flip-Flops                                            : 322
+# Comparators                                          : 2
+ 10-bit comparator greater                             : 2
+# Xors                                                 : 18
+ 1-bit xor2                                            : 2
+ 1-bit xor3                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <dotclock> ...
+
+Optimizing unit <dotfetch> ...
+
+Optimizing unit <charmap> ...
+
+Optimizing unit <rx_line> ...
+
+Optimizing unit <tx> ...
+
+Optimizing unit <rx> ...
+
+Optimizing unit <prom_ram_empty> ...
+
+Optimizing unit <ripple> ...
+
+Optimizing unit <adder16> ...
+
+Optimizing unit <simplemult> ...
+
+Optimizing unit <dotaddr> ...
+
+Optimizing unit <VGA_S3E500> ...
+WARNING:Xst:2677 - Node <u_vga/u_dotaddr/u_mult/blio/result_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_dotaddr/u_mult/blio/result_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_dotaddr/u_mult/result_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_dotaddr/u_mult/result_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_daddr/result_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_daddr/result_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_daddr/blio/result_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_daddr/blio/result_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/ram0/old_addrb_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/ram0/old_addrb_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/ram0/old_addrb_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_rx/out_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_tx/data_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/de_out> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/u_charmap/color_out_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <u_vga/rows_pxclk_7> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 291
+ Flip-Flops                                            : 291
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 452
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 29
+#      LUT2                        : 45
+#      LUT3                        : 69
+#      LUT3_D                      : 3
+#      LUT3_L                      : 1
+#      LUT4                        : 173
+#      LUT4_D                      : 3
+#      LUT4_L                      : 15
+#      MUXCY                       : 47
+#      MUXF5                       : 25
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 291
+#      FD                          : 45
+#      FDC                         : 118
+#      FDCE                        : 68
+#      FDE                         : 49
+#      FDPE                        : 5
+#      FDR                         : 6
+# RAMS                             : 11
+#      RAMB16_S1                   : 1
+#      RAMB16_S4_S4                : 10
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 8
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 5
+# DCMs                             : 2
+#      DCM_SP                      : 2
+# MULTs                            : 2
+#      MULT18X18SIO                : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      253  out of   4656     5%  
+ Number of Slice Flip Flops:            291  out of   9312     3%  
+ Number of 4 input LUTs:                346  out of   9312     3%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
+ Number of BRAMs:                        11  out of     20    55%  
+ Number of MULT18X18SIOs:                 2  out of     20    10%  
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                        | Load  |
+-----------------------------------+--------------------------------------------------------------+-------+
+CLK_50MHz                          | IBUFG+BUFG                                                   | 158   |
+CLK_50MHz                          | u_clockgen/DCM_SP_inst_0:CLKFX+u_clockgen/DCM_SP_inst_1:CLKFX| 154   |
+-----------------------------------+--------------------------------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 191   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 19.751ns (Maximum Frequency: 50.630MHz)
+   Minimum input arrival time before clock: 4.536ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_50MHz'
+  Clock period: 19.751ns (frequency: 50.630MHz)
+  Total number of paths / destination ports: 8268 / 735
+-------------------------------------------------------------------------
+Delay:               9.144ns (Levels of Logic = 8)
+  Source:            u_vga/u_dotaddr/u_mult/blio/in2_reg_0 (FF)
+  Destination:       u_vga/u_dotaddr/u_mult/blio/dummie (FF)
+  Source Clock:      CLK_50MHz rising 2.2X
+  Destination Clock: CLK_50MHz rising 2.2X
+
+  Data Path: u_vga/u_dotaddr/u_mult/blio/in2_reg_0 to u_vga/u_dotaddr/u_mult/blio/dummie
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.591   0.712  u_vga/u_dotaddr/u_mult/blio/in2_reg_0 (u_vga/u_dotaddr/u_mult/blio/in2_reg_0)
+     LUT4_D:I1->O          1   0.704   0.455  u_vga/u_dotaddr/u_mult/blio/asd/add2/c_out1 (u_vga/u_dotaddr/u_mult/blio/asd/c2)
+     LUT3_D:I2->LO         1   0.704   0.135  u_vga/u_dotaddr/u_mult/blio/asd/add3/c_out1 (N160)
+     LUT3:I2->O            2   0.704   0.482  u_vga/u_dotaddr/u_mult/blio/asd/add4/c_out1 (u_vga/u_dotaddr/u_mult/blio/asd/c4)
+     LUT3_D:I2->LO         1   0.704   0.135  u_vga/u_dotaddr/u_mult/blio/asd/add5/c_out1 (N162)
+     LUT3:I2->O            2   0.704   0.482  u_vga/u_dotaddr/u_mult/blio/asd/add6/c_out1 (u_vga/u_dotaddr/u_mult/blio/asd/c6)
+     LUT3_D:I2->O          1   0.704   0.595  u_vga/u_dotaddr/u_mult/blio/asd/add7/c_out1 (u_vga/u_dotaddr/u_mult/blio/asd/c7)
+     LUT3:I0->O            1   0.704   0.000  u_vga/u_dotaddr/u_mult/blio/dummie_mux00001 (u_vga/u_dotaddr/u_mult/blio/dummie_mux00001)
+     MUXF5:I0->O           1   0.321   0.000  u_vga/u_dotaddr/u_mult/blio/dummie_mux0000_f5 (u_vga/u_dotaddr/u_mult/blio/dummie_mux0000)
+     FD:D                      0.308          u_vga/u_dotaddr/u_mult/blio/dummie
+    ----------------------------------------
+    Total                      9.144ns (6.148ns logic, 2.996ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_50MHz'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.536ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       u_vga/u_charmap/Mrom__varindex0000 (RAM)
+  Destination Clock: CLK_50MHz rising 2.2X
+
+  Data Path: reset to u_vga/u_charmap/Mrom__varindex0000
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           196   1.218   1.489  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            1   0.704   0.420  u_vga/u_charmap/N01 (u_vga/u_charmap/N0)
+     RAMB16_S1:SSR             0.705          u_vga/u_charmap/Mrom__varindex0000
+    ----------------------------------------
+    Total                      4.536ns (2.627ns logic, 1.909ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50MHz'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            u_vga/VGA_BLUE (FF)
+  Destination:       VGA_BLUE (PAD)
+  Source Clock:      CLK_50MHz rising 2.2X
+
+  Data Path: u_vga/VGA_BLUE to VGA_BLUE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.531  u_vga/VGA_BLUE (u_vga/VGA_BLUE)
+     OBUF:I->O                 3.272          VGA_BLUE_OBUF (VGA_BLUE)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 116.00 secs
+Total CPU time to Xst completion: 116.46 secs
+ 
+--> 
+
+
+Total memory usage is 476324 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   84 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

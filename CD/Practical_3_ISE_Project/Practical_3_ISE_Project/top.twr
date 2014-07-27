@@ -1,0 +1,2545 @@
+--------------------------------------------------------------------------------
+Release 13.2 Trace  (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/afs/inf.ed.ac.uk/group/teaching/cd/Xilinx132/ISE_DS/ISE/bin/lin64/unwrapped/trce
+-intstyle ise -v 5 -tsi top.tsi -a -s 4 -u 20 -n 5 -xml top.twx top.ncd -o
+top.twr top.pcf -ucf constraints.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2011-06-20)
+Report level:             verbose report, limited to 5 items per endpoint, 5 endpoints per constraint
+                          unconstrained path report, limited to 20 items per endpoint, 5 endpoints per path report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2700 - Timing constraints ignored because advanced analysis with 
+   offsets was specified.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: Default period analysis for net "CLK_50MHz_IBUFG" 
+
+ 6832 paths analyzed, 639 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  11.173ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/row_6 (SLICE_X46Y54.G1), 278 paths
+--------------------------------------------------------------------------------
+Delay:                  11.173ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_6 (FF)
+  Data Path Delay:      11.154ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                1.001   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y54.G1      net (fanout=6)        1.145   u_vga/N48
+    SLICE_X46Y54.CLK     Tgck                  1.285   u_vga/row<6>
+                                                       u_vga/row_mux0000<1>_F
+                                                       u_vga/row_mux0000<1>
+                                                       u_vga/row_6
+    -------------------------------------------------  ---------------------------
+    Total                                     11.154ns (6.250ns logic, 4.904ns route)
+                                                       (56.0% logic, 44.0% route)
+
+--------------------------------------------------------------------------------
+Delay:                  11.102ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_6 (FF)
+  Data Path Delay:      11.083ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y48.F2      net (fanout=7)        0.504   u_vga/N22
+    SLICE_X48Y48.X       Tilo                  0.759   u_vga/row_sub0001<5>
+                                                       u_vga/Msub_row_sub0001_xor<5>11
+    SLICE_X49Y49.BY      net (fanout=1)        0.441   u_vga/row_sub0001<5>
+    SLICE_X49Y49.COUT    Tbycy                 0.972   u_vga/Mcompar_row_cmp_gt0001_cy<5>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<5>
+    SLICE_X49Y50.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<5>
+    SLICE_X49Y50.COUT    Tbyp                  0.118   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y54.G1      net (fanout=6)        1.145   u_vga/N48
+    SLICE_X46Y54.CLK     Tgck                  1.285   u_vga/row<6>
+                                                       u_vga/row_mux0000<1>_F
+                                                       u_vga/row_mux0000<1>
+                                                       u_vga/row_6
+    -------------------------------------------------  ---------------------------
+    Total                                     11.083ns (6.292ns logic, 4.791ns route)
+                                                       (56.8% logic, 43.2% route)
+
+--------------------------------------------------------------------------------
+Delay:                  11.080ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_6 (FF)
+  Data Path Delay:      11.061ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X46Y48.F4      net (fanout=7)        0.079   u_vga/N22
+    SLICE_X46Y48.X       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<6>11
+    SLICE_X49Y50.F1      net (fanout=1)        0.772   u_vga/row_sub0001<6>
+    SLICE_X49Y50.COUT    Topcyf                1.162   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y54.G1      net (fanout=6)        1.145   u_vga/N48
+    SLICE_X46Y54.CLK     Tgck                  1.285   u_vga/row<6>
+                                                       u_vga/row_mux0000<1>_F
+                                                       u_vga/row_mux0000<1>
+                                                       u_vga/row_6
+    -------------------------------------------------  ---------------------------
+    Total                                     11.061ns (6.364ns logic, 4.697ns route)
+                                                       (57.5% logic, 42.5% route)
+
+--------------------------------------------------------------------------------
+Delay:                  11.077ns (data path - clock path skew + uncertainty)
+  Source:               columns_0 (FF)
+  Destination:          u_vga/row_6 (FF)
+  Data Path Delay:      11.064ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.013ns (0.090 - 0.103)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_0 to u_vga/row_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.YQ      Tcko                  0.587   columns<1>
+                                                       columns_0
+    SLICE_X46Y48.G3      net (fanout=9)        0.913   columns<0>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                1.001   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y54.G1      net (fanout=6)        1.145   u_vga/N48
+    SLICE_X46Y54.CLK     Tgck                  1.285   u_vga/row<6>
+                                                       u_vga/row_mux0000<1>_F
+                                                       u_vga/row_mux0000<1>
+                                                       u_vga/row_6
+    -------------------------------------------------  ---------------------------
+    Total                                     11.064ns (6.250ns logic, 4.814ns route)
+                                                       (56.5% logic, 43.5% route)
+
+--------------------------------------------------------------------------------
+Delay:                  11.060ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_6 (FF)
+  Data Path Delay:      11.041ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                0.888   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y54.G1      net (fanout=6)        1.145   u_vga/N48
+    SLICE_X46Y54.CLK     Tgck                  1.285   u_vga/row<6>
+                                                       u_vga/row_mux0000<1>_F
+                                                       u_vga/row_mux0000<1>
+                                                       u_vga/row_6
+    -------------------------------------------------  ---------------------------
+    Total                                     11.041ns (6.137ns logic, 4.904ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/row_5 (SLICE_X44Y57.F1), 201 paths
+--------------------------------------------------------------------------------
+Delay:                  11.000ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_5 (FF)
+  Data Path Delay:      10.985ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.015ns (0.027 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                1.001   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.BX      net (fanout=8)        1.993   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.X       Tbxx                  0.806   u_vga/N3
+                                                       u_vga/row_mux0000<2>1
+    SLICE_X44Y56.F2      net (fanout=3)        0.405   u_vga/N3
+    SLICE_X44Y56.X       Tilo                  0.759   u_vga/row<0>
+                                                       u_vga/row_mux0000<2>_SW1
+    SLICE_X44Y57.F1      net (fanout=1)        0.119   N43
+    SLICE_X44Y57.CLK     Tfck                  1.285   u_vga/row<5>
+                                                       u_vga/row_mux0000<2>_G
+                                                       u_vga/row_mux0000<2>
+                                                       u_vga/row_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.985ns (6.407ns logic, 4.578ns route)
+                                                       (58.3% logic, 41.7% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.929ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_5 (FF)
+  Data Path Delay:      10.914ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.015ns (0.027 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y48.F2      net (fanout=7)        0.504   u_vga/N22
+    SLICE_X48Y48.X       Tilo                  0.759   u_vga/row_sub0001<5>
+                                                       u_vga/Msub_row_sub0001_xor<5>11
+    SLICE_X49Y49.BY      net (fanout=1)        0.441   u_vga/row_sub0001<5>
+    SLICE_X49Y49.COUT    Tbycy                 0.972   u_vga/Mcompar_row_cmp_gt0001_cy<5>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<5>
+    SLICE_X49Y50.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<5>
+    SLICE_X49Y50.COUT    Tbyp                  0.118   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.BX      net (fanout=8)        1.993   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.X       Tbxx                  0.806   u_vga/N3
+                                                       u_vga/row_mux0000<2>1
+    SLICE_X44Y56.F2      net (fanout=3)        0.405   u_vga/N3
+    SLICE_X44Y56.X       Tilo                  0.759   u_vga/row<0>
+                                                       u_vga/row_mux0000<2>_SW1
+    SLICE_X44Y57.F1      net (fanout=1)        0.119   N43
+    SLICE_X44Y57.CLK     Tfck                  1.285   u_vga/row<5>
+                                                       u_vga/row_mux0000<2>_G
+                                                       u_vga/row_mux0000<2>
+                                                       u_vga/row_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.914ns (6.449ns logic, 4.465ns route)
+                                                       (59.1% logic, 40.9% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.907ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_5 (FF)
+  Data Path Delay:      10.892ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.015ns (0.027 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X46Y48.F4      net (fanout=7)        0.079   u_vga/N22
+    SLICE_X46Y48.X       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<6>11
+    SLICE_X49Y50.F1      net (fanout=1)        0.772   u_vga/row_sub0001<6>
+    SLICE_X49Y50.COUT    Topcyf                1.162   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.BX      net (fanout=8)        1.993   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.X       Tbxx                  0.806   u_vga/N3
+                                                       u_vga/row_mux0000<2>1
+    SLICE_X44Y56.F2      net (fanout=3)        0.405   u_vga/N3
+    SLICE_X44Y56.X       Tilo                  0.759   u_vga/row<0>
+                                                       u_vga/row_mux0000<2>_SW1
+    SLICE_X44Y57.F1      net (fanout=1)        0.119   N43
+    SLICE_X44Y57.CLK     Tfck                  1.285   u_vga/row<5>
+                                                       u_vga/row_mux0000<2>_G
+                                                       u_vga/row_mux0000<2>
+                                                       u_vga/row_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.892ns (6.521ns logic, 4.371ns route)
+                                                       (59.9% logic, 40.1% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.904ns (data path - clock path skew + uncertainty)
+  Source:               columns_0 (FF)
+  Destination:          u_vga/row_5 (FF)
+  Data Path Delay:      10.895ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.009ns (0.094 - 0.103)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_0 to u_vga/row_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.YQ      Tcko                  0.587   columns<1>
+                                                       columns_0
+    SLICE_X46Y48.G3      net (fanout=9)        0.913   columns<0>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                1.001   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.BX      net (fanout=8)        1.993   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.X       Tbxx                  0.806   u_vga/N3
+                                                       u_vga/row_mux0000<2>1
+    SLICE_X44Y56.F2      net (fanout=3)        0.405   u_vga/N3
+    SLICE_X44Y56.X       Tilo                  0.759   u_vga/row<0>
+                                                       u_vga/row_mux0000<2>_SW1
+    SLICE_X44Y57.F1      net (fanout=1)        0.119   N43
+    SLICE_X44Y57.CLK     Tfck                  1.285   u_vga/row<5>
+                                                       u_vga/row_mux0000<2>_G
+                                                       u_vga/row_mux0000<2>
+                                                       u_vga/row_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.895ns (6.407ns logic, 4.488ns route)
+                                                       (58.8% logic, 41.2% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.887ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_5 (FF)
+  Data Path Delay:      10.872ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.015ns (0.027 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                0.888   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.BX      net (fanout=8)        1.993   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X40Y57.X       Tbxx                  0.806   u_vga/N3
+                                                       u_vga/row_mux0000<2>1
+    SLICE_X44Y56.F2      net (fanout=3)        0.405   u_vga/N3
+    SLICE_X44Y56.X       Tilo                  0.759   u_vga/row<0>
+                                                       u_vga/row_mux0000<2>_SW1
+    SLICE_X44Y57.F1      net (fanout=1)        0.119   N43
+    SLICE_X44Y57.CLK     Tfck                  1.285   u_vga/row<5>
+                                                       u_vga/row_mux0000<2>_G
+                                                       u_vga/row_mux0000<2>
+                                                       u_vga/row_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.872ns (6.294ns logic, 4.578ns route)
+                                                       (57.9% logic, 42.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/in1_reg_4 (SLICE_X58Y88.G1), 16 paths
+--------------------------------------------------------------------------------
+Delay:                  10.838ns (data path - clock path skew + uncertainty)
+  Source:               columns_0 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.838ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_0 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.YQ      Tcko                  0.587   columns<1>
+                                                       columns_0
+    MULT18X18_X1Y7.B0    net (fanout=9)        2.387   columns<0>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.G1      net (fanout=2)        1.874   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tgck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>2
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.838ns (6.577ns logic, 4.261ns route)
+                                                       (60.7% logic, 39.3% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.793ns (data path - clock path skew + uncertainty)
+  Source:               columns_4 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.793ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_4 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y48.YQ      Tcko                  0.587   columns<5>
+                                                       columns_4
+    MULT18X18_X1Y7.B4    net (fanout=9)        2.342   columns<4>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.G1      net (fanout=2)        1.874   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tgck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>2
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.793ns (6.577ns logic, 4.216ns route)
+                                                       (60.9% logic, 39.1% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.790ns (data path - clock path skew + uncertainty)
+  Source:               columns_6 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.790ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_6 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y51.YQ      Tcko                  0.652   columns<7>
+                                                       columns_6
+    MULT18X18_X1Y7.B6    net (fanout=5)        2.274   columns<6>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.G1      net (fanout=2)        1.874   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tgck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>2
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.790ns (6.642ns logic, 4.148ns route)
+                                                       (61.6% logic, 38.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.751ns (data path - clock path skew + uncertainty)
+  Source:               columns_5 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.751ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_5 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y48.XQ      Tcko                  0.591   columns<5>
+                                                       columns_5
+    MULT18X18_X1Y7.B5    net (fanout=7)        2.296   columns<5>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.G1      net (fanout=2)        1.874   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tgck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>2
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.751ns (6.581ns logic, 4.170ns route)
+                                                       (61.2% logic, 38.8% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.729ns (data path - clock path skew + uncertainty)
+  Source:               columns_1 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.729ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_1 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.XQ      Tcko                  0.591   columns<1>
+                                                       columns_1
+    MULT18X18_X1Y7.B1    net (fanout=8)        2.274   columns<1>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.G1      net (fanout=2)        1.874   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tgck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>2
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.729ns (6.581ns logic, 4.148ns route)
+                                                       (61.3% logic, 38.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/in1_reg_4 (SLICE_X58Y88.F1), 16 paths
+--------------------------------------------------------------------------------
+Delay:                  10.833ns (data path - clock path skew + uncertainty)
+  Source:               columns_0 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.833ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_0 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.YQ      Tcko                  0.587   columns<1>
+                                                       columns_0
+    MULT18X18_X1Y7.B0    net (fanout=9)        2.387   columns<0>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.F1      net (fanout=2)        1.869   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tfck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>1
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.833ns (6.577ns logic, 4.256ns route)
+                                                       (60.7% logic, 39.3% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.788ns (data path - clock path skew + uncertainty)
+  Source:               columns_4 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.788ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_4 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y48.YQ      Tcko                  0.587   columns<5>
+                                                       columns_4
+    MULT18X18_X1Y7.B4    net (fanout=9)        2.342   columns<4>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.F1      net (fanout=2)        1.869   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tfck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>1
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.788ns (6.577ns logic, 4.211ns route)
+                                                       (61.0% logic, 39.0% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.785ns (data path - clock path skew + uncertainty)
+  Source:               columns_6 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.785ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_6 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y51.YQ      Tcko                  0.652   columns<7>
+                                                       columns_6
+    MULT18X18_X1Y7.B6    net (fanout=5)        2.274   columns<6>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.F1      net (fanout=2)        1.869   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tfck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>1
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.785ns (6.642ns logic, 4.143ns route)
+                                                       (61.6% logic, 38.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.746ns (data path - clock path skew + uncertainty)
+  Source:               columns_5 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.746ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_5 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y48.XQ      Tcko                  0.591   columns<5>
+                                                       columns_5
+    MULT18X18_X1Y7.B5    net (fanout=7)        2.296   columns<5>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.F1      net (fanout=2)        1.869   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tfck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>1
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.746ns (6.581ns logic, 4.165ns route)
+                                                       (61.2% logic, 38.8% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.724ns (data path - clock path skew + uncertainty)
+  Source:               columns_1 (FF)
+  Destination:          u_vga/u_daddr/blio/in1_reg_4 (FF)
+  Data Path Delay:      10.724ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_1 to u_vga/u_daddr/blio/in1_reg_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.XQ      Tcko                  0.591   columns<1>
+                                                       columns_1
+    MULT18X18_X1Y7.B1    net (fanout=8)        2.274   columns<1>
+    MULT18X18_X1Y7.P12   Tmult                 4.705   u_vga/u_daddr/Mmult__mult0000
+                                                       u_vga/u_daddr/Mmult__mult0000
+    SLICE_X58Y88.F1      net (fanout=2)        1.869   u_vga/u_daddr/_mult0000<12>
+    SLICE_X58Y88.CLK     Tfck                  1.285   u_vga/u_daddr/blio/in1_reg<4>
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>1
+                                                       u_vga/u_daddr/blio/in1_reg_mux0000<4>_f5
+                                                       u_vga/u_daddr/blio/in1_reg_4
+    -------------------------------------------------  ---------------------------
+    Total                                     10.724ns (6.581ns logic, 4.143ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/row_7 (SLICE_X46Y55.G3), 278 paths
+--------------------------------------------------------------------------------
+Delay:                  10.795ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_7 (FF)
+  Data Path Delay:      10.776ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                1.001   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y55.G3      net (fanout=6)        0.767   u_vga/N48
+    SLICE_X46Y55.CLK     Tgck                  1.285   u_vga/row<7>
+                                                       u_vga/row_mux0000<0>_F
+                                                       u_vga/row_mux0000<0>
+                                                       u_vga/row_7
+    -------------------------------------------------  ---------------------------
+    Total                                     10.776ns (6.250ns logic, 4.526ns route)
+                                                       (58.0% logic, 42.0% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.724ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_7 (FF)
+  Data Path Delay:      10.705ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y48.F2      net (fanout=7)        0.504   u_vga/N22
+    SLICE_X48Y48.X       Tilo                  0.759   u_vga/row_sub0001<5>
+                                                       u_vga/Msub_row_sub0001_xor<5>11
+    SLICE_X49Y49.BY      net (fanout=1)        0.441   u_vga/row_sub0001<5>
+    SLICE_X49Y49.COUT    Tbycy                 0.972   u_vga/Mcompar_row_cmp_gt0001_cy<5>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<5>
+    SLICE_X49Y50.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<5>
+    SLICE_X49Y50.COUT    Tbyp                  0.118   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y55.G3      net (fanout=6)        0.767   u_vga/N48
+    SLICE_X46Y55.CLK     Tgck                  1.285   u_vga/row<7>
+                                                       u_vga/row_mux0000<0>_F
+                                                       u_vga/row_mux0000<0>
+                                                       u_vga/row_7
+    -------------------------------------------------  ---------------------------
+    Total                                     10.705ns (6.292ns logic, 4.413ns route)
+                                                       (58.8% logic, 41.2% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.702ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_7 (FF)
+  Data Path Delay:      10.683ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X46Y48.F4      net (fanout=7)        0.079   u_vga/N22
+    SLICE_X46Y48.X       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<6>11
+    SLICE_X49Y50.F1      net (fanout=1)        0.772   u_vga/row_sub0001<6>
+    SLICE_X49Y50.COUT    Topcyf                1.162   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<6>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y55.G3      net (fanout=6)        0.767   u_vga/N48
+    SLICE_X46Y55.CLK     Tgck                  1.285   u_vga/row<7>
+                                                       u_vga/row_mux0000<0>_F
+                                                       u_vga/row_mux0000<0>
+                                                       u_vga/row_7
+    -------------------------------------------------  ---------------------------
+    Total                                     10.683ns (6.364ns logic, 4.319ns route)
+                                                       (59.6% logic, 40.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.699ns (data path - clock path skew + uncertainty)
+  Source:               columns_0 (FF)
+  Destination:          u_vga/row_7 (FF)
+  Data Path Delay:      10.686ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.013ns (0.090 - 0.103)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_0 to u_vga/row_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y44.YQ      Tcko                  0.587   columns<1>
+                                                       columns_0
+    SLICE_X46Y48.G3      net (fanout=9)        0.913   columns<0>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                1.001   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_lut<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y55.G3      net (fanout=6)        0.767   u_vga/N48
+    SLICE_X46Y55.CLK     Tgck                  1.285   u_vga/row<7>
+                                                       u_vga/row_mux0000<0>_F
+                                                       u_vga/row_mux0000<0>
+                                                       u_vga/row_7
+    -------------------------------------------------  ---------------------------
+    Total                                     10.686ns (6.250ns logic, 4.436ns route)
+                                                       (58.5% logic, 41.5% route)
+
+--------------------------------------------------------------------------------
+Delay:                  10.682ns (data path - clock path skew + uncertainty)
+  Source:               columns_2 (FF)
+  Destination:          u_vga/row_7 (FF)
+  Data Path Delay:      10.663ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.019ns (0.023 - 0.042)
+  Source Clock:         CLK_50MHz_IBUFG rising
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: columns_2 to u_vga/row_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X43Y49.YQ      Tcko                  0.587   columns<3>
+                                                       columns_2
+    SLICE_X46Y48.G1      net (fanout=6)        1.003   columns<2>
+    SLICE_X46Y48.Y       Tilo                  0.759   u_vga/row_sub0001<6>
+                                                       u_vga/Msub_row_sub0001_xor<3>111
+    SLICE_X48Y51.BX      net (fanout=7)        0.547   u_vga/N22
+    SLICE_X48Y51.X       Tbxx                  0.806   u_vga/row_sub0001<7>
+                                                       u_vga/Msub_row_sub0001_xor<7>1_f5
+    SLICE_X49Y50.G1      net (fanout=1)        0.511   u_vga/row_sub0001<7>
+    SLICE_X49Y50.COUT    Topcyg                0.888   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.CIN     net (fanout=1)        0.000   u_vga/Mcompar_row_cmp_gt0001_cy<7>
+    SLICE_X49Y51.XB      Tcinxb                0.404   N45
+                                                       u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.F4      net (fanout=8)        1.337   u_vga/Mcompar_row_cmp_gt0001_cy<8>
+    SLICE_X41Y56.X       Tilo                  0.704   N61
+                                                       u_vga/row_mux0000<3>5_SW0
+    SLICE_X45Y56.G2      net (fanout=1)        0.361   N61
+    SLICE_X45Y56.Y       Tilo                  0.704   u_vga/row<4>
+                                                       u_vga/row_mux0000<3>5
+    SLICE_X46Y55.G3      net (fanout=6)        0.767   u_vga/N48
+    SLICE_X46Y55.CLK     Tgck                  1.285   u_vga/row<7>
+                                                       u_vga/row_mux0000<0>_F
+                                                       u_vga/row_mux0000<0>
+                                                       u_vga/row_7
+    -------------------------------------------------  ---------------------------
+    Total                                     10.663ns (6.137ns logic, 4.526ns route)
+                                                       (57.6% logic, 42.4% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default OFFSET IN BEFORE analysis for clock 
+"CLK_50MHz_IBUFG" 
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   4.672ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_rx_line/U_retime0 (U8.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset:                 4.672ns (data path - clock path + uncertainty)
+  Source:               UART_RX (PAD)
+  Destination:          u_rx_line/U_retime0 (FF)
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Data Path Delay:      7.490ns (Levels of Logic = 0)
+  Clock Path Delay:     2.818ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: UART_RX to u_rx_line/U_retime0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    U8.ICLK1             Tiopickd              7.490   UART_RX
+                                                       UART_RX
+                                                       UART_RX_IBUF
+                                                       UART_RX.IFD_DELAY
+                                                       u_rx_line/U_retime0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.490ns (7.490ns logic, 0.000ns route)
+                                                       (100.0% logic, 0.0% route)
+
+  Minimum Clock Path: CLK_50MHz to u_rx_line/U_retime0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.037   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.166   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    U8.ICLK1             net (fanout=109)      0.149   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      2.818ns (2.632ns logic, 0.186ns route)
+                                                       (93.4% logic, 6.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_rx_line/writeen (SLICE_X37Y45.CE), 1 path
+--------------------------------------------------------------------------------
+Offset:                 1.983ns (data path - clock path + uncertainty)
+  Source:               reset (PAD)
+  Destination:          u_rx_line/writeen (FF)
+  Destination Clock:    CLK_50MHz_IBUFG rising
+  Data Path Delay:      4.792ns (Levels of Logic = 1)
+  Clock Path Delay:     2.809ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to u_rx_line/writeen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    D18.I                Tiopi                 1.726   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X37Y45.CE      net (fanout=128)      2.511   reset_IBUF
+    SLICE_X37Y45.CLK     Tceck                 0.555   u_rx_line/writeen
+                                                       u_rx_line/writeen
+    -------------------------------------------------  ---------------------------
+    Total                                      4.792ns (2.281ns logic, 2.511ns route)
+                                                       (47.6% logic, 52.4% route)
+
+  Minimum Clock Path: CLK_50MHz to u_rx_line/writeen
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.037   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.166   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    SLICE_X37Y45.CLK     net (fanout=109)      0.140   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      2.809ns (2.632ns logic, 0.177ns route)
+                                                       (93.7% logic, 6.3% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default period analysis for net "CLK_108MHz" 
+
+ 1426 paths analyzed, 444 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   9.241ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_dotaddr/u_mult/blio/in1_reg_6 (SLICE_X65Y51.F2), 17 paths
+--------------------------------------------------------------------------------
+Delay:                  9.241ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_2 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_6 (FF)
+  Data Path Delay:      9.241ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_2 to u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y39.YQ      Tcko                  0.587   u_vga/columns_pxclk<3>
+                                                       u_vga/columns_pxclk_2
+    MULT18X18_X1Y6.B2    net (fanout=1)        1.912   u_vga/columns_pxclk<2>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y51.G4      net (fanout=2)        0.737   u_vga/u_dotaddr/u_mult/_mult0000<6>
+    SLICE_X65Y51.Y       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1
+    SLICE_X65Y51.F2      net (fanout=1)        0.378   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1/O
+    SLICE_X65Y51.CLK     Tfck                  0.837   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.241ns (6.214ns logic, 3.027ns route)
+                                                       (67.2% logic, 32.8% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.151ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_0 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_6 (FF)
+  Data Path Delay:      9.151ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_0 to u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.YQ      Tcko                  0.652   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_0
+    MULT18X18_X1Y6.B0    net (fanout=1)        1.757   u_vga/columns_pxclk<0>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y51.G4      net (fanout=2)        0.737   u_vga/u_dotaddr/u_mult/_mult0000<6>
+    SLICE_X65Y51.Y       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1
+    SLICE_X65Y51.F2      net (fanout=1)        0.378   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1/O
+    SLICE_X65Y51.CLK     Tfck                  0.837   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.151ns (6.279ns logic, 2.872ns route)
+                                                       (68.6% logic, 31.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.062ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_1 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_6 (FF)
+  Data Path Delay:      9.062ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_1 to u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.XQ      Tcko                  0.592   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_1
+    MULT18X18_X1Y6.B1    net (fanout=1)        1.728   u_vga/columns_pxclk<1>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y51.G4      net (fanout=2)        0.737   u_vga/u_dotaddr/u_mult/_mult0000<6>
+    SLICE_X65Y51.Y       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1
+    SLICE_X65Y51.F2      net (fanout=1)        0.378   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1/O
+    SLICE_X65Y51.CLK     Tfck                  0.837   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.062ns (6.219ns logic, 2.843ns route)
+                                                       (68.6% logic, 31.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.041ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_6 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_6 (FF)
+  Data Path Delay:      9.041ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_6 to u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.YQ      Tcko                  0.652   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_6
+    MULT18X18_X1Y6.A3    net (fanout=2)        1.647   u_vga/u_dotclock/vctr<6>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y51.G4      net (fanout=2)        0.737   u_vga/u_dotaddr/u_mult/_mult0000<6>
+    SLICE_X65Y51.Y       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1
+    SLICE_X65Y51.F2      net (fanout=1)        0.378   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1/O
+    SLICE_X65Y51.CLK     Tfck                  0.837   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.041ns (6.279ns logic, 2.762ns route)
+                                                       (69.5% logic, 30.5% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.005ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_7 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_6 (FF)
+  Data Path Delay:      9.005ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_7 to u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.XQ      Tcko                  0.592   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_7
+    MULT18X18_X1Y6.A4    net (fanout=2)        1.671   u_vga/u_dotclock/vctr<7>
+    MULT18X18_X1Y6.P6    Tmult                 4.086   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y51.G4      net (fanout=2)        0.737   u_vga/u_dotaddr/u_mult/_mult0000<6>
+    SLICE_X65Y51.Y       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1
+    SLICE_X65Y51.F2      net (fanout=1)        0.378   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>_SW1/O
+    SLICE_X65Y51.CLK     Tfck                  0.837   u_vga/u_dotaddr/u_mult/blio/in1_reg<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<6>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.005ns (6.219ns logic, 2.786ns route)
+                                                       (69.1% logic, 30.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (SLICE_X64Y52.F2), 19 paths
+--------------------------------------------------------------------------------
+Delay:                  9.202ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_2 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      9.202ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_2 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y39.YQ      Tcko                  0.587   u_vga/columns_pxclk<3>
+                                                       u_vga/columns_pxclk_2
+    MULT18X18_X1Y6.B2    net (fanout=1)        1.912   u_vga/columns_pxclk<2>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y53.F1      net (fanout=2)        0.636   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y53.X       Tilo                  0.759   N96
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW0
+    SLICE_X64Y52.F2      net (fanout=1)        0.072   N96
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.202ns (6.582ns logic, 2.620ns route)
+                                                       (71.5% logic, 28.5% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.113ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_0 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      9.112ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.001ns (0.136 - 0.137)
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_0 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.YQ      Tcko                  0.652   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_0
+    MULT18X18_X1Y6.B0    net (fanout=1)        1.757   u_vga/columns_pxclk<0>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y53.F1      net (fanout=2)        0.636   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y53.X       Tilo                  0.759   N96
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW0
+    SLICE_X64Y52.F2      net (fanout=1)        0.072   N96
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.112ns (6.647ns logic, 2.465ns route)
+                                                       (72.9% logic, 27.1% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.024ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_1 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      9.023ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.001ns (0.136 - 0.137)
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_1 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.XQ      Tcko                  0.592   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_1
+    MULT18X18_X1Y6.B1    net (fanout=1)        1.728   u_vga/columns_pxclk<1>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y53.F1      net (fanout=2)        0.636   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y53.X       Tilo                  0.759   N96
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW0
+    SLICE_X64Y52.F2      net (fanout=1)        0.072   N96
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.023ns (6.587ns logic, 2.436ns route)
+                                                       (73.0% logic, 27.0% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.002ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_6 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      9.002ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_6 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.YQ      Tcko                  0.652   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_6
+    MULT18X18_X1Y6.A3    net (fanout=2)        1.647   u_vga/u_dotclock/vctr<6>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y53.F1      net (fanout=2)        0.636   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y53.X       Tilo                  0.759   N96
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW0
+    SLICE_X64Y52.F2      net (fanout=1)        0.072   N96
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.002ns (6.647ns logic, 2.355ns route)
+                                                       (73.8% logic, 26.2% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.966ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_7 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      8.966ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_7 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.XQ      Tcko                  0.592   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_7
+    MULT18X18_X1Y6.A4    net (fanout=2)        1.671   u_vga/u_dotclock/vctr<7>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y53.F1      net (fanout=2)        0.636   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y53.X       Tilo                  0.759   N96
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW0
+    SLICE_X64Y52.F2      net (fanout=1)        0.072   N96
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      8.966ns (6.587ns logic, 2.379ns route)
+                                                       (73.5% logic, 26.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (SLICE_X64Y52.F4), 19 paths
+--------------------------------------------------------------------------------
+Delay:                  9.158ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_2 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      9.158ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_2 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y39.YQ      Tcko                  0.587   u_vga/columns_pxclk<3>
+                                                       u_vga/columns_pxclk_2
+    MULT18X18_X1Y6.B2    net (fanout=1)        1.912   u_vga/columns_pxclk<2>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y52.G1      net (fanout=2)        0.641   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y52.Y       Tilo                  0.759   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1
+    SLICE_X64Y52.F4      net (fanout=1)        0.023   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1/O
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.158ns (6.582ns logic, 2.576ns route)
+                                                       (71.9% logic, 28.1% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.069ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_0 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      9.068ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.001ns (0.136 - 0.137)
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_0 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.YQ      Tcko                  0.652   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_0
+    MULT18X18_X1Y6.B0    net (fanout=1)        1.757   u_vga/columns_pxclk<0>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y52.G1      net (fanout=2)        0.641   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y52.Y       Tilo                  0.759   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1
+    SLICE_X64Y52.F4      net (fanout=1)        0.023   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1/O
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      9.068ns (6.647ns logic, 2.421ns route)
+                                                       (73.3% logic, 26.7% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.980ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_1 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      8.979ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.001ns (0.136 - 0.137)
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_1 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.XQ      Tcko                  0.592   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_1
+    MULT18X18_X1Y6.B1    net (fanout=1)        1.728   u_vga/columns_pxclk<1>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y52.G1      net (fanout=2)        0.641   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y52.Y       Tilo                  0.759   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1
+    SLICE_X64Y52.F4      net (fanout=1)        0.023   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1/O
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      8.979ns (6.587ns logic, 2.392ns route)
+                                                       (73.4% logic, 26.6% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.958ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_6 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      8.958ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_6 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.YQ      Tcko                  0.652   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_6
+    MULT18X18_X1Y6.A3    net (fanout=2)        1.647   u_vga/u_dotclock/vctr<6>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y52.G1      net (fanout=2)        0.641   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y52.Y       Tilo                  0.759   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1
+    SLICE_X64Y52.F4      net (fanout=1)        0.023   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1/O
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      8.958ns (6.647ns logic, 2.311ns route)
+                                                       (74.2% logic, 25.8% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.922ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_7 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_7 (FF)
+  Data Path Delay:      8.922ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_7 to u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.XQ      Tcko                  0.592   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_7
+    MULT18X18_X1Y6.A4    net (fanout=2)        1.671   u_vga/u_dotclock/vctr<7>
+    MULT18X18_X1Y6.P7    Tmult                 4.344   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X64Y52.G1      net (fanout=2)        0.641   u_vga/u_dotaddr/u_mult/_mult0000<7>
+    SLICE_X64Y52.Y       Tilo                  0.759   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1
+    SLICE_X64Y52.F4      net (fanout=1)        0.023   u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>_SW1/O
+    SLICE_X64Y52.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<7>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      8.922ns (6.587ns logic, 2.335ns route)
+                                                       (73.8% logic, 26.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_dotaddr/u_mult/blio/in1_reg_5 (SLICE_X66Y54.F3), 16 paths
+--------------------------------------------------------------------------------
+Delay:                  9.148ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_2 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_5 (FF)
+  Data Path Delay:      9.148ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_2 to u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y39.YQ      Tcko                  0.587   u_vga/columns_pxclk<3>
+                                                       u_vga/columns_pxclk_2
+    MULT18X18_X1Y6.B2    net (fanout=1)        1.912   u_vga/columns_pxclk<2>
+    MULT18X18_X1Y6.P13   Tmult                 4.757   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X66Y54.F3      net (fanout=1)        1.000   u_vga/u_dotaddr/u_mult/_mult0000<13>
+    SLICE_X66Y54.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                      9.148ns (6.236ns logic, 2.912ns route)
+                                                       (68.2% logic, 31.8% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.059ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_0 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_5 (FF)
+  Data Path Delay:      9.058ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.001ns (0.136 - 0.137)
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_0 to u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.YQ      Tcko                  0.652   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_0
+    MULT18X18_X1Y6.B0    net (fanout=1)        1.757   u_vga/columns_pxclk<0>
+    MULT18X18_X1Y6.P13   Tmult                 4.757   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X66Y54.F3      net (fanout=1)        1.000   u_vga/u_dotaddr/u_mult/_mult0000<13>
+    SLICE_X66Y54.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                      9.058ns (6.301ns logic, 2.757ns route)
+                                                       (69.6% logic, 30.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.970ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_1 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_5 (FF)
+  Data Path Delay:      8.969ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.001ns (0.136 - 0.137)
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_1 to u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.XQ      Tcko                  0.592   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_1
+    MULT18X18_X1Y6.B1    net (fanout=1)        1.728   u_vga/columns_pxclk<1>
+    MULT18X18_X1Y6.P13   Tmult                 4.757   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X66Y54.F3      net (fanout=1)        1.000   u_vga/u_dotaddr/u_mult/_mult0000<13>
+    SLICE_X66Y54.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.969ns (6.241ns logic, 2.728ns route)
+                                                       (69.6% logic, 30.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.948ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_6 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_5 (FF)
+  Data Path Delay:      8.948ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_6 to u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.YQ      Tcko                  0.652   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_6
+    MULT18X18_X1Y6.A3    net (fanout=2)        1.647   u_vga/u_dotclock/vctr<6>
+    MULT18X18_X1Y6.P13   Tmult                 4.757   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X66Y54.F3      net (fanout=1)        1.000   u_vga/u_dotaddr/u_mult/_mult0000<13>
+    SLICE_X66Y54.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.948ns (6.301ns logic, 2.647ns route)
+                                                       (70.4% logic, 29.6% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.912ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_7 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_5 (FF)
+  Data Path Delay:      8.912ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_7 to u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.XQ      Tcko                  0.592   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_7
+    MULT18X18_X1Y6.A4    net (fanout=2)        1.671   u_vga/u_dotclock/vctr<7>
+    MULT18X18_X1Y6.P13   Tmult                 4.757   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X66Y54.F3      net (fanout=1)        1.000   u_vga/u_dotaddr/u_mult/_mult0000<13>
+    SLICE_X66Y54.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<5>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.912ns (6.241ns logic, 2.671ns route)
+                                                       (70.0% logic, 30.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_dotaddr/u_mult/blio/in1_reg_3 (SLICE_X64Y50.F2), 11 paths
+--------------------------------------------------------------------------------
+Delay:                  9.135ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_2 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_3 (FF)
+  Data Path Delay:      9.135ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_2 to u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y39.YQ      Tcko                  0.587   u_vga/columns_pxclk<3>
+                                                       u_vga/columns_pxclk_2
+    MULT18X18_X1Y6.B2    net (fanout=1)        1.912   u_vga/columns_pxclk<2>
+    MULT18X18_X1Y6.P3    Tmult                 3.657   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y50.F2      net (fanout=2)        0.818   u_vga/u_dotaddr/u_mult/_mult0000<3>
+    SLICE_X65Y50.X       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/result<11>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>_SW0
+    SLICE_X64Y50.F2      net (fanout=1)        0.565   N84
+    SLICE_X64Y50.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      9.135ns (5.840ns logic, 3.295ns route)
+                                                       (63.9% logic, 36.1% route)
+
+--------------------------------------------------------------------------------
+Delay:                  9.045ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_0 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_3 (FF)
+  Data Path Delay:      9.045ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_0 to u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.YQ      Tcko                  0.652   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_0
+    MULT18X18_X1Y6.B0    net (fanout=1)        1.757   u_vga/columns_pxclk<0>
+    MULT18X18_X1Y6.P3    Tmult                 3.657   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y50.F2      net (fanout=2)        0.818   u_vga/u_dotaddr/u_mult/_mult0000<3>
+    SLICE_X65Y50.X       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/result<11>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>_SW0
+    SLICE_X64Y50.F2      net (fanout=1)        0.565   N84
+    SLICE_X64Y50.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      9.045ns (5.905ns logic, 3.140ns route)
+                                                       (65.3% logic, 34.7% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.956ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_1 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_3 (FF)
+  Data Path Delay:      8.956ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_1 to u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y40.XQ      Tcko                  0.592   u_vga/columns_pxclk<1>
+                                                       u_vga/columns_pxclk_1
+    MULT18X18_X1Y6.B1    net (fanout=1)        1.728   u_vga/columns_pxclk<1>
+    MULT18X18_X1Y6.P3    Tmult                 3.657   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y50.F2      net (fanout=2)        0.818   u_vga/u_dotaddr/u_mult/_mult0000<3>
+    SLICE_X65Y50.X       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/result<11>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>_SW0
+    SLICE_X64Y50.F2      net (fanout=1)        0.565   N84
+    SLICE_X64Y50.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      8.956ns (5.845ns logic, 3.111ns route)
+                                                       (65.3% logic, 34.7% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.935ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/u_dotclock/vctr_6 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_3 (FF)
+  Data Path Delay:      8.935ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/u_dotclock/vctr_6 to u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y43.YQ      Tcko                  0.652   u_vga/u_dotclock/vctr<7>
+                                                       u_vga/u_dotclock/vctr_6
+    MULT18X18_X1Y6.A3    net (fanout=2)        1.647   u_vga/u_dotclock/vctr<6>
+    MULT18X18_X1Y6.P3    Tmult                 3.657   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y50.F2      net (fanout=2)        0.818   u_vga/u_dotaddr/u_mult/_mult0000<3>
+    SLICE_X65Y50.X       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/result<11>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>_SW0
+    SLICE_X64Y50.F2      net (fanout=1)        0.565   N84
+    SLICE_X64Y50.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      8.935ns (5.905ns logic, 3.030ns route)
+                                                       (66.1% logic, 33.9% route)
+
+--------------------------------------------------------------------------------
+Delay:                  8.809ns (data path - clock path skew + uncertainty)
+  Source:               u_vga/columns_pxclk_3 (FF)
+  Destination:          u_vga/u_dotaddr/u_mult/blio/in1_reg_3 (FF)
+  Data Path Delay:      8.809ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_108MHz rising
+  Destination Clock:    CLK_108MHz rising
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: u_vga/columns_pxclk_3 to u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y39.XQ      Tcko                  0.591   u_vga/columns_pxclk<3>
+                                                       u_vga/columns_pxclk_3
+    MULT18X18_X1Y6.B3    net (fanout=1)        1.582   u_vga/columns_pxclk<3>
+    MULT18X18_X1Y6.P3    Tmult                 3.657   u_vga/u_dotaddr/u_mult/Mmult__mult0000
+                                                       u_vga/u_dotaddr/u_mult/Mmult__mult0000
+    SLICE_X65Y50.F2      net (fanout=2)        0.818   u_vga/u_dotaddr/u_mult/_mult0000<3>
+    SLICE_X65Y50.X       Tilo                  0.704   u_vga/u_dotaddr/u_mult/blio/result<11>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>_SW0
+    SLICE_X64Y50.F2      net (fanout=1)        0.565   N84
+    SLICE_X64Y50.CLK     Tfck                  0.892   u_vga/u_dotaddr/u_mult/blio/in1_reg<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_mux0000<3>
+                                                       u_vga/u_dotaddr/u_mult/blio/in1_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      8.809ns (5.844ns logic, 2.965ns route)
+                                                       (66.3% logic, 33.7% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default OFFSET IN BEFORE analysis for clock "CLK_108MHz" 
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   5.662ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_charmap/Mrom__varindex0000.A (RAMB16_X1Y7.SSRA), 1 path
+--------------------------------------------------------------------------------
+Offset:                 5.662ns (data path - clock path + uncertainty)
+  Source:               reset (PAD)
+  Destination:          u_vga/u_charmap/Mrom__varindex0000.A (RAM)
+  Destination Clock:    CLK_108MHz rising
+  Data Path Delay:      7.535ns (Levels of Logic = 2)
+  Clock Path Delay:     1.873ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to u_vga/u_charmap/Mrom__varindex0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    D18.I                Tiopi                 1.726   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X66Y49.G3      net (fanout=128)      2.682   reset_IBUF
+    SLICE_X66Y49.Y       Tilo                  0.759   u_vga/u_charmap/N0
+                                                       u_vga/u_charmap/N01
+    RAMB16_X1Y7.SSRA     net (fanout=1)        1.663   u_vga/u_charmap/N0
+    RAMB16_X1Y7.CLKA     Tbrck                 0.705   u_vga/u_charmap/Mrom__varindex0000
+                                                       u_vga/u_charmap/Mrom__varindex0000.A
+    -------------------------------------------------  ---------------------------
+    Total                                      7.535ns (3.190ns logic, 4.345ns route)
+                                                       (42.3% logic, 57.7% route)
+
+  Minimum Clock Path: CLK_50MHz to u_vga/u_charmap/Mrom__varindex0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.612   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -3.014   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        2.634   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.446   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.333   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.166   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    RAMB16_X1Y7.CLKA     net (fanout=105)      0.122   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      1.873ns (-1.828ns logic, 3.701ns route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_charmap/Mrom__varindex0000.A (RAMB16_X1Y7.ENA), 1 path
+--------------------------------------------------------------------------------
+Offset:                 3.585ns (data path - clock path + uncertainty)
+  Source:               reset (PAD)
+  Destination:          u_vga/u_charmap/Mrom__varindex0000.A (RAM)
+  Destination Clock:    CLK_108MHz rising
+  Data Path Delay:      5.458ns (Levels of Logic = 1)
+  Clock Path Delay:     1.873ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to u_vga/u_charmap/Mrom__varindex0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    D18.I                Tiopi                 1.726   reset
+                                                       reset
+                                                       reset_IBUF
+    RAMB16_X1Y7.ENA      net (fanout=128)      2.962   reset_IBUF
+    RAMB16_X1Y7.CLKA     Tbeck                 0.770   u_vga/u_charmap/Mrom__varindex0000
+                                                       u_vga/u_charmap/Mrom__varindex0000.A
+    -------------------------------------------------  ---------------------------
+    Total                                      5.458ns (2.496ns logic, 2.962ns route)
+                                                       (45.7% logic, 54.3% route)
+
+  Minimum Clock Path: CLK_50MHz to u_vga/u_charmap/Mrom__varindex0000.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.612   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -3.014   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        2.634   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.446   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.333   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.166   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    RAMB16_X1Y7.CLKA     net (fanout=105)      0.122   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      1.873ns (-1.828ns logic, 3.701ns route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/VGA_BLUE (SLICE_X64Y63.SR), 1 path
+--------------------------------------------------------------------------------
+Offset:                 3.012ns (data path - clock path + uncertainty)
+  Source:               reset (PAD)
+  Destination:          u_vga/VGA_BLUE (FF)
+  Destination Clock:    CLK_108MHz rising
+  Data Path Delay:      4.903ns (Levels of Logic = 1)
+  Clock Path Delay:     1.891ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to u_vga/VGA_BLUE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    D18.I                Tiopi                 1.726   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X64Y63.SR      net (fanout=128)      2.267   reset_IBUF
+    SLICE_X64Y63.CLK     Tsrck                 0.910   u_vga/VGA_BLUE
+                                                       u_vga/VGA_BLUE
+    -------------------------------------------------  ---------------------------
+    Total                                      4.903ns (2.636ns logic, 2.267ns route)
+                                                       (53.8% logic, 46.2% route)
+
+  Minimum Clock Path: CLK_50MHz to u_vga/VGA_BLUE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.612   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -3.014   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        2.634   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.446   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.333   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.166   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    SLICE_X64Y63.CLK     net (fanout=105)      0.140   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      1.891ns (-1.828ns logic, 3.719ns route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/VGA_VSYNC (F14.SR), 1 path
+--------------------------------------------------------------------------------
+Offset:                 1.641ns (data path - clock path + uncertainty)
+  Source:               reset (PAD)
+  Destination:          u_vga/VGA_VSYNC (FF)
+  Destination Clock:    CLK_108MHz rising
+  Data Path Delay:      3.553ns (Levels of Logic = 1)
+  Clock Path Delay:     1.912ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to u_vga/VGA_VSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    D18.I                Tiopi                 1.726   reset
+                                                       reset
+                                                       reset_IBUF
+    F14.SR               net (fanout=128)      0.875   reset_IBUF
+    F14.OTCLK1           Tiosrcko              0.952   VGA_VSYNC
+                                                       u_vga/VGA_VSYNC
+    -------------------------------------------------  ---------------------------
+    Total                                      3.553ns (2.678ns logic, 0.875ns route)
+                                                       (75.4% logic, 24.6% route)
+
+  Minimum Clock Path: CLK_50MHz to u_vga/VGA_VSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.612   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -3.014   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        2.634   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.446   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.333   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.166   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    F14.OTCLK1           net (fanout=105)      0.161   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      1.912ns (-1.828ns logic, 3.740ns route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/VGA_HSYNC (F15.SR), 1 path
+--------------------------------------------------------------------------------
+Offset:                 1.634ns (data path - clock path + uncertainty)
+  Source:               reset (PAD)
+  Destination:          u_vga/VGA_HSYNC (FF)
+  Destination Clock:    CLK_108MHz rising
+  Data Path Delay:      3.546ns (Levels of Logic = 1)
+  Clock Path Delay:     1.912ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to u_vga/VGA_HSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    D18.I                Tiopi                 1.726   reset
+                                                       reset
+                                                       reset_IBUF
+    F15.SR               net (fanout=128)      0.868   reset_IBUF
+    F15.OTCLK1           Tiosrcko              0.952   VGA_HSYNC
+                                                       u_vga/VGA_HSYNC
+    -------------------------------------------------  ---------------------------
+    Total                                      3.546ns (2.678ns logic, 0.868ns route)
+                                                       (75.5% logic, 24.5% route)
+
+  Minimum Clock Path: CLK_50MHz to u_vga/VGA_HSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.466   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.612   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -3.014   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        2.634   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.446   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.333   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.166   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    F15.OTCLK1           net (fanout=105)      0.161   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      1.912ns (-1.828ns logic, 3.740ns route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default OFFSET OUT AFTER analysis for clock "CLK_108MHz" 
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Maximum allowable offset is   8.178ns.
+--------------------------------------------------------------------------------
+
+Paths for end point VGA_BLUE (G15.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset:                 8.178ns (clock path + data path + uncertainty)
+  Source:               u_vga/VGA_BLUE (FF)
+  Destination:          VGA_BLUE (PAD)
+  Source Clock:         CLK_108MHz rising
+  Data Path Delay:      4.822ns (Levels of Logic = 1)
+  Clock Path Delay:     3.356ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: CLK_50MHz to u_vga/VGA_BLUE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.765   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -2.659   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        3.293   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.807   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.416   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.457   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    SLICE_X64Y63.CLK     net (fanout=105)      0.165   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      3.356ns (-1.283ns logic, 4.639ns route)
+
+  Maximum Data Path: u_vga/VGA_BLUE to VGA_BLUE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y63.YQ      Tcko                  0.652   u_vga/VGA_BLUE
+                                                       u_vga/VGA_BLUE
+    G15.O1               net (fanout=3)        0.898   u_vga/VGA_BLUE
+    G15.PAD              Tioop                 3.272   VGA_BLUE
+                                                       VGA_BLUE_OBUF
+                                                       VGA_BLUE
+    -------------------------------------------------  ---------------------------
+    Total                                      4.822ns (3.924ns logic, 0.898ns route)
+                                                       (81.4% logic, 18.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point VGA_GREEN (H15.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset:                 8.175ns (clock path + data path + uncertainty)
+  Source:               u_vga/VGA_BLUE (FF)
+  Destination:          VGA_GREEN (PAD)
+  Source Clock:         CLK_108MHz rising
+  Data Path Delay:      4.819ns (Levels of Logic = 1)
+  Clock Path Delay:     3.356ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: CLK_50MHz to u_vga/VGA_BLUE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.765   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -2.659   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        3.293   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.807   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.416   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.457   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    SLICE_X64Y63.CLK     net (fanout=105)      0.165   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      3.356ns (-1.283ns logic, 4.639ns route)
+
+  Maximum Data Path: u_vga/VGA_BLUE to VGA_GREEN
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y63.YQ      Tcko                  0.652   u_vga/VGA_BLUE
+                                                       u_vga/VGA_BLUE
+    H15.O1               net (fanout=3)        0.895   u_vga/VGA_BLUE
+    H15.PAD              Tioop                 3.272   VGA_GREEN
+                                                       VGA_GREEN_OBUF
+                                                       VGA_GREEN
+    -------------------------------------------------  ---------------------------
+    Total                                      4.819ns (3.924ns logic, 0.895ns route)
+                                                       (81.4% logic, 18.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point VGA_RED (H14.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset:                 7.932ns (clock path + data path + uncertainty)
+  Source:               u_vga/VGA_BLUE (FF)
+  Destination:          VGA_RED (PAD)
+  Source Clock:         CLK_108MHz rising
+  Data Path Delay:      4.576ns (Levels of Logic = 1)
+  Clock Path Delay:     3.356ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: CLK_50MHz to u_vga/VGA_BLUE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.765   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -2.659   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        3.293   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.807   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.416   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.457   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    SLICE_X64Y63.CLK     net (fanout=105)      0.165   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      3.356ns (-1.283ns logic, 4.639ns route)
+
+  Maximum Data Path: u_vga/VGA_BLUE to VGA_RED
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y63.YQ      Tcko                  0.652   u_vga/VGA_BLUE
+                                                       u_vga/VGA_BLUE
+    H14.O1               net (fanout=3)        0.652   u_vga/VGA_BLUE
+    H14.PAD              Tioop                 3.272   VGA_RED
+                                                       VGA_RED_OBUF
+                                                       VGA_RED
+    -------------------------------------------------  ---------------------------
+    Total                                      4.576ns (3.924ns logic, 0.652ns route)
+                                                       (85.8% logic, 14.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point VGA_HSYNC (F15.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset:                 6.581ns (clock path + data path + uncertainty)
+  Source:               u_vga/VGA_HSYNC (FF)
+  Destination:          VGA_HSYNC (PAD)
+  Source Clock:         CLK_108MHz rising
+  Data Path Delay:      3.200ns (Levels of Logic = 0)
+  Clock Path Delay:     3.381ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: CLK_50MHz to u_vga/VGA_HSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.765   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -2.659   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        3.293   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.807   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.416   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.457   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    F15.OTCLK1           net (fanout=105)      0.190   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      3.381ns (-1.283ns logic, 4.664ns route)
+
+  Maximum Data Path: u_vga/VGA_HSYNC to VGA_HSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    F15.PAD              Tiockp                3.200   VGA_HSYNC
+                                                       u_vga/VGA_HSYNC
+                                                       VGA_HSYNC_OBUF
+                                                       VGA_HSYNC
+    -------------------------------------------------  ---------------------------
+    Total                                      3.200ns (3.200ns logic, 0.000ns route)
+                                                       (100.0% logic, 0.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point VGA_VSYNC (F14.PAD), 1 path
+--------------------------------------------------------------------------------
+Offset:                 6.581ns (clock path + data path + uncertainty)
+  Source:               u_vga/VGA_VSYNC (FF)
+  Destination:          VGA_VSYNC (PAD)
+  Source Clock:         CLK_108MHz rising
+  Data Path Delay:      3.200ns (Levels of Logic = 0)
+  Clock Path Delay:     3.381ns (Levels of Logic = 4)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: CLK_50MHz to u_vga/VGA_VSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    DCM_X0Y1.CLKIN       net (fanout=2)        0.765   CLK_50MHz_IBUFG1
+    DCM_X0Y1.CLKFX       Tdcmino              -2.659   u_clockgen/DCM_SP_inst_0
+                                                       u_clockgen/DCM_SP_inst_0
+    DCM_X0Y0.CLKIN       net (fanout=1)        3.293   u_clockgen/CLK_180MHz
+    DCM_X0Y0.CLKFX       Tdcmino              -1.807   u_clockgen/DCM_SP_inst_1
+                                                       u_clockgen/DCM_SP_inst_1
+    BUFGMUX_X1Y0.I0      net (fanout=1)        0.416   CLK_108MHz1
+    BUFGMUX_X1Y0.O       Tgi0o                 1.457   CLK_108MHz_BUFG
+                                                       CLK_108MHz_BUFG.GCLKMUX
+                                                       CLK_108MHz_BUFG
+    F14.OTCLK1           net (fanout=105)      0.190   CLK_108MHz
+    -------------------------------------------------  ---------------------------
+    Total                                      3.381ns (-1.283ns logic, 4.664ns route)
+
+  Maximum Data Path: u_vga/VGA_VSYNC to VGA_VSYNC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    F14.PAD              Tiockp                3.200   VGA_VSYNC
+                                                       u_vga/VGA_VSYNC
+                                                       VGA_VSYNC_OBUF
+                                                       VGA_VSYNC
+    -------------------------------------------------  ---------------------------
+    Total                                      3.200ns (3.200ns logic, 0.000ns route)
+                                                       (100.0% logic, 0.0% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Default path analysis 
+
+ 322 paths analyzed, 322 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   1.953ns.
+ Maximum delay is   3.424ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/dummie (SLICE_X64Y85.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay:                  3.424ns (data path)
+  Source:               CLK_50MHz (PAD)
+  Destination:          u_vga/u_daddr/blio/dummie (FF)
+  Data Path Delay:      3.424ns (Levels of Logic = 2)
+
+  Maximum Data Path: CLK_50MHz to u_vga/u_daddr/blio/dummie
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.046   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.457   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    SLICE_X64Y85.CLK     net (fanout=109)      0.195   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      3.424ns (3.183ns logic, 0.241ns route)
+                                                       (93.0% logic, 7.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/in2_reg_7 (SLICE_X65Y85.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay:                  3.424ns (data path)
+  Source:               CLK_50MHz (PAD)
+  Destination:          u_vga/u_daddr/blio/in2_reg_7 (FF)
+  Data Path Delay:      3.424ns (Levels of Logic = 2)
+
+  Maximum Data Path: CLK_50MHz to u_vga/u_daddr/blio/in2_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.046   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.457   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    SLICE_X65Y85.CLK     net (fanout=109)      0.195   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      3.424ns (3.183ns logic, 0.241ns route)
+                                                       (93.0% logic, 7.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/in2_reg_6 (SLICE_X65Y85.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay:                  3.424ns (data path)
+  Source:               CLK_50MHz (PAD)
+  Destination:          u_vga/u_daddr/blio/in2_reg_6 (FF)
+  Data Path Delay:      3.424ns (Levels of Logic = 2)
+
+  Maximum Data Path: CLK_50MHz to u_vga/u_daddr/blio/in2_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.046   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.457   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    SLICE_X65Y85.CLK     net (fanout=109)      0.195   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      3.424ns (3.183ns logic, 0.241ns route)
+                                                       (93.0% logic, 7.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/result_6 (SLICE_X64Y84.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay:                  3.424ns (data path)
+  Source:               CLK_50MHz (PAD)
+  Destination:          u_vga/u_daddr/blio/result_6 (FF)
+  Data Path Delay:      3.424ns (Levels of Logic = 2)
+
+  Maximum Data Path: CLK_50MHz to u_vga/u_daddr/blio/result_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.046   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.457   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    SLICE_X64Y84.CLK     net (fanout=109)      0.195   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      3.424ns (3.183ns logic, 0.241ns route)
+                                                       (93.0% logic, 7.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_vga/u_daddr/blio/result_7 (SLICE_X65Y84.CLK), 1 path
+--------------------------------------------------------------------------------
+Delay:                  3.424ns (data path)
+  Source:               CLK_50MHz (PAD)
+  Destination:          u_vga/u_daddr/blio/result_7 (FF)
+  Data Path Delay:      3.424ns (Levels of Logic = 2)
+
+  Maximum Data Path: CLK_50MHz to u_vga/u_daddr/blio/result_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    C9.I                 Tiopi                 1.726   CLK_50MHz
+                                                       CLK_50MHz
+                                                       CLK_50MHz_IBUFG
+    BUFGMUX_X1Y11.I0     net (fanout=2)        0.046   CLK_50MHz_IBUFG1
+    BUFGMUX_X1Y11.O      Tgi0o                 1.457   CLK_50MHz_IBUFG_BUFG
+                                                       CLK_50MHz_IBUFG_BUFG.GCLKMUX
+                                                       CLK_50MHz_IBUFG_BUFG
+    SLICE_X65Y84.CLK     net (fanout=109)      0.195   CLK_50MHz_IBUFG
+    -------------------------------------------------  ---------------------------
+    Total                                      3.424ns (3.183ns logic, 0.241ns route)
+                                                       (93.0% logic, 7.0% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK_50MHz
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+UART_RX     |    4.672(R)|   -0.799(R)|CLK_50MHz_IBUFG   |   0.000|
+reset       |    5.662(R)|    0.545(R)|CLK_108MHz        |   0.000|
+            |    1.983(R)|   -0.150(R)|CLK_50MHz_IBUFG   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK_50MHz to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+VGA_BLUE    |    8.178(R)|CLK_108MHz        |   0.000|
+VGA_GREEN   |    8.175(R)|CLK_108MHz        |   0.000|
+VGA_HSYNC   |    6.581(R)|CLK_108MHz        |   0.000|
+VGA_RED     |    7.932(R)|CLK_108MHz        |   0.000|
+VGA_VSYNC   |    6.581(R)|CLK_108MHz        |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK_50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_50MHz      |   11.173|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 8592 paths, 0 nets, and 2004 connections
+
+Design statistics:
+   Minimum period:  11.173ns{1}   (Maximum frequency:  89.501MHz)
+   Maximum combinational path delay:   3.424ns
+   Minimum input required time before clock:   5.662ns
+   Maximum output delay after clock:   8.178ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Nov 20 14:59:02 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 278 MB
+
+
+

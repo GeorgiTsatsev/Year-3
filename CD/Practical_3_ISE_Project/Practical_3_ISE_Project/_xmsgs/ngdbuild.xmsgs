@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >TNM : CLK was distributed to a DCM but new TNM constraints were not derived. The requirement for derived TNM constraints is that the distributed TNM is referenced by no more than a single PERIOD constraint. Non-PERIOD referencers are also not allowed. This TNM is used in the following user groups or specifications:
+&lt;TIMESPEC TS_clk = PERIOD CLK 20.0ns HIGH 40%;&gt; [constraints.ucf(2)]
+&lt;TIMESPEC TS_IG1 = FROM PCLK TO CLK TIG;&gt; [constraints.ucf(17)]
+&lt;TIMESPEC TS_IG2 = FROM CLK TO PCLK TIG;&gt; [constraints.ucf(18)]
+</msg>
+
+</messages>
+

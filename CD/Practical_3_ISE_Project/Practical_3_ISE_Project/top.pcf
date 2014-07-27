@@ -1,0 +1,238 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Tue Nov 20 14:58:38 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "VGA_RED" LOCATE = SITE "H14" LEVEL 1;
+COMP "UART_RX" LOCATE = SITE "U8" LEVEL 1;
+COMP "VGA_BLUE" LOCATE = SITE "G15" LEVEL 1;
+COMP "VGA_GREEN" LOCATE = SITE "H15" LEVEL 1;
+COMP "VGA_HSYNC" LOCATE = SITE "F15" LEVEL 1;
+COMP "VGA_VSYNC" LOCATE = SITE "F14" LEVEL 1;
+COMP "reset" LOCATE = SITE "D18" LEVEL 1;
+COMP "CLK_50MHz" LOCATE = SITE "C9" LEVEL 1;
+NET "CLK_50MHz_IBUFG1" BEL "CLK_50MHz_IBUFG_BUFG.GCLKMUX" USELOCALCONNECT;
+PIN u_vga/ram0/u_ram4/Mram_prom1.B_pins<13> = BEL
+        "u_vga/ram0/u_ram4/Mram_prom1.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram2/Mram_prom1.B_pins<13> = BEL
+        "u_vga/ram0/u_ram2/Mram_prom1.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram2/Mram_prom2.B_pins<13> = BEL
+        "u_vga/ram0/u_ram2/Mram_prom2.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram4/Mram_prom2.B_pins<13> = BEL
+        "u_vga/ram0/u_ram4/Mram_prom2.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram3/Mram_prom1.B_pins<13> = BEL
+        "u_vga/ram0/u_ram3/Mram_prom1.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram1/Mram_prom2.B_pins<13> = BEL
+        "u_vga/ram0/u_ram1/Mram_prom2.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram3/Mram_prom2.B_pins<13> = BEL
+        "u_vga/ram0/u_ram3/Mram_prom2.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram1/Mram_prom1.B_pins<13> = BEL
+        "u_vga/ram0/u_ram1/Mram_prom1.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram0/Mram_prom1.B_pins<13> = BEL
+        "u_vga/ram0/u_ram0/Mram_prom1.B" PINNAME CLKB;
+PIN u_vga/ram0/u_ram0/Mram_prom2.B_pins<13> = BEL
+        "u_vga/ram0/u_ram0/Mram_prom2.B" PINNAME CLKB;
+TIMEGRP CLK = BEL "row_column_update" BEL "fwd_uart_ena" BEL "fwd_uart_data_0"
+        BEL "fwd_uart_data_1" BEL "fwd_uart_data_2" BEL "fwd_uart_data_3" BEL
+        "fwd_uart_data_4" BEL "fwd_uart_data_5" BEL "fwd_uart_data_6" BEL
+        "fwd_uart_data_7" BEL "escape_FSM_FFd2" BEL "escape_FSM_FFd1" BEL
+        "columns_7" BEL "columns_6" BEL "columns_5" BEL "columns_4" BEL
+        "columns_3" BEL "columns_2" BEL "columns_1" BEL "columns_0" BEL
+        "rows_7" BEL "rows_6" BEL "rows_5" BEL "rows_4" BEL "rows_3" BEL
+        "rows_2" BEL "rows_1" BEL "rows_0" BEL "u_rx_line/U_retime1" BEL
+        "u_rx_line/U_retime0" BEL "u_rx_line/data_0" BEL "u_rx_line/data_1"
+        BEL "u_rx_line/data_2" BEL "u_rx_line/data_3" BEL "u_rx_line/data_4"
+        BEL "u_rx_line/data_5" BEL "u_rx_line/data_6" BEL "u_rx_line/data_7"
+        BEL "u_rx_line/writeen" BEL "u_rx_line/active" BEL
+        "u_rx_line/cyclecounter_9" BEL "u_rx_line/cyclecounter_8" BEL
+        "u_rx_line/cyclecounter_7" BEL "u_rx_line/cyclecounter_6" BEL
+        "u_rx_line/cyclecounter_5" BEL "u_rx_line/cyclecounter_4" BEL
+        "u_rx_line/cyclecounter_3" BEL "u_rx_line/cyclecounter_2" BEL
+        "u_rx_line/cyclecounter_1" BEL "u_rx_line/cyclecounter_0" BEL
+        "u_rx_line/bitcounter_3" BEL "u_rx_line/bitcounter_2" BEL
+        "u_rx_line/bitcounter_1" BEL "u_rx_line/bitcounter_0" BEL
+        "u_vga/u_daddr/result_14" BEL "u_vga/u_daddr/result_13" BEL
+        "u_vga/u_daddr/result_10" BEL "u_vga/u_daddr/result_12" BEL
+        "u_vga/u_daddr/result_11" BEL "u_vga/u_daddr/result_9" BEL
+        "u_vga/u_daddr/result_8" BEL "u_vga/u_daddr/result_5" BEL
+        "u_vga/u_daddr/result_7" BEL "u_vga/u_daddr/result_6" BEL
+        "u_vga/u_daddr/result_4" BEL "u_vga/u_daddr/result_3" BEL
+        "u_vga/u_daddr/result_2" BEL "u_vga/u_daddr/result_1" BEL
+        "u_vga/u_daddr/result_0" BEL "u_vga/u_daddr/blio/result_8" BEL
+        "u_vga/u_daddr/blio/result_9" BEL "u_vga/u_daddr/blio/result_10" BEL
+        "u_vga/u_daddr/blio/result_11" BEL "u_vga/u_daddr/blio/result_13" BEL
+        "u_vga/u_daddr/blio/result_12" BEL "u_vga/u_daddr/blio/result_0" BEL
+        "u_vga/u_daddr/blio/result_1" BEL "u_vga/u_daddr/blio/result_2" BEL
+        "u_vga/u_daddr/blio/result_4" BEL "u_vga/u_daddr/blio/result_5" BEL
+        "u_vga/u_daddr/blio/result_3" BEL "u_vga/u_daddr/blio/result_6" BEL
+        "u_vga/u_daddr/blio/result_7" BEL "u_vga/u_daddr/blio/result_16" BEL
+        "u_vga/u_daddr/blio/dummie" BEL "u_vga/u_daddr/blio/state_1" BEL
+        "u_vga/u_daddr/blio/in2_reg_0" BEL "u_vga/u_daddr/blio/in2_reg_1" BEL
+        "u_vga/u_daddr/blio/in2_reg_2" BEL "u_vga/u_daddr/blio/in2_reg_3" BEL
+        "u_vga/u_daddr/blio/in2_reg_4" BEL "u_vga/u_daddr/blio/in2_reg_5" BEL
+        "u_vga/u_daddr/blio/in2_reg_6" BEL "u_vga/u_daddr/blio/in2_reg_7" BEL
+        "u_vga/u_daddr/blio/in1_reg_7" BEL "u_vga/u_daddr/blio/in1_reg_6" BEL
+        "u_vga/u_daddr/blio/in1_reg_5" BEL "u_vga/u_daddr/blio/in1_reg_4" BEL
+        "u_vga/u_daddr/blio/in1_reg_3" BEL "u_vga/u_daddr/blio/in1_reg_2" BEL
+        "u_vga/u_daddr/blio/in1_reg_1" BEL "u_vga/u_daddr/blio/in1_reg_0" BEL
+        "u_vga/u_tx/data_0" BEL "u_vga/u_tx/data_1" BEL "u_vga/u_tx/data_2"
+        BEL "u_vga/u_tx/data_3" BEL "u_vga/u_tx/data_4" BEL
+        "u_vga/u_tx/data_5" BEL "u_vga/u_tx/data_6" BEL "u_vga/u_tx/data_7"
+        BEL "u_vga/u_tx/tx" BEL "u_vga/u_tx/u_rx1" BEL "u_vga/u_tx/u_rx2" BEL
+        "u_vga/ramb_data_in_dly_7" BEL "u_vga/ramb_data_in_dly_6" BEL
+        "u_vga/ramb_data_in_dly_5" BEL "u_vga/ramb_data_in_dly_4" BEL
+        "u_vga/ramb_data_in_dly_3" BEL "u_vga/ramb_data_in_dly_2" BEL
+        "u_vga/ramb_data_in_dly_1" BEL "u_vga/ramb_data_in_dly_0" BEL
+        "u_vga/ramb_ena_dly" BEL "u_vga/ramb_data_in_7" BEL
+        "u_vga/ramb_data_in_6" BEL "u_vga/ramb_data_in_5" BEL
+        "u_vga/ramb_data_in_4" BEL "u_vga/ramb_data_in_3" BEL
+        "u_vga/ramb_data_in_2" BEL "u_vga/ramb_data_in_1" BEL
+        "u_vga/ramb_data_in_0" BEL "u_vga/ramb_ena" BEL "u_vga/row_7" BEL
+        "u_vga/row_6" BEL "u_vga/row_5" BEL "u_vga/row_4" BEL "u_vga/row_3"
+        BEL "u_vga/row_2" BEL "u_vga/row_1" BEL "u_vga/row_0" BEL
+        "u_vga/column_7" BEL "u_vga/column_6" BEL "u_vga/column_5" BEL
+        "u_vga/column_4" BEL "u_vga/column_3" BEL "u_vga/column_2" BEL
+        "u_vga/column_1" BEL "u_vga/column_0" BEL "u_vga/u_daddr/blio/state_0"
+        PIN "u_vga/ram0/u_ram4/Mram_prom1.B_pins<13>" PIN
+        "u_vga/ram0/u_ram2/Mram_prom1.B_pins<13>" PIN
+        "u_vga/ram0/u_ram2/Mram_prom2.B_pins<13>" PIN
+        "u_vga/ram0/u_ram4/Mram_prom2.B_pins<13>" PIN
+        "u_vga/ram0/u_ram3/Mram_prom1.B_pins<13>" PIN
+        "u_vga/ram0/u_ram1/Mram_prom2.B_pins<13>" PIN
+        "u_vga/ram0/u_ram3/Mram_prom2.B_pins<13>" PIN
+        "u_vga/ram0/u_ram1/Mram_prom1.B_pins<13>" PIN
+        "u_vga/ram0/u_ram0/Mram_prom1.B_pins<13>" PIN
+        "u_vga/ram0/u_ram0/Mram_prom2.B_pins<13>" BEL
+        "CLK_50MHz_IBUFG_BUFG.GCLKMUX" BEL "CLK_50MHz_IBUFG_BUFG";
+PIN u_vga/ram0/u_ram4/Mram_prom1.A_pins<13> = BEL
+        "u_vga/ram0/u_ram4/Mram_prom1.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram2/Mram_prom1.A_pins<13> = BEL
+        "u_vga/ram0/u_ram2/Mram_prom1.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram2/Mram_prom2.A_pins<13> = BEL
+        "u_vga/ram0/u_ram2/Mram_prom2.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram4/Mram_prom2.A_pins<13> = BEL
+        "u_vga/ram0/u_ram4/Mram_prom2.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram3/Mram_prom1.A_pins<13> = BEL
+        "u_vga/ram0/u_ram3/Mram_prom1.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram1/Mram_prom2.A_pins<13> = BEL
+        "u_vga/ram0/u_ram1/Mram_prom2.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram3/Mram_prom2.A_pins<13> = BEL
+        "u_vga/ram0/u_ram3/Mram_prom2.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram1/Mram_prom1.A_pins<13> = BEL
+        "u_vga/ram0/u_ram1/Mram_prom1.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram0/Mram_prom1.A_pins<13> = BEL
+        "u_vga/ram0/u_ram0/Mram_prom1.A" PINNAME CLKA;
+PIN u_vga/ram0/u_ram0/Mram_prom2.A_pins<13> = BEL
+        "u_vga/ram0/u_ram0/Mram_prom2.A" PINNAME CLKA;
+TIMEGRP PCLK = BEL "u_vga/u_dotaddr/vsync_out" BEL "u_vga/u_dotaddr/hsync_out"
+        BEL "u_vga/u_dotaddr/vctr_out_0" BEL "u_vga/u_dotaddr/vctr_out_1" BEL
+        "u_vga/u_dotaddr/vctr_out_2" BEL "u_vga/u_dotaddr/de_out" BEL
+        "u_vga/u_dotaddr/hctr_out_0" BEL "u_vga/u_dotaddr/hctr_out_1" BEL
+        "u_vga/u_dotaddr/hctr_out_2" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_0" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_1" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_2" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_3" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_4" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_5" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_6" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in1_reg_7" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_7" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_6" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_5" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_4" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_3" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_2" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_1" BEL
+        "u_vga/u_dotaddr/u_mult/blio/in2_reg_0" BEL
+        "u_vga/u_dotaddr/u_mult/blio/state_1" BEL
+        "u_vga/u_dotaddr/u_mult/blio/dummie" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_16" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_7" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_6" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_3" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_5" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_4" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_2" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_1" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_0" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_12" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_13" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_11" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_10" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_9" BEL
+        "u_vga/u_dotaddr/u_mult/blio/result_8" BEL
+        "u_vga/u_dotaddr/u_mult/result_0" BEL
+        "u_vga/u_dotaddr/u_mult/result_1" BEL
+        "u_vga/u_dotaddr/u_mult/result_2" BEL
+        "u_vga/u_dotaddr/u_mult/result_3" BEL
+        "u_vga/u_dotaddr/u_mult/result_4" BEL
+        "u_vga/u_dotaddr/u_mult/result_6" BEL
+        "u_vga/u_dotaddr/u_mult/result_7" BEL
+        "u_vga/u_dotaddr/u_mult/result_5" BEL
+        "u_vga/u_dotaddr/u_mult/result_8" BEL
+        "u_vga/u_dotaddr/u_mult/result_9" BEL
+        "u_vga/u_dotaddr/u_mult/result_11" BEL
+        "u_vga/u_dotaddr/u_mult/result_12" BEL
+        "u_vga/u_dotaddr/u_mult/result_10" BEL
+        "u_vga/u_dotaddr/u_mult/result_13" BEL
+        "u_vga/u_dotaddr/u_mult/result_14" BEL "u_vga/ram0/old_addra_0" BEL
+        "u_vga/ram0/old_addra_1" BEL "u_vga/ram0/old_addra_2" BEL
+        "u_vga/u_rx/out_0" BEL "u_vga/u_rx/out_1" BEL "u_vga/u_rx/out_2" BEL
+        "u_vga/u_rx/out_3" BEL "u_vga/u_rx/out_4" BEL "u_vga/u_rx/out_5" BEL
+        "u_vga/u_rx/out_6" BEL "u_vga/u_rx/out_7" BEL "u_vga/u_rx/valid" BEL
+        "u_vga/u_rx/rx" BEL "u_vga/u_rx/u_tx1" BEL "u_vga/u_rx/u_tx2" BEL
+        "u_vga/u_charmap/hsync_out" BEL "u_vga/u_charmap/vsync_out" BEL
+        "u_vga/u_fetch/de_out" BEL "u_vga/u_fetch/hsync_out" BEL
+        "u_vga/u_fetch/vsync_out" BEL "u_vga/u_fetch/hctr_out_0" BEL
+        "u_vga/u_fetch/hctr_out_1" BEL "u_vga/u_fetch/hctr_out_2" BEL
+        "u_vga/u_fetch/vctr_out_0" BEL "u_vga/u_fetch/vctr_out_1" BEL
+        "u_vga/u_fetch/vctr_out_2" BEL "u_vga/u_dotclock/hsync" BEL
+        "u_vga/u_dotclock/vctr_int_0" BEL "u_vga/u_dotclock/vctr_int_1" BEL
+        "u_vga/u_dotclock/vctr_int_2" BEL "u_vga/u_dotclock/vctr_int_3" BEL
+        "u_vga/u_dotclock/vctr_int_4" BEL "u_vga/u_dotclock/vctr_int_5" BEL
+        "u_vga/u_dotclock/vctr_int_6" BEL "u_vga/u_dotclock/vctr_int_7" BEL
+        "u_vga/u_dotclock/vctr_int_8" BEL "u_vga/u_dotclock/vctr_int_9" BEL
+        "u_vga/u_dotclock/vctr_int_10" BEL "u_vga/u_dotclock/vsync" BEL
+        "u_vga/u_dotclock/de_h" BEL "u_vga/u_dotclock/de_v" BEL
+        "u_vga/u_dotclock/hctr_0" BEL "u_vga/u_dotclock/hctr_1" BEL
+        "u_vga/u_dotclock/hctr_2" BEL "u_vga/u_dotclock/hctr_3" BEL
+        "u_vga/u_dotclock/hctr_4" BEL "u_vga/u_dotclock/hctr_5" BEL
+        "u_vga/u_dotclock/hctr_6" BEL "u_vga/u_dotclock/hctr_7" BEL
+        "u_vga/u_dotclock/hctr_8" BEL "u_vga/u_dotclock/hctr_9" BEL
+        "u_vga/u_dotclock/hctr_10" BEL "u_vga/u_dotclock/vctr_0" BEL
+        "u_vga/u_dotclock/vctr_1" BEL "u_vga/u_dotclock/vctr_2" BEL
+        "u_vga/u_dotclock/vctr_3" BEL "u_vga/u_dotclock/vctr_4" BEL
+        "u_vga/u_dotclock/vctr_5" BEL "u_vga/u_dotclock/vctr_6" BEL
+        "u_vga/u_dotclock/vctr_7" BEL "u_vga/u_dotclock/vctr_8" BEL
+        "u_vga/u_dotclock/vctr_9" BEL "u_vga/u_dotclock/vctr_10" BEL
+        "u_vga/u_dotclock/hctr_int_0" BEL "u_vga/u_dotclock/hctr_int_1" BEL
+        "u_vga/u_dotclock/hctr_int_2" BEL "u_vga/u_dotclock/hctr_int_3" BEL
+        "u_vga/u_dotclock/hctr_int_4" BEL "u_vga/u_dotclock/hctr_int_5" BEL
+        "u_vga/u_dotclock/hctr_int_6" BEL "u_vga/u_dotclock/hctr_int_7" BEL
+        "u_vga/u_dotclock/hctr_int_8" BEL "u_vga/u_dotclock/hctr_int_9" BEL
+        "u_vga/u_dotclock/hctr_int_10" BEL "u_vga/columns_pxclk_0" BEL
+        "u_vga/columns_pxclk_1" BEL "u_vga/columns_pxclk_2" BEL
+        "u_vga/columns_pxclk_3" BEL "u_vga/columns_pxclk_4" BEL
+        "u_vga/columns_pxclk_5" BEL "u_vga/columns_pxclk_6" BEL
+        "u_vga/columns_pxclk_7" BEL "u_vga/VGA_BLUE" BEL "u_vga/VGA_HSYNC" BEL
+        "u_vga/VGA_VSYNC" BEL "u_vga/u_dotaddr/u_mult/blio/state_0" PIN
+        "u_vga/ram0/u_ram4/Mram_prom1.A_pins<13>" PIN
+        "u_vga/ram0/u_ram2/Mram_prom1.A_pins<13>" PIN
+        "u_vga/ram0/u_ram2/Mram_prom2.A_pins<13>" PIN
+        "u_vga/ram0/u_ram4/Mram_prom2.A_pins<13>" PIN
+        "u_vga/ram0/u_ram3/Mram_prom1.A_pins<13>" PIN
+        "u_vga/ram0/u_ram1/Mram_prom2.A_pins<13>" PIN
+        "u_vga/ram0/u_ram3/Mram_prom2.A_pins<13>" PIN
+        "u_vga/ram0/u_ram1/Mram_prom1.A_pins<13>" PIN
+        "u_vga/ram0/u_ram0/Mram_prom1.A_pins<13>" PIN
+        "u_vga/ram0/u_ram0/Mram_prom2.A_pins<13>" BEL
+        "u_vga/u_charmap/Mrom__varindex0000.A";
+TS_clk = PERIOD TIMEGRP "CLK" 20 ns HIGH 40%;
+TS_108 = PERIOD TIMEGRP "PCLK" 9.2592 ns HIGH 50%;
+PATH TS_IG1_path = FROM TIMEGRP "PCLK" TO TIMEGRP "CLK";
+PATH "TS_IG1_path" TIG;
+PATH TS_IG2_path = FROM TIMEGRP "CLK" TO TIMEGRP "PCLK";
+PATH "TS_IG2_path" TIG;
+SCHEMATIC END;
+

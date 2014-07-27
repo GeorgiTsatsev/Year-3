@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Practical3 -o /afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project/adder16.tfi -lib work /afs/inf.ed.ac.uk/user/s10/s1038722/Downloads/Practical_3_ISE_Project//adder16.v -module adder16 -template /afs/inf.ed.ac.uk/group/teaching/cd/Xilinx132/ISE_DS/ISE//data/tfi.tft -deleteonerror 

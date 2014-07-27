@@ -1,0 +1,64 @@
+Release 13.2 - xst O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Project/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "adder.v" in library work
+Compiling verilog file "ripple.v" in library work
+Module <adder> compiled
+Compiling verilog file "adder16.v" in library work
+Module <ripple> compiled
+Compiling verilog file "simplemult.v" in library work
+Module <adder16> compiled
+Compiling verilog file "tx.v" in library work
+Module <simplemult> compiled
+Compiling verilog file "rx.v" in library work
+Module <tx> compiled
+Compiling verilog file "prom.v" in library work
+Module <rx> compiled
+Module <prom_ram_empty> compiled
+Compiling verilog file "dotfetch.v" in library work
+Module <prom_ram_small> compiled
+Compiling verilog file "dotclock.v" in library work
+Module <dotfetch> compiled
+Compiling verilog file "dotaddr.v" in library work
+Module <dotclock> compiled
+Compiling verilog file "charmap.v" in library work
+Module <dotaddr> compiled
+Compiling verilog file "S3E500.v" in library work
+Module <charmap> compiled
+Module <VGA_S3E500> compiled
+No errors in compilation
+Analysis of file <"VGA_S3E500.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+
+
+Total memory usage is 413444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

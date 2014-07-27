@@ -1,0 +1,242 @@
+--=========================================================================
+-- AR 2013-14: Coursework 2
+--=========================================================================
+-- Student UUN: 1045049
+
+--=========================================================================
+-- Sec 2, Q1: LTL Exercise
+--=========================================================================
+
+----------------------------------------------------------------------------
+-- Model
+----------------------------------------------------------------------------
+
+-- <INSERT NuSMV MODEL HERE>
+MODULE main 
+VAR
+	state:  {q1, q2, q3, q4};
+ 
+ASSIGN 
+	init(state) := q3;
+	next(state) := case
+		state = q1      : q2;
+		state = q2      : q2;
+		state = q3     	: {q1,q2,q4};
+		state = q4     	: q3;
+	esac;
+
+DEFINE
+	a := case
+		state = q1 :FALSE;
+		state = q2 :FALSE;
+		state = q3 :TRUE; 
+		state = q4 :TRUE;		
+	esac;
+	
+	b := case
+		state = q1 :FALSE;
+		state = q2 :TRUE;
+		state = q3 :FALSE; 
+		state = q4 :TRUE;	
+	esac;
+
+	
+----------------------------------------------------------------------------
+-- Identifying satisfying paths
+----------------------------------------------------------------------------
+
+-- <BRIEFLY EXPLAIN HOW YOU DO THIS AND WHY IT WORKS>
+-- The model consists of four states q1..q4 and from each state the possible
+-- transitions are given by the next(state) case (in ASSIGN). The values of a and b are
+-- defined for each state by their case statements (in DEFINE). So in every state the values
+-- of a and b are changed according to their respective value. Given all that the model
+-- works because it simulates system shown in fig 1.
+
+----------------------------------------------------------------------------
+-- Part (a)
+----------------------------------------------------------------------------
+
+-- Query for checking validity
+LTLSPEC G a;
+-- Valid: No
+
+-- Example satisfying path
+-- -> State: 1.1 <-
+--  state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.2 <-
+--  state = q4
+--   b = TRUE
+--   a = TRUE
+-- -> State: 1.3 <-
+--   state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.4 <-
+--   state = q4
+--   b = TRUE
+--   a = TRUE
+-- -> State: 1.5 <-
+--   state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.6 <-
+--   state = q4
+--   b = TRUE
+--   a = TRUE
+-- -> State: 1.7 <-
+--   state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.8 <-
+--   state = q4
+--   b = TRUE
+--   a = TRUE
+-- -> State: 1.9 <-
+--   state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.10 <-
+--   state = q4
+--   b = TRUE
+--   a = TRUE
+-- -> State: 1.11 <-
+--   state = q3
+--   b = FALSE
+--   a = TRUE
+
+----------------------------------------------------------------------------
+-- Part (b)
+----------------------------------------------------------------------------
+
+-- Query for checking validity
+LTLSPEC a U b;
+-- Valid: No
+
+-- Example satisfying path
+-- -> State: 2.1 <-
+--   state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 2.2 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.3 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.4 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.5 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.6 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.7 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.8 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.9 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.10 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+-- -> State: 2.11 <-
+--   state = q2
+--   b = TRUE
+--   a = FALSE
+
+----------------------------------------------------------------------------
+-- Part (c)
+----------------------------------------------------------------------------
+
+-- Query for checking validity
+LTLSPEC a U X (a & !b);
+-- Valid: No
+
+-- Example satisfying path
+-- This path satisfies the ltlspec since the next state from q4 is q3 where
+-- a is true and b is false.
+-- -> State: 1.1 <-
+--  state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.2 <-
+--  state = q4
+--   b = TRUE
+--   a = TRUE
+
+----------------------------------------------------------------------------
+-- Part (d)
+----------------------------------------------------------------------------
+
+-- Query for checking validity
+LTLSPEC X !b & G(!a | !b);
+-- Valid: No
+
+-- Example satisfying path
+-- This parth satisfies the ltlspec since we have next be to be false in q3 and
+-- in every state within the path a or b is false.
+
+-- -> State: 1.1 <-
+--  state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.2 <-
+--  state = q1
+--   b = FALSE
+--   a = FALSE
+-- loop starts here :
+-- -> State: 1.3 <-
+--  state = q2
+--   b = TRUE
+--   a = FALSE
+-- 		... 
+
+----------------------------------------------------------------------------
+-- Part (e)
+----------------------------------------------------------------------------
+
+-- Query for checking validity
+LTLSPEC X (a & b) & F (!a & !b);
+-- Valid: No
+
+-- Example satisfying path
+-- It has a next state a and b to be true (from q3 to q4) and it eventually reaches
+-- state q1 where a and b are false.
+-- -> State: 1.1 <-
+--  state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.2 <-
+--  state = q4
+--   b = TRUE
+--   a = TRUE
+-- -> State: 1.3 <-
+--  state = q3
+--   b = FALSE
+--   a = TRUE
+-- -> State: 1.4 <-
+--  state = q1
+--   b = FALSE
+--   a = FALSE
+-- loop starts here :
+-- -> State: 1.5 <-
+--  state = q2
+--   b = TRUE
+--   a = FALSE
+-- 		...

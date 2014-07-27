@@ -1,0 +1,48 @@
+Release 13.2 ngdbuild O.61xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+/afs/inf.ed.ac.uk/group/teaching/cd/Xilinx132/ISE_DS/ISE/bin/lin64/unwrapped/ngd
+build -intstyle ise -dd _ngo -nt timestamp -a -uc constraints.ucf -p
+xc3s500e-fg320-4 top.ngc top.ngd
+
+Reading NGO file
+"/afs/inf.ed.ac.uk/user/s10/s1045049/Practical_3_ISE_Project/Practical_3_ISE_Pro
+ject/top.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "constraints.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem - TNM : CLK was distributed to a DCM but new TNM
+   constraints were not derived. The requirement for derived TNM constraints is
+   that the distributed TNM is referenced by no more than a single PERIOD
+   constraint. Non-PERIOD referencers are also not allowed. This TNM is used in
+   the following user groups or specifications:
+   <TIMESPEC TS_clk = PERIOD CLK 20.0ns HIGH 40%;> [constraints.ucf(2)]
+   <TIMESPEC TS_IG1 = FROM PCLK TO CLK TIG;> [constraints.ucf(17)]
+   <TIMESPEC TS_IG2 = FROM CLK TO PCLK TIG;> [constraints.ucf(18)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 360484 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "top.bld"...

@@ -1,0 +1,143 @@
+--=========================================================================
+-- AR 2013-14: Coursework 2
+--=========================================================================
+-- Student UUN: 1045049
+
+--=========================================================================
+-- Sec 2, Q2: CTL Exercise
+--=========================================================================
+
+----------------------------------------------------------------------------
+-- Module bringing together modules showing inequivalence
+----------------------------------------------------------------------------
+
+MODULE main
+VAR
+  a : model_a;
+  c : model_c;
+  e : model_e;
+  h : model_h;
+----------------------------------------------------------------------------
+-- Part (a)
+----------------------------------------------------------------------------
+-- Formulas equivalent? No
+
+MODULE model_a
+VAR
+  st : 0..1;
+DEFINE
+  phi := st = 1;
+ASSIGN
+  init(st) := 0;
+  next(st) := 
+    case 
+      st = 0 : 1;
+      st = 1 : 1;
+    esac;
+
+CTLSPEC EF phi
+CTLSPEC EG phi
+
+----------------------------------------------------------------------------
+-- Part (b)
+----------------------------------------------------------------------------
+-- Formulas equivalent? Yes
+
+-- <BRIEF EXPLANATION FOR EQUIVALENCE>
+-- EF x is true at s if and only if somewhere on some R-path from s x is true. 
+-- That being said the first ctl formula states that in at least one of the states
+-- we would have psi true or phi true (since the two EF are disjoint one of the two formulas
+-- will hold at state s). The second ctl formula states that there exists a computation path 
+-- that some state n on this path satisfies phi or psi.But then state n satisfies at least one of phi or psi
+-- so we infer that it satisfies EF phi or EF psi. Hence the two ctl formulas are equivalent.
+
+----------------------------------------------------------------------------
+-- Part (c)
+----------------------------------------------------------------------------
+-- Formulas equivalent? No
+-- <MODEL AND QUERIES SHOWING INEQUIVALENCE>
+MODULE model_c
+VAR
+  st : 0..2;
+DEFINE
+  phi := st = 1;
+  psi := st = 2;
+ASSIGN
+  init(st) := 0;
+  next(st) := 
+    case 
+      st = 0 : {1,2};
+      st = 1 : 1;
+	  st = 2 : 2;
+    esac;
+
+CTLSPEC AF phi | AF psi
+CTLSPEC AF (phi | psi)
+
+
+----------------------------------------------------------------------------
+-- Part (d)
+----------------------------------------------------------------------------
+-- Formulas equivalent? Yes
+-- <BRIEF EXPLANATION FOR EQUIVALENCE>
+-- This is one of de-Morgan identities for temporal connectives so the two 
+-- ctl formulas are equivalent.
+----------------------------------------------------------------------------
+-- Part (e)
+----------------------------------------------------------------------------
+-- Formulas equivalent? No
+-- <MODEL AND QUERIES SHOWING INEQUIVALENCE>
+MODULE model_e
+VAR
+  st : 0..1;
+DEFINE
+  phi := st = 1;
+ASSIGN
+  init(st) := 0;
+  next(st) := 
+    case 
+      st = 0 : 1;
+      st = 1 : 1;
+    esac;
+
+CTLSPEC EF !phi
+CTLSPEC !AF phi
+
+----------------------------------------------------------------------------
+-- Part (f)
+----------------------------------------------------------------------------
+-- Formulas equivalent? Yes
+-- <BRIEF EXPLANATION FOR EQUIVALENCE>
+-- The formulas are equivalent because the square brackets do not matter when 
+-- using the U operator but the order does. And in both ctl formulas the order
+-- is the same phi1 phi2 phi3 so the two formulas must be equivalent.
+
+
+----------------------------------------------------------------------------
+-- Part (g)
+----------------------------------------------------------------------------
+-- Formulas equivalent? Yes
+-- <BRIEF EXPLANATION FOR EQUIVALENCE>
+-- They are equivalent because if we require somewhere that there is always one state.
+-- If there is one state, there is always at least one path.
+----------------------------------------------------------------------------
+-- Part (h)
+----------------------------------------------------------------------------
+-- Formulas equivalent? No
+-- <MODEL AND QUERIES SHOWING INEQUIVALENCE>
+
+MODULE model_h
+VAR
+  st : 0..1;
+DEFINE
+  phi := st = 0;
+ASSIGN
+  init(st) := 0;
+  next(st) := 
+    case 
+      st = 0 : {0,1};
+      st = 1 : 1;
+    esac;
+
+CTLSPEC TRUE
+CTLSPEC EG phi -> AG phi
